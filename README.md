@@ -23,8 +23,8 @@ I am a **Genetic Counseling Assistant at GeneDx** bridging the gap between clini
 ---
 
 ### 🎓 Education & Continuous Learning
-* **M.S. Bioinformatics** | University of Maryland Global Campus (Incoming Student)
-* **Specialized Certificate in Bioinformatics** | UC San Diego (Completed 2026)
+* **M.S. Bioinformatics** | University of Maryland Global Campus (Current Student)
+* **Specialized Certificate in Bioinformatics** | UC San Diego (In Progess, 2026)
     * *Core Competencies:* Relational database modeling, *NIX command line, and genomic sequencing mechanisms (Cancer Genomics, RNA-Seq, Epigenetics).
 * **Current Upskilling:** Pipeline orchestration with **Nextflow** and cloud infrastructure architecture on **AWS**.
 
@@ -32,4 +32,4 @@ I am a **Genetic Counseling Assistant at GeneDx** bridging the gap between clini
 
 ### 📫 Connect with Me
 * **LinkedIn:** [Marina Rice](https://www.linkedin.com/in/marina-rice-3071a1a9/)
-* **GitHub:** Take a look at my pinned repositories below to explore the source code!
+* **GitHub:** Explore my featured repositories on my main profile page!
