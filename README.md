@@ -6,7 +6,7 @@ I am a **Genetic Counseling Assistant at GeneDx** bridging the gap between clini
 ---
 
 ### 🛠️ Featured Technical Portfolio (Pinned Below)
-* **[Genomic Annotation Pipeline](https://github.com/riceroni18/BF_finalproject):** A 3-tier, evidence-based automated Python pipeline for functional genome annotation using HMMER, BLAST, and structural transmembrane logic.
+* **[Genomic Annotation Pipeline](https://github.com/riceroni18/genomic-annotation-pipeline):** A 3-tier, evidence-based automated Python pipeline for functional genome annotation using HMMER, BLAST, and structural transmembrane logic.
 * **[GLP1R Lead Optimization](https://github.com/riceroni18/glp1r-lead-optimization):** Machine learning pipeline and structural docking simulations for lead optimization, built during the SD AI x Bio Hackathon (**5th Place Finish**).
 * **[Bioinformatics Sandbox / Archives](https://github.com/riceroni18/bioinformatics-sandbox):** A collection of independent scripts, algorithm challenges (DNA Sequence Parser, HPO Data Mapper), and collaborative hackathon script contributions.
 
