@@ -5,10 +5,10 @@ I am a **Genetic Counseling Assistant at GeneDx** bridging the gap between clini
 
 ---
 
-### 🛠️ Technical Portfolio
-* **[DNA Sequence Parser](./bioinformatics_projects/dna_sequence_parser):** Python utility for processing FASTA files; automates GC content calculations and sequence metric QC.
-* **[HPO Data Mapper](./bioinformatics_projects/hpo_data_mapper):** NLP-based tool mapping unstructured clinical notes to **Human Phenotype Ontology (HPO)** terms for standardized diagnostics.
-* **[Genomic Annotation Pipeline](./bioinformatics_projects/genomic_annotation_pipeline):** A command-line driven workflow for functional genome annotation. Focuses on data interoperability, GFF3 manipulation using Biocode, and executing production-level pipelines.
+### 🛠️ Featured Technical Portfolio (Pinned Below)
+* **[Genomic Annotation Pipeline](https://github.com/riceroni18/BF_finalproject):** A 3-tier, evidence-based automated Python pipeline for functional genome annotation using HMMER, BLAST, and structural transmembrane logic.
+* **[GLP1R Lead Optimization](https://github.com/riceroni18/glp1r-lead-optimization):** Machine learning pipeline and structural docking simulations for lead optimization, built during the SD AI x Bio Hackathon (**5th Place Finish**).
+* **[Bioinformatics Sandbox / Archives](https://github.com/riceroni18/bioinformatics-sandbox):** A collection of independent scripts, algorithm challenges (DNA Sequence Parser, HPO Data Mapper), and collaborative hackathon script contributions.
 
 ---
 
@@ -16,20 +16,20 @@ I am a **Genetic Counseling Assistant at GeneDx** bridging the gap between clini
 | Category | Tools & Technologies |
 | :--- | :--- |
 | **Programming** | Python (Biopython, Pandas), Bash/Linux, SQL (MySQL/MariaDB) |
-| **Genomics** | NGS/TGS Platforms, BLAST, ClinVar, HPO, Entrez |
+| **Genomics** | NGS/TGS Platforms, BLAST, HMMER, ClinVar, HPO |
 | **Workflow** | Git/GitHub, Docker, Nextflow, WSL |
-| **Clinical Ops** | High-volume diagnostic laboratory workflows, LIMS |
+| **Clinical Ops** | High-volume diagnostic laboratory workflows, LIMS, SOP Compliance |
 
 ---
 
 ### 🎓 Education & Continuous Learning
-* **M.S. Bioinformatics** | University of Maryland Global Campus (Incoming May 2026)
+* **M.S. Bioinformatics** | University of Maryland Global Campus (Incoming Student)
 * **Specialized Certificate in Bioinformatics** | UC San Diego (Completed 2026)
-    * *Core Competencies:* Relational database modeling, NIX command line, and NGS/Third-Gen sequencing mechanisms (Cancer Genomics, RNA-Seq, Epigenetics).
-* **Current Upskilling:** Master’s-level pipeline orchestration with **Nextflow** and genomic data architecture on **AWS**.
+    * *Core Competencies:* Relational database modeling, *NIX command line, and genomic sequencing mechanisms (Cancer Genomics, RNA-Seq, Epigenetics).
+* **Current Upskilling:** Pipeline orchestration with **Nextflow** and cloud infrastructure architecture on **AWS**.
 
 ---
 
 ### 📫 Connect with Me
-* **LinkedIn:** [Your Profile Name](https://www.linkedin.com/in/marina-rice-3071a1a9/)
-* **GitHub:** Check out my `bioinformatics_projects` folder above for source code.
+* **LinkedIn:** [Marina Rice](https://www.linkedin.com/in/marina-rice-3071a1a9/)
+* **GitHub:** Take a look at my pinned repositories below to explore the source code!
