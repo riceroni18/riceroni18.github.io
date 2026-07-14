@@ -1,0 +1,100 @@
+[
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "A concise overview of my bioinformatics, computational biology, and clinical genomics experience.\n📄 Download Networking Resume"
+  },
+  {
+    "objectID": "resume.html#networking-resume",
+    "href": "resume.html#networking-resume",
+    "title": "Resume",
+    "section": "Networking Resume",
+    "text": "Networking Resume"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Let’s Connect",
+    "section": "",
+    "text": "I welcome conversations about bioinformatics, computational biology, scientific data visualization, and collaborative research projects.\nEmail Me LinkedIn GitHub"
+  },
+  {
+    "objectID": "contact.html#current-interests",
+    "href": "contact.html#current-interests",
+    "title": "Let’s Connect",
+    "section": "Current Interests",
+    "text": "Current Interests\n\nComputational Biology\nBioinformatics\nScientific Data Visualization\nGenomics\nGenome Annotation\nSpatial Biology\nReproducible Research\n\nI welcome conversations about research collaborations, internships, hackathons, graduate opportunities, and computational biology projects."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "Building computational tools and visualizations that transform biological data into meaningful scientific insight.\n\n\nEarly-career computational biologist with experience supporting clinical genomics workflows, scientific data quality, and research data management. Currently pursuing an M.S. in Bioinformatics and building skills in reproducible scientific computing.\nView My GitHub Connect on LinkedIn"
+  },
+  {
+    "objectID": "index.html#computational-biology-bioinformatics-clinical-genomics",
+    "href": "index.html#computational-biology-bioinformatics-clinical-genomics",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "Early-career computational biologist with experience supporting clinical genomics workflows, scientific data quality, and research data management. Currently pursuing an M.S. in Bioinformatics and building skills in reproducible scientific computing.\nView My GitHub Connect on LinkedIn"
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Marina Rice",
+    "section": "About Me",
+    "text": "About Me\nHello! I’m Marina, an early-career computational biologist passionate about using data to better understand biology and improve human health.\nI currently work as a Genetic Counseling Assistant at GeneDx, where I support high-throughput clinical genomics workflows and contribute to data quality and process improvement. Alongside my professional work, I am pursuing an M.S. in Bioinformatics at the University of Maryland Global Campus while expanding my experience in computational biology, genomics, and reproducible scientific computing.\nI’m especially interested in genome annotation, transcriptomics, scientific data visualization, and building computational tools that make biological data more accessible, reproducible, and impactful. I’m energized by collaborative projects that combine biology, technology, and creative problem-solving."
+  },
+  {
+    "objectID": "index.html#featured-projects",
+    "href": "index.html#featured-projects",
+    "title": "Marina Rice",
+    "section": "Featured Projects",
+    "text": "Featured Projects\n\n\nDATA EXPLORATION\n\nEcoScope\nInvestigated ten years (2016–2026) of GBIF biodiversity observations within the Key Largo conservation area to evaluate whether selected indicator species exhibited changes in occurrence patterns associated with increasing climate-related pressures. Built an interactive mapping application using the GBIF API and Folium to visualize species distributions across space and time.\nOutcome: Created an interactive mapping application for exploring long-term biodiversity patterns in a climate-sensitive ecosystem.\nTools: Python, GBIF API, Folium, Geospatial Analysis\n\n\n\nBIOINFORMATICS WORKFLOW\n\nGenome Annotation Pipeline\nDeveloped a genome annotation workflow that integrated BLAST, HMMER, and TMHMM results to identify and annotate putative protein-coding genes. Automated sequence matching and annotation processing using Python, SQL, and Linux-based workflows.\nOutcome: Produced a reproducible annotation workflow capable of integrating multiple protein prediction tools into a unified annotation pipeline.\nTechnologies: Python, SQL, Linux, BLAST, HMMER, TMHMM\n\n\n\nDATA VISUALIZATION\n\nCFDE Data Visualization Challenge\nBuilt an interactive 3D visualization of HuBMAP lymph node tissue by mapping cell clusters and cellular coordinates into three-dimensional space. Developed a Streamlit application with Plotly to explore tissue organization and spatial relationships within single-cell datasets.\nOutcome: Delivered an interactive 3D visualization that improved exploration of spatial organization within HuBMAP lymph node tissue.\nTechnologies: Python, Streamlit, Plotly, HuBMAP"
+  },
+  {
+    "objectID": "index.html#currently-working-on",
+    "href": "index.html#currently-working-on",
+    "title": "Marina Rice",
+    "section": "Currently Working On",
+    "text": "Currently Working On\n\n🔬 CFDE Capstone Project – Collaborating through the Common Fund Data Ecosystem (CFDE) DeCoDE Institute to apply bioinformatics and data science skills to real-world biomedical datasets.\n☀️ Hack Your Summer Challenge – Building new computational and software development skills through hands-on technical projects.\n🦠 Ebolathon – Participating in a collaborative computational biology challenge focused on infectious disease and genomic data analysis.\n🎓 M.S. in Bioinformatics – University of Maryland Global Campus (Expected 2028)."
+  },
+  {
+    "objectID": "index.html#technical-skills",
+    "href": "index.html#technical-skills",
+    "title": "Marina Rice",
+    "section": "Technical Skills",
+    "text": "Technical Skills\n\nPython R SQL Bash Linux Git GitHub Galaxy NGS Clinical Genomics Data Quality Scientific Data Visualization Workflow Development"
+  },
+  {
+    "objectID": "index.html#experience-education",
+    "href": "index.html#experience-education",
+    "title": "Marina Rice",
+    "section": "Experience & Education",
+    "text": "Experience & Education\nGenetic Counseling Assistant\nGeneDx\nSupporting high-throughput clinical genomics workflows, case review, data quality, quality assurance, and process improvement.\nM.S. Bioinformatics\nUniversity of Maryland Global Campus\nExpected 2028"
+  },
+  {
+    "objectID": "index.html#career-goals",
+    "href": "index.html#career-goals",
+    "title": "Marina Rice",
+    "section": "Career Goals",
+    "text": "Career Goals\nI’m seeking opportunities to contribute to computational biology and bioinformatics projects that combine genomics, reproducible research, and scientific software development. My goal is to build tools that help researchers generate meaningful biological insights from complex datasets."
+  },
+  {
+    "objectID": "index.html#lets-connect",
+    "href": "index.html#lets-connect",
+    "title": "Marina Rice",
+    "section": "Let’s Connect",
+    "text": "Let’s Connect\nI’m always happy to connect with researchers, bioinformaticians, and professionals working in computational biology, genomics, and scientific data science.\nEmail Me LinkedIn GitHub"
+  }
+]
