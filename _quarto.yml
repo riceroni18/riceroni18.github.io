@@ -1,0 +1,35 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Marina Rice"
+  search: false
+  
+  navbar:
+    background: light
+    left:
+      - href: index.qmd
+        text: Home
+      - href: resume.qmd
+        text: Resume
+      - href: contact.qmd
+        text: Contact
+
+    right:
+      - icon: github
+        href: https://github.com/riceroni18
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/marina-rice-3071a1a9
+        aria-label: LinkedIn
+
+  page-footer:
+    center: "© 2026 Marina Rice"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    smooth-scroll: true

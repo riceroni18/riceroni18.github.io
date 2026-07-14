@@ -1,0 +1,28 @@
+---
+title: ""
+page-layout: full
+---
+
+::: {.hero}
+
+# Let's Connect
+
+I welcome conversations about bioinformatics, computational biology, scientific data visualization, and collaborative research projects.
+
+[Email Me](mailto:mrice183@gmail.com){.btn .btn-primary}
+[LinkedIn](https://www.linkedin.com/in/marina-rice-3071a1a9){.btn .btn-outline-primary}
+[GitHub](https://github.com/riceroni18){.btn .btn-outline-primary}
+
+:::
+
+## Current Interests
+
+- Computational Biology
+- Bioinformatics
+- Scientific Data Visualization
+- Genomics
+- Genome Annotation
+- Spatial Biology
+- Reproducible Research
+
+I welcome conversations about research collaborations, internships, hackathons, graduate opportunities, and computational biology projects.

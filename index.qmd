@@ -1,0 +1,116 @@
+---
+title: ""
+page-layout: full
+---
+
+::: {.hero}
+
+# Marina Rice
+*Building computational tools and visualizations that transform biological data into meaningful scientific insight.*
+
+## Computational Biology · Bioinformatics · Clinical Genomics
+
+Early-career computational biologist with experience supporting clinical genomics workflows, scientific data quality, and research data management. Currently pursuing an M.S. in Bioinformatics and building skills in reproducible scientific computing.
+
+[View My GitHub](https://github.com/riceroni18){.btn .btn-primary}
+[Connect on LinkedIn](https://www.linkedin.com/in/marina-rice-3071a1a9){.btn .btn-outline-primary}
+
+:::
+
+## About Me
+
+Hello! I'm Marina, an early-career computational biologist passionate about using data to better understand biology and improve human health.
+
+I currently work as a Genetic Counseling Assistant at GeneDx, where I support high-throughput clinical genomics workflows and contribute to data quality and process improvement. Alongside my professional work, I am pursuing an M.S. in Bioinformatics at the University of Maryland Global Campus while expanding my experience in computational biology, genomics, and reproducible scientific computing.
+
+I'm especially interested in genome annotation, transcriptomics, scientific data visualization, and building computational tools that make biological data more accessible, reproducible, and impactful. I’m energized by collaborative projects that combine biology, technology, and creative problem-solving.
+
+## Featured Projects
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4 .project-card}
+
+<span class="project-label">DATA EXPLORATION</span>
+
+### EcoScope
+
+Investigated ten years (2016–2026) of GBIF biodiversity observations within the Key Largo conservation area to evaluate whether selected indicator species exhibited changes in occurrence patterns associated with increasing climate-related pressures. Built an interactive mapping application using the GBIF API and Folium to visualize species distributions across space and time.
+
+Outcome: Created an interactive mapping application for exploring long-term biodiversity patterns in a climate-sensitive ecosystem.
+
+**Tools:** Python, GBIF API, Folium, Geospatial Analysis
+
+:::
+
+::: {.g-col-12 .g-col-md-4 .project-card}
+
+<span class="project-label">BIOINFORMATICS WORKFLOW</span>
+
+### Genome Annotation Pipeline
+
+Developed a genome annotation workflow that integrated BLAST, HMMER, and TMHMM results to identify and annotate putative protein-coding genes. Automated sequence matching and annotation processing using Python, SQL, and Linux-based workflows.
+
+Outcome: Produced a reproducible annotation workflow capable of integrating multiple protein prediction tools into a unified annotation pipeline.
+
+**Technologies:** Python, SQL, Linux, BLAST, HMMER, TMHMM
+
+:::
+
+::: {.g-col-12 .g-col-md-4 .project-card}
+
+<span class="project-label">DATA VISUALIZATION</span>
+
+### CFDE Data Visualization Challenge
+
+Built an interactive 3D visualization of HuBMAP lymph node tissue by mapping cell clusters and cellular coordinates into three-dimensional space. Developed a Streamlit application with Plotly to explore tissue organization and spatial relationships within single-cell datasets.
+
+Outcome: Delivered an interactive 3D visualization that improved exploration of spatial organization within HuBMAP lymph node tissue.
+
+**Technologies:** Python, Streamlit, Plotly, HuBMAP
+
+:::
+
+:::
+
+## Currently Working On
+
+- 🔬 **CFDE Capstone Project** – Collaborating through the Common Fund Data Ecosystem (CFDE) DeCoDE Institute to apply bioinformatics and data science skills to real-world biomedical datasets.
+
+- ☀️ **Hack Your Summer Challenge** – Building new computational and software development skills through hands-on technical projects.
+
+- 🦠 **Ebolathon** – Participating in a collaborative computational biology challenge focused on infectious disease and genomic data analysis.
+
+- 🎓 **M.S. in Bioinformatics** – University of Maryland Global Campus (Expected 2028).
+
+## Technical Skills
+
+::: {.skills}
+
+`Python` `R` `SQL` `Bash` `Linux` `Git` `GitHub` `Galaxy` `NGS` `Clinical Genomics` `Data Quality` `Scientific Data Visualization` `Workflow Development`
+
+:::
+
+## Experience & Education
+
+**Genetic Counseling Assistant**  
+GeneDx
+
+Supporting high-throughput clinical genomics workflows, case review, data quality, quality assurance, and process improvement.
+
+**M.S. Bioinformatics**  
+University of Maryland Global Campus
+
+Expected 2028
+
+## Career Goals
+
+I'm seeking opportunities to contribute to computational biology and bioinformatics projects that combine genomics, reproducible research, and scientific software development. My goal is to build tools that help researchers generate meaningful biological insights from complex datasets.
+
+## Let's Connect
+
+I'm always happy to connect with researchers, bioinformaticians, and professionals working in computational biology, genomics, and scientific data science.
+
+[Email Me](mailto:mrice183@gmail.com){.btn .btn-primary}
+[LinkedIn](https://www.linkedin.com/in/marina-rice-3071a1a9){.btn .btn-outline-primary}
+[GitHub](https://github.com/riceroni18){.btn .btn-outline-primary}

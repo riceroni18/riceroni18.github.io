@@ -1,0 +1,27 @@
+---
+title: ""
+page-layout: full
+---
+
+::: {.hero}
+
+# Resume
+
+A concise overview of my bioinformatics, computational biology, and clinical genomics experience.
+
+[📄 Download Networking Resume](Marina_Rice_Networking_Resume.pdf){.btn .btn-primary}
+
+<!-- Add this back after the professional resume exists:
+[Download Professional Resume](professional-resume.pdf){.btn .btn-outline-primary}
+-->
+
+:::
+
+## Networking Resume
+
+<iframe
+  src="Marina_Rice_Networking_Resume.pdf"
+  width="100%"
+  height="1000"
+  style="border: 1px solid #d9e2e5; border-radius: 12px;">
+</iframe>
