@@ -1,35 +1,68 @@
-# Hi, I'm Marina 👋
-### Genetic Counseling Assistant | Aspiring Bioinformatics Engineer
+# Marina Rice | Computational Biology Portfolio
 
-I am a **Genetic Counseling Assistant at GeneDx** bridging the gap between clinical operations and computational biology. I develop tools to automate genomic data parsing and clinical phenotyping to support high-throughput NGS workflows.
+Welcome! This repository contains the source code for my personal portfolio website, built with **Quarto** and hosted with **GitHub Pages**.
 
----
-
-### 🛠️ Featured Technical Portfolio (Pinned Below)
-* **[Genomic Annotation Pipeline](https://github.com/riceroni18/genomic-annotation-pipeline):** A 3-tier, evidence-based automated Python pipeline for functional genome annotation using HMMER, BLAST, and structural transmembrane logic.
-* **[GLP1R Lead Optimization](https://github.com/riceroni18/glp1r-lead-optimization):** Machine learning pipeline and structural docking simulations for lead optimization, built during the SD AI x Bio Hackathon (**5th Place Finish**).
-* **[Bioinformatics Sandbox / Archives](https://github.com/riceroni18/bioinformatics-sandbox):** A collection of independent scripts, algorithm challenges (DNA Sequence Parser, HPO Data Mapper), and collaborative hackathon script contributions.
+🌐 **Live Portfolio:** https://riceroni18.github.io/
 
 ---
 
-### 💻 Technical Skillset
-| Category | Tools & Technologies |
-| :--- | :--- |
-| **Programming** | Python (Biopython, Pandas), Bash/Linux, SQL (MySQL/MariaDB) |
-| **Genomics** | NGS/TGS Platforms, BLAST, HMMER, ClinVar, HPO |
-| **Workflow** | Git/GitHub, Docker, Nextflow, WSL |
-| **Clinical Ops** | High-volume diagnostic laboratory workflows, LIMS, SOP Compliance |
+## About
+
+I'm an early-career computational biologist with experience supporting clinical genomics workflows and developing computational tools for biological data analysis and visualization.
+
+My interests include:
+
+- 🧬 Computational Biology
+- 🧬 Bioinformatics
+- 📊 Scientific Data Visualization
+- 🌿 Biodiversity Informatics
+- 🔬 Genome Annotation
+- 🧪 Reproducible Scientific Computing
+
+I currently work as a **Genetic Counseling Assistant at GeneDx** and am pursuing an **M.S. in Bioinformatics** at the **University of Maryland Global Campus**.
 
 ---
 
-### 🎓 Education & Continuous Learning
-* **M.S. Bioinformatics** | University of Maryland Global Campus (Current Student)
-* **Specialized Certificate in Bioinformatics** | UC San Diego (In Progess, 2026)
-    * *Core Competencies:* Relational database modeling, *NIX command line, and genomic sequencing mechanisms (Cancer Genomics, RNA-Seq, Epigenetics).
-* **Current Upskilling:** Pipeline orchestration with **Nextflow** and cloud infrastructure architecture on **AWS**.
+## About This Repository
+
+This repository contains the source code for my personal website, including:
+
+- Portfolio homepage
+- Featured bioinformatics projects
+- Networking and professional résumés
+- Contact information
+- Future project pages and technical write-ups
+
+The website is built using:
+
+- **Quarto**
+- **HTML/CSS**
+- **GitHub Pages**
 
 ---
 
-### 📫 Connect with Me
-* **LinkedIn:** [Marina Rice](https://www.linkedin.com/in/marina-rice-3071a1a9/)
-* **GitHub:** Explore my featured repositories on my main profile page!
+## Featured Projects
+
+Current featured projects include:
+
+- 🌿 **EcoScope** – Geospatial biodiversity analysis using GBIF occurrence data and Folium.
+- 🧬 **Genome Annotation Pipeline** – Protein annotation workflow integrating BLAST, HMMER, and TMHMM.
+- 📊 **CFDE Data Visualization Challenge** – Interactive 3D visualization of HuBMAP lymph node tissue using Streamlit and Plotly.
+
+Additional project repositories and technical documentation will continue to be added as my portfolio grows.
+
+---
+
+## Connect
+
+🌐 Portfolio  
+https://riceroni18.github.io/
+
+💼 LinkedIn  
+https://www.linkedin.com/in/marina-rice-3071a1a9
+
+💻 GitHub  
+https://github.com/riceroni18
+
+📧 Email  
+mrice183@gmail.com
