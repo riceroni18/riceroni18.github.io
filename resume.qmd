@@ -3,21 +3,54 @@ title: ""
 page-layout: full
 ---
 
-::: {.hero}
+::: {.project-detail-page}
 
-# Resume
+::: {.project-detail-hero .case-study-hero}
 
-A concise overview of my bioinformatics, computational biology, and clinical genomics experience.
+::: {.project-detail-intro}
 
-[📄 Download Networking Resume](Marina_Rice_Networking_Resume.pdf){.btn .btn-primary}
+<span class="project-kicker">EXPERIENCE · EDUCATION · TECHNICAL SKILLS</span>
 
-<!-- Add this back after the professional resume exists:
-[Download Professional Resume](professional-resume.pdf){.btn .btn-outline-primary}
--->
+A clinical genomics professional building toward bioinformatics and computational biology through graduate study, scientific computing, and hands-on genomics projects.
+
+[View Resume](#resume-viewer){.btn .btn-primary}
+[LinkedIn](https://www.linkedin.com/in/marina-rice-3071a1a9){.btn .btn-outline-light}
+
+:::
+
+:::
+
+
+::: {.project-detail-section}
+
+## Current Focus
+
+I work in clinical genomics while pursuing an M.S. in Bioinformatics and developing experience in Python, biological data analysis, scientific computing, and reproducible computational workflows.
+
+My background combines high-throughput genetic testing with project experience in functional gene annotation, extracellular RNA biomarker research, spatial biology visualization, and biodiversity data.
+
+:::
+
+
+::: {.project-detail-section}
+
+## Technical Toolkit
+
+**Programming & Data**  
+Python · Pandas · R · SQL · Linux
+
+**Bioinformatics**  
+BLAST · HMMER · TMHMM · Nextflow · Genomics
+
+**Scientific Computing & Visualization**  
+Git · GitHub · Streamlit · Plotly · Data Visualization
+
+:::
 
 :::
 
 ## Networking Resume
+<div id="resume-viewer"></div>
 
 <iframe
   src="Marina_Rice_Networking_Resume.pdf"

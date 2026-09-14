@@ -1,0 +1,335 @@
+---
+title: ""
+page-layout: full
+---
+
+::: {.project-detail-page .gene-detail}
+
+
+::: {.project-detail-hero .case-study-hero}
+
+::: {.project-detail-intro}
+
+<span class="project-kicker">UC SAN DIEGO EXTENDED STUDIES · BIOINFORMATICS FUNDAMENTALS</span>
+
+A rule-based workflow integrating BLAST, HMMER, and TMHMM evidence to assign functional annotations to unknown genomic sequences.
+
+::: {.project-tech}
+`Python` `BLAST` `HMMER` `TMHMM`
+:::
+
+[View on GitHub](https://github.com/riceroni18/genomic-annotation-pipeline){.btn .btn-primary}
+[← Back to Projects](../index.qmd#projects){.btn .btn-outline-light}
+
+:::
+
+:::
+
+
+::: {.project-detail-section}
+
+## Project Overview
+
+Functional annotation often requires combining evidence from multiple bioinformatics tools, each providing a different type of biological information.
+
+This project explored how sequence similarity, conserved protein domains, and transmembrane predictions could be integrated into a consistent annotation workflow.
+
+The pipeline uses outputs from BLAST, HMMER, and TMHMM and applies a rule-based hierarchy to determine the most appropriate functional annotation for each sequence.
+
+:::
+
+
+::: {.project-detail-section}
+
+## Project Gallery
+
+<div class="project-gallery-grid">
+
+<div class="gallery-card gallery-workflow">
+
+<span class="gallery-number">01</span>
+
+### Pipeline Workflow
+
+<div class="workflow-diagram">
+
+<div class="workflow-node workflow-input">
+<span class="workflow-label">INPUT</span>
+<strong>Unknown Sequence</strong>
+</div>
+
+<div class="workflow-connector">↓</div>
+
+<div class="workflow-tools">
+
+<div class="workflow-tool">
+<span>HMMER</span>
+<small>Protein domains</small>
+</div>
+
+<div class="workflow-tool">
+<span>BLAST</span>
+<small>Sequence similarity</small>
+</div>
+
+<div class="workflow-tool">
+<span>TMHMM</span>
+<small>Membrane topology</small>
+</div>
+
+</div>
+
+<div class="workflow-connector">↓</div>
+
+<div class="workflow-node">
+<span class="workflow-label">INTEGRATION</span>
+<strong>Evidence Comparison</strong>
+</div>
+
+<div class="workflow-connector">↓</div>
+
+<div class="workflow-node">
+<span class="workflow-label">DECISION</span>
+<strong>Rule-Based Logic</strong>
+</div>
+
+<div class="workflow-connector">↓</div>
+
+<div class="workflow-node workflow-output">
+<span class="workflow-label">OUTPUT</span>
+<strong>Functional Annotation</strong>
+</div>
+
+</div>
+
+<p class="gallery-caption">
+BLAST, HMMER, and TMHMM provide complementary biological evidence that is evaluated through a structured annotation workflow.
+</p>
+
+</div>
+
+
+<div class="gallery-card">
+
+<span class="gallery-number">02</span>
+
+### Evidence Sources
+
+<div class="evidence-visual">
+
+<div class="evidence-row">
+<span class="evidence-tool">HMMER</span>
+<div>
+<strong>Conserved protein domains</strong>
+<p>Identifies protein-family and domain-level evidence.</p>
+</div>
+</div>
+
+<div class="evidence-row">
+<span class="evidence-tool">BLAST</span>
+<div>
+<strong>Sequence similarity</strong>
+<p>Compares unknown sequences with known biological sequences.</p>
+</div>
+</div>
+
+<div class="evidence-row">
+<span class="evidence-tool">TMHMM</span>
+<div>
+<strong>Membrane topology</strong>
+<p>Predicts transmembrane regions that may support functional interpretation.</p>
+</div>
+</div>
+
+</div>
+
+<p class="gallery-caption">
+Each analysis method contributes a different type of biological evidence to the annotation process.
+</p>
+
+</div>
+
+
+<div class="gallery-card">
+
+<span class="gallery-number">03</span>
+
+### Decision Logic
+
+<div class="decision-visual">
+
+<div class="decision-step">
+<span>1</span>
+<p>Evaluate available bioinformatics evidence</p>
+</div>
+
+<div class="decision-line"></div>
+
+<div class="decision-step">
+<span>2</span>
+<p>Compare results across analysis methods</p>
+</div>
+
+<div class="decision-line"></div>
+
+<div class="decision-step">
+<span>3</span>
+<p>Apply predefined annotation rules</p>
+</div>
+
+<div class="decision-line"></div>
+
+<div class="decision-step">
+<span>4</span>
+<p>Assign the most supported functional annotation</p>
+</div>
+
+</div>
+
+<p class="gallery-caption">
+A rule-based hierarchy converts multiple analysis outputs into a consistent annotation decision.
+</p>
+
+</div>
+
+
+<div class="gallery-card">
+
+<span class="gallery-number">04</span>
+
+### Annotation Output
+
+<div class="output-preview">
+
+<div class="output-header">
+<span>Sequence</span>
+<span>Evidence</span>
+<span>Annotation</span>
+</div>
+
+<div class="output-row">
+<span>SEQ_01</span>
+<span>HMMER + BLAST</span>
+<span>Functional assignment</span>
+</div>
+
+<div class="output-row">
+<span>SEQ_02</span>
+<span>TMHMM</span>
+<span>Membrane-associated protein</span>
+</div>
+
+<div class="output-row">
+<span>SEQ_03</span>
+<span>Limited evidence</span>
+<span>Unresolved / hypothetical</span>
+</div>
+
+</div>
+
+<p class="gallery-caption">
+Representative layout showing how computational evidence is translated into final functional annotations.
+</p>
+
+</div>
+
+</div>
+
+:::
+
+
+::: {.project-detail-section}
+
+## The Problem
+
+Different bioinformatics tools capture different biological signals.
+
+BLAST can identify sequence similarity to known sequences, HMMER can detect conserved protein domains, and TMHMM can predict transmembrane topology.
+
+A major challenge is determining how to interpret these results together when the evidence does not point to a single obvious annotation.
+
+:::
+
+
+::: {.project-detail-section}
+
+## My Approach
+
+I designed a rule-based decision hierarchy that combines evidence from each analysis method.
+
+The workflow evaluates available evidence and prioritizes stronger biological signals before assigning a final functional annotation.
+
+::: {.pipeline-flow}
+
+**Unknown Sequence**
+
+↓
+
+**BLAST · HMMER · TMHMM**
+
+↓
+
+**Evidence Comparison**
+
+↓
+
+**Rule-Based Decision Hierarchy**
+
+↓
+
+**Functional Annotation**
+
+:::
+
+:::
+
+
+::: {.project-detail-section}
+
+## Technical Implementation
+
+The workflow was implemented in Python and structured around outputs produced by BLAST, HMMER, and TMHMM.
+
+The annotation logic compares available evidence and applies predefined rules to determine which result should guide the final assignment.
+
+This approach helped make the annotation process more consistent and reproducible than interpreting each tool result independently.
+
+:::
+
+
+::: {.project-detail-section}
+
+## Results
+
+The final workflow produced functional annotations by integrating multiple forms of bioinformatics evidence within a single decision framework.
+
+The project demonstrated how complementary analysis tools can be combined to create a structured annotation process rather than relying on one source of evidence alone.
+
+:::
+
+
+::: {.project-detail-section}
+
+## What I Learned
+
+This project strengthened my understanding of how bioinformatics tools can be combined within a larger computational workflow.
+
+I gained additional experience working with biological sequence-analysis outputs, translating scientific reasoning into Python logic, and designing a reproducible process for interpreting multiple sources of evidence.
+
+:::
+
+
+::: {.project-detail-footer}
+
+## Explore the Code
+
+The complete project implementation and documentation are available on GitHub.
+
+[View GitHub Repository →](https://github.com/riceroni18/genomic-annotation-pipeline){.btn .btn-primary}
+
+[← Back to Selected Work](../index.qmd#projects){.btn .btn-outline-light}
+
+:::
+
+
+:::

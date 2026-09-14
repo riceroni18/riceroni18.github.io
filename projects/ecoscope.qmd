@@ -1,0 +1,299 @@
+---
+title: ""
+page-layout: full
+---
+
+::: {.project-detail-page .ecoscope-detail}
+
+
+::: {.project-detail-hero .case-study-hero}
+
+::: {.project-detail-intro}
+
+<span class="project-kicker">BIODIVERSITY · ECOLOGICAL DATA · GEOSPATIAL VISUALIZATION</span>
+
+An interactive exploration of biodiversity observations in Key Largo, using ecological occurrence data to examine species patterns across a climate-sensitive ecosystem.
+
+::: {.project-tech}
+`Python` `GBIF` `Folium` `Geospatial Data`
+:::
+
+[View on GitHub](https://github.com/riceroni18/ecoscope){.btn .btn-primary}
+[← Back to Projects](../index.qmd#projects){.btn .btn-outline-light}
+
+:::
+
+:::
+
+
+::: {.project-detail-section}
+
+## Project Overview
+
+EcoScope is a Python-based biodiversity visualization project exploring approximately a decade of species observations in the Key Largo area.
+
+The project uses biodiversity occurrence records from GBIF to examine where species have been observed and to transform those records into an interactive geographic visualization.
+
+The goal was to make ecological observation data easier to explore while connecting computational analysis with my broader interest in conservation and biodiversity.
+
+:::
+
+
+::: {.project-detail-section}
+
+## The Ecological Question
+
+Biodiversity databases contain large numbers of individual species observations collected across different locations and time periods.
+
+When viewed as rows in a dataset, it can be difficult to understand how those observations relate to the landscape in which they were recorded.
+
+EcoScope explores how geospatial visualization can provide additional context by placing biodiversity observations back onto the geographic environment they represent.
+
+:::
+
+
+::: {.project-detail-section}
+
+## Project Gallery
+
+<div class="project-gallery-grid">
+
+<div class="gallery-card">
+
+<span class="gallery-number">01</span>
+
+### Data Workflow
+
+<div class="workflow-diagram">
+
+<div class="workflow-node">
+<span class="workflow-label">SOURCE</span>
+<strong>GBIF Biodiversity Records</strong>
+</div>
+
+<div class="workflow-connector">↓</div>
+
+<div class="workflow-node">
+<span class="workflow-label">PROCESSING</span>
+<strong>Python</strong>
+</div>
+
+<div class="workflow-connector">↓</div>
+
+<div class="workflow-tools">
+
+<div class="workflow-tool">
+<span>Species</span>
+<small>Occurrence records</small>
+</div>
+
+<div class="workflow-tool">
+<span>Location</span>
+<small>Coordinates</small>
+</div>
+
+<div class="workflow-tool">
+<span>Time</span>
+<small>Observation period</small>
+</div>
+
+</div>
+
+<div class="workflow-connector">↓</div>
+
+<div class="workflow-node workflow-output">
+<span class="workflow-label">OUTPUT</span>
+<strong>Interactive Biodiversity Map</strong>
+</div>
+
+</div>
+
+<p class="gallery-caption">
+GBIF occurrence records were processed in Python and transformed into an interactive geographic view of biodiversity observations.
+</p>
+
+</div>
+
+
+<div class="gallery-card">
+
+<span class="gallery-number">02</span>
+
+### Biodiversity Data
+
+<div class="evidence-visual">
+
+<div class="evidence-row">
+<span class="evidence-tool">GBIF</span>
+<div>
+<strong>Species observations</strong>
+<p>Provides biodiversity occurrence records collected from biological observations and contributing datasets.</p>
+</div>
+</div>
+
+<div class="evidence-row">
+<span class="evidence-tool">SPACE</span>
+<div>
+<strong>Geographic coordinates</strong>
+<p>Connects individual observations with locations across the study area.</p>
+</div>
+</div>
+
+<div class="evidence-row">
+<span class="evidence-tool">TIME</span>
+<div>
+<strong>Observation history</strong>
+<p>Provides temporal context for examining records across the project period.</p>
+</div>
+</div>
+
+</div>
+
+<p class="gallery-caption">
+Combining species, location, and observation information makes biodiversity records easier to explore within their ecological context.
+</p>
+
+</div>
+
+
+<div class="gallery-card">
+
+<span class="gallery-number">03</span>
+
+### Geospatial Exploration
+
+<div class="decision-visual">
+
+<div class="decision-step">
+<span>1</span>
+<p>Retrieve biodiversity occurrence records</p>
+</div>
+
+<div class="decision-line"></div>
+
+<div class="decision-step">
+<span>2</span>
+<p>Prepare relevant species and geographic information</p>
+</div>
+
+<div class="decision-line"></div>
+
+<div class="decision-step">
+<span>3</span>
+<p>Map observations using geographic coordinates</p>
+</div>
+
+<div class="decision-line"></div>
+
+<div class="decision-step">
+<span>4</span>
+<p>Interactively explore biodiversity patterns</p>
+</div>
+
+</div>
+
+<p class="gallery-caption">
+The workflow turns structured occurrence records into a spatial representation that can be explored geographically.
+</p>
+
+</div>
+
+
+<div class="gallery-card">
+
+<span class="gallery-number">04</span>
+
+### Computational Toolkit
+
+<div class="output-preview">
+
+<div class="output-header">
+<span>Tool</span>
+<span>Role</span>
+<span>Application</span>
+</div>
+
+<div class="output-row">
+<span>Python</span>
+<span>Data processing</span>
+<span>Occurrence records</span>
+</div>
+
+<div class="output-row">
+<span>GBIF</span>
+<span>Data source</span>
+<span>Biodiversity observations</span>
+</div>
+
+<div class="output-row">
+<span>Folium</span>
+<span>Visualization</span>
+<span>Interactive mapping</span>
+</div>
+
+</div>
+
+<p class="gallery-caption">
+The project combines programmatic biodiversity data access with Python-based processing and interactive geospatial visualization.
+</p>
+
+</div>
+
+</div>
+
+:::
+
+
+::: {.project-detail-section}
+
+## Technical Approach
+
+I used Python to work with biodiversity occurrence data from GBIF and prepare relevant species, location, and observation information for visualization.
+
+Folium was used to translate geographic coordinates into an interactive map, allowing biodiversity records to be explored spatially rather than only through tabular data.
+
+The project provided an opportunity to combine biological data, programmatic data access, and geospatial visualization within a single workflow.
+
+:::
+
+
+::: {.project-detail-section}
+
+## Conservation Context
+
+EcoScope also connects my computational work with my interest in conservation and ecological monitoring.
+
+My previous conservation experience has included wildlife monitoring, vegetation surveys, habitat restoration, GPS-supported field activities, and community-science projects in Southern California.
+
+Working with biodiversity occurrence data provided another perspective on the same broader challenge: transforming individual biological observations into structured information that can support exploration and interpretation.
+
+:::
+
+
+::: {.project-detail-section}
+
+## What I Learned
+
+This project strengthened my experience working with biological data outside of human genomics and introduced additional considerations involved in ecological and geospatial datasets.
+
+I gained practice retrieving and processing biodiversity records, working with geographic coordinates, and building interactive maps with Python and Folium.
+
+It also reinforced my interest in applying computational methods across different areas of biology, including biodiversity informatics and conservation data.
+
+:::
+
+
+::: {.project-detail-footer}
+
+## Explore the Code
+
+View the project implementation and documentation on GitHub.
+
+[View GitHub Repository →](https://github.com/riceroni18/ecoscope){.btn .btn-primary}
+
+[← Back to Selected Work](../index.qmd#projects){.btn .btn-outline-light}
+
+:::
+
+
+:::

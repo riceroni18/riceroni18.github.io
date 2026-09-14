@@ -1,0 +1,274 @@
+---
+title: ""
+page-layout: full
+---
+
+::: {.project-detail-page .cfde-detail}
+
+
+::: {.project-detail-hero .case-study-hero}
+
+::: {.project-detail-intro}
+
+<span class="project-kicker">CFDE DATA VISUALIZATION CHALLENGE · 3RD PLACE</span>
+
+An interactive spatial-biology visualization exploring cell populations within HuBMAP lymph node tissue.
+
+::: {.project-tech}
+`Python` `Streamlit` `Plotly` `HuBMAP`
+:::
+
+[View on GitHub](https://github.com/riceroni18/cfde-data-visualization-challenge){.btn .btn-primary}
+[← Back to Projects](../index.qmd#projects){.btn .btn-outline-light}
+
+:::
+
+:::
+
+
+::: {.project-detail-section}
+
+## Project Overview
+
+This project was developed for the CFDE Data Visualization Challenge using HuBMAP lymph node data.
+
+The goal was to make complex spatial biological data easier to explore by transforming cell-center and cluster information into an interactive 3D visualization.
+
+The project placed **3rd overall** in the challenge.
+
+:::
+
+
+::: {.project-detail-section}
+
+## The Biological Question
+
+Spatial biology datasets contain information not only about which cell types are present, but also about where those cells are located relative to one another.
+
+Visualizing those relationships can help reveal tissue organization and patterns that may be difficult to understand from tables alone.
+
+This project focused on creating an intuitive way to explore the spatial organization of cell populations within lymph node tissue.
+
+:::
+
+
+::: {.project-detail-section}
+
+## Project Gallery
+
+<div class="project-gallery-grid">
+
+<div class="gallery-card">
+
+<span class="gallery-number">01</span>
+
+### Spatial Data
+
+<div class="workflow-diagram">
+
+<div class="workflow-node">
+<span class="workflow-label">INPUT</span>
+<strong>HuBMAP Lymph Node Data</strong>
+</div>
+
+<div class="workflow-connector">↓</div>
+
+<div class="workflow-tools">
+
+<div class="workflow-tool">
+<span>Cell Centers</span>
+<small>Spatial coordinates</small>
+</div>
+
+<div class="workflow-tool">
+<span>Clusters</span>
+<small>Cell population labels</small>
+</div>
+
+</div>
+
+<div class="workflow-connector">↓</div>
+
+<div class="workflow-node workflow-output">
+<span class="workflow-label">OUTPUT</span>
+<strong>Interactive 3D Tissue View</strong>
+</div>
+
+</div>
+
+<p class="gallery-caption">
+Cell-center coordinates and cluster information were combined to represent tissue organization in three dimensions.
+</p>
+
+</div>
+
+
+<div class="gallery-card">
+
+<span class="gallery-number">02</span>
+
+### Visualization Stack
+
+<div class="evidence-visual">
+
+<div class="evidence-row">
+<span class="evidence-tool">PYTHON</span>
+<div>
+<strong>Data processing</strong>
+<p>Prepared and structured spatial data for visualization.</p>
+</div>
+</div>
+
+<div class="evidence-row">
+<span class="evidence-tool">PLOTLY</span>
+<div>
+<strong>3D visualization</strong>
+<p>Rendered interactive spatial plots for exploring cell populations.</p>
+</div>
+</div>
+
+<div class="evidence-row">
+<span class="evidence-tool">STREAMLIT</span>
+<div>
+<strong>Interactive interface</strong>
+<p>Provided an accessible environment for exploring the visualization.</p>
+</div>
+</div>
+
+</div>
+
+<p class="gallery-caption">
+The project combined Python-based data handling with interactive scientific visualization tools.
+</p>
+
+</div>
+
+
+<div class="gallery-card">
+
+<span class="gallery-number">03</span>
+
+### Exploration Workflow
+
+<div class="decision-visual">
+
+<div class="decision-step">
+<span>1</span>
+<p>Load cell-center and cluster data</p>
+</div>
+
+<div class="decision-line"></div>
+
+<div class="decision-step">
+<span>2</span>
+<p>Associate spatial coordinates with cell populations</p>
+</div>
+
+<div class="decision-line"></div>
+
+<div class="decision-step">
+<span>3</span>
+<p>Render cell populations in three dimensions</p>
+</div>
+
+<div class="decision-line"></div>
+
+<div class="decision-step">
+<span>4</span>
+<p>Interactively explore tissue organization</p>
+</div>
+
+</div>
+
+<p class="gallery-caption">
+The visualization translated structured spatial data into an interactive representation of tissue architecture.
+</p>
+
+</div>
+
+
+<div class="gallery-card">
+
+<span class="gallery-number">04</span>
+
+### Challenge Outcome
+
+<div class="output-preview">
+
+<div class="output-header">
+<span>Area</span>
+<span>Approach</span>
+<span>Result</span>
+</div>
+
+<div class="output-row">
+<span>Data</span>
+<span>HuBMAP spatial biology</span>
+<span>3D exploration</span>
+</div>
+
+<div class="output-row">
+<span>Tools</span>
+<span>Python + Plotly</span>
+<span>Interactive visualization</span>
+</div>
+
+<div class="output-row">
+<span>Challenge</span>
+<span>CFDE</span>
+<span>3rd Place</span>
+</div>
+
+</div>
+
+<p class="gallery-caption">
+The final visualization was recognized with 3rd place in the CFDE Data Visualization Challenge.
+</p>
+
+</div>
+
+</div>
+
+:::
+
+
+::: {.project-detail-section}
+
+## Technical Approach
+
+I used Python to work with cell-center and cluster data and Plotly to represent the spatial organization of cell populations in three dimensions.
+
+Streamlit provided the interactive application layer, allowing the visualization to be explored more intuitively than a static figure.
+
+The project emphasized scientific communication as much as technical implementation: the goal was to make a complex biological dataset easier to investigate visually.
+
+:::
+
+
+::: {.project-detail-section}
+
+## What I Learned
+
+This project strengthened my skills in biological data visualization and reinforced the importance of choosing representations that help users understand complex scientific datasets.
+
+I gained additional experience working with spatial biological data, interactive Plotly visualizations, and Streamlit application development.
+
+It also strengthened my interest in scientific computing tools that make high-dimensional biological data easier to explore.
+
+:::
+
+
+::: {.project-detail-footer}
+
+## Explore the Code
+
+View the project implementation and documentation on GitHub.
+
+[View GitHub Repository →](https://github.com/riceroni18/cfde-data-visualization-challenge){.btn .btn-primary}
+
+[← Back to Selected Work](../index.qmd#projects){.btn .btn-outline-light}
+
+:::
+
+
+:::

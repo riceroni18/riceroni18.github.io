@@ -1,0 +1,254 @@
+---
+title: ""
+page-layout: full
+---
+
+::: {.project-detail-page .decode-detail}
+
+
+::: {.project-detail-hero .case-study-hero}
+
+::: {.project-detail-intro}
+
+<span class="project-kicker">DECODE INSTITUTE · 1ST PLACE CAPSTONE</span>
+
+A team research project investigating shared extracellular RNA biomarkers across neurodegenerative and cognitive disorders.
+
+::: {.project-tech}
+`Bioinformatics` `R` `DESeq2` `Biological Interpretation`
+:::
+
+[← Back to Projects](../index.qmd#projects){.btn .btn-outline-light}
+
+:::
+
+:::
+
+
+::: {.project-detail-section}
+
+## Project Overview
+
+The DeCoDE Institute capstone focused on identifying shared extracellular RNA signals across neurodegenerative and cognitive disorders.
+
+Our team explored patterns across multiple biological datasets and worked to interpret potential biomarker signals within the broader disease context.
+
+The project placed **1st overall** in the capstone program.
+
+:::
+
+
+::: {.project-detail-section}
+
+## My Contribution
+
+My primary role focused on biological research and interpretation.
+
+I reviewed disease biology and relevant literature to help contextualize computational findings, support team discussions, and strengthen the biological interpretation presented in the final project.
+
+I also explored differential expression analysis with DESeq2 using one project dataset as additional hands-on practice.
+
+:::
+
+
+::: {.project-detail-section}
+
+## Research Focus
+
+The project investigated whether extracellular RNA biomarkers could reveal biological signals shared across multiple neurodegenerative and cognitive conditions.
+
+Extracellular RNA is particularly interesting because it may provide measurable molecular information outside of cells and has potential applications in biomarker discovery.
+
+Our work centered on connecting computational findings with biologically meaningful interpretations.
+
+:::
+
+
+::: {.project-detail-section}
+
+## Project Gallery
+
+<div class="project-gallery-grid">
+
+<div class="gallery-card">
+
+<span class="gallery-number">01</span>
+
+### Research Question
+
+<div class="evidence-visual">
+
+<div class="evidence-row">
+<span class="evidence-tool">FOCUS</span>
+<div>
+<strong>Shared exRNA signals</strong>
+<p>Investigated whether multiple neurological and cognitive conditions showed overlapping extracellular RNA patterns.</p>
+</div>
+</div>
+
+<div class="evidence-row">
+<span class="evidence-tool">GOAL</span>
+<div>
+<strong>Biomarker interpretation</strong>
+<p>Connected computational findings with biological context and disease relevance.</p>
+</div>
+</div>
+
+</div>
+
+<p class="gallery-caption">
+The project combined computational analysis with biological interpretation to explore potential shared biomarker signals.
+</p>
+
+</div>
+
+
+<div class="gallery-card">
+
+<span class="gallery-number">02</span>
+
+### Biological Interpretation
+
+<div class="decision-visual">
+
+<div class="decision-step">
+<span>1</span>
+<p>Review disease biology and relevant literature</p>
+</div>
+
+<div class="decision-line"></div>
+
+<div class="decision-step">
+<span>2</span>
+<p>Examine candidate extracellular RNA findings</p>
+</div>
+
+<div class="decision-line"></div>
+
+<div class="decision-step">
+<span>3</span>
+<p>Evaluate biological plausibility and shared relevance</p>
+</div>
+
+<div class="decision-line"></div>
+
+<div class="decision-step">
+<span>4</span>
+<p>Support interpretation for the final presentation</p>
+</div>
+
+</div>
+
+<p class="gallery-caption">
+My contribution centered on translating computational findings into biologically meaningful context.
+</p>
+
+</div>
+
+
+<div class="gallery-card">
+
+<span class="gallery-number">03</span>
+
+### Differential Expression Practice
+
+<div class="workflow-diagram">
+
+<div class="workflow-node">
+<span class="workflow-label">DATA</span>
+<strong>Project Dataset</strong>
+</div>
+
+<div class="workflow-connector">↓</div>
+
+<div class="workflow-node">
+<span class="workflow-label">ANALYSIS</span>
+<strong>DESeq2 Exploration</strong>
+</div>
+
+<div class="workflow-connector">↓</div>
+
+<div class="workflow-node workflow-output">
+<span class="workflow-label">LEARNING</span>
+<strong>Differential Expression Interpretation</strong>
+</div>
+
+</div>
+
+<p class="gallery-caption">
+I independently practiced DESeq2 using one project dataset to build additional experience with differential expression analysis.
+</p>
+
+</div>
+
+
+<div class="gallery-card">
+
+<span class="gallery-number">04</span>
+
+### Project Outcome
+
+<div class="output-preview">
+
+<div class="output-header">
+<span>Area</span>
+<span>Contribution</span>
+<span>Outcome</span>
+</div>
+
+<div class="output-row">
+<span>Research</span>
+<span>Biological context</span>
+<span>Interpretation support</span>
+</div>
+
+<div class="output-row">
+<span>Team</span>
+<span>Collaborative analysis</span>
+<span>Final presentation</span>
+</div>
+
+<div class="output-row">
+<span>Result</span>
+<span>Capstone project</span>
+<span>1st Place</span>
+</div>
+
+</div>
+
+<p class="gallery-caption">
+The project combined computational analysis, biological research, and collaborative interpretation and received 1st place.
+</p>
+
+</div>
+
+</div>
+
+:::
+
+
+::: {.project-detail-section}
+
+## What I Learned
+
+This project strengthened my ability to connect computational findings with biological context rather than treating analytical results in isolation.
+
+I gained experience working within a collaborative research team, evaluating biological relevance, communicating scientific interpretations, and thinking more critically about how molecular signals may relate across complex disorders.
+
+My independent DESeq2 practice also gave me additional exposure to differential expression workflows and interpretation.
+
+:::
+
+
+:::: {.project-detail-footer}
+
+## Explore the Project
+
+This capstone was completed collaboratively as part of the DeCoDE Institute program. My contribution focused on biological research and interpretation supporting the team's analysis and final presentation.
+
+[← Back to Selected Work](../index.qmd#projects){.btn .btn-outline-light}
+
+:::
+
+
+:::

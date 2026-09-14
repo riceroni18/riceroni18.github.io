@@ -1,0 +1,2742 @@
+/* =========================================================
+   MARINA RICE — PORTFOLIO
+   Scientific exploration / organic space theme
+   ========================================================= */
+
+:root {
+  --space: #071018;
+  --space-deep: #03080d;
+  --space-soft: #0d1b25;
+
+  --text: #eef7f4;
+  --muted: #a8bbb8;
+
+  --bio-green: #9dd9b5;
+  --bio-teal: #79c7c5;
+  --bio-blue: #8fbdd3;
+  --bio-purple: #b7a7d9;
+
+  --glass: rgba(13, 27, 37, 0.72);
+  --border: rgba(157, 217, 181, 0.18);
+}
+
+
+/* ---------------- BASE ---------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 20% 15%,
+      rgba(121, 199, 197, 0.08),
+      transparent 28%),
+
+    radial-gradient(circle at 85% 35%,
+      rgba(183, 167, 217, 0.07),
+      transparent 30%),
+
+    linear-gradient(
+      180deg,
+      var(--space) 0%,
+      var(--space-deep) 55%,
+      #07120f 100%
+    );
+}
+
+
+/* Quarto content width */
+
+main {
+  max-width: none;
+}
+
+#quarto-content {
+  overflow: hidden;
+}
+
+
+/* ---------------- NAVIGATION ---------------- */
+
+.navbar {
+  background: rgba(3, 8, 13, 0.72) !important;
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: var(--text) !important;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--bio-green) !important;
+}
+
+
+/* ---------------- HERO ---------------- */
+
+.space-hero {
+  position: relative;
+
+  min-height: calc(100vh - 55px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 4rem 2rem;
+
+  text-align: center;
+
+  isolation: isolate;
+}
+
+
+/* ambient glow */
+
+.space-hero::before {
+  content: "";
+
+  position: absolute;
+
+  width: 620px;
+  height: 620px;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(121, 199, 197, 0.13),
+      rgba(143, 189, 211, 0.05) 35%,
+      transparent 68%
+    );
+
+  filter: blur(15px);
+
+  z-index: -1;
+}
+
+
+/* tiny star field */
+
+.space-hero::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    radial-gradient(circle, rgba(255,255,255,.55) 1px, transparent 1px),
+    radial-gradient(circle, rgba(157,217,181,.35) 1px, transparent 1px);
+
+  background-size:
+    95px 95px,
+    145px 145px;
+
+  background-position:
+    20px 30px,
+    70px 10px;
+
+  opacity: .35;
+
+  z-index: -2;
+}
+
+
+.hero-content {
+  max-width: 950px;
+}
+
+
+.hero-content h1 {
+  margin: 0;
+
+  font-size: clamp(4rem, 10vw, 8rem);
+
+  font-weight: 800;
+
+  letter-spacing: -0.06em;
+
+  color: var(--text);
+}
+
+
+.hero-content h2 {
+  margin: 1.5rem 0;
+
+  border: 0;
+
+  font-size: clamp(1rem, 2.2vw, 1.4rem);
+
+  font-weight: 500;
+
+  letter-spacing: .09em;
+
+  text-transform: uppercase;
+
+  color: var(--bio-green);
+}
+
+
+.hero-content h2::after {
+  display: none;
+}
+
+
+.hero-content p {
+  max-width: 700px;
+
+  margin: 1.5rem auto 2rem;
+
+  font-size: 1.15rem;
+
+  line-height: 1.8;
+
+  color: var(--muted);
+}
+
+
+/* ---------------- BUTTONS ---------------- */
+
+.btn {
+  margin: .4rem;
+
+  padding: .75rem 1.25rem;
+
+  border-radius: 999px;
+
+  font-weight: 600;
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease,
+    background .2s ease;
+}
+
+
+.btn-primary {
+  background: var(--bio-green);
+  border-color: var(--bio-green);
+
+  color: #071018;
+}
+
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+
+  background: #b7e8c8;
+  border-color: #b7e8c8;
+
+  color: #071018;
+
+  box-shadow:
+    0 8px 30px rgba(157,217,181,.2);
+}
+
+
+.btn-outline-light:hover {
+  transform: translateY(-3px);
+}
+
+
+/* ---------------- SCROLL CUE ---------------- */
+
+.scroll-cue {
+  position: absolute;
+
+  bottom: 3rem;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  font-size: .72rem;
+
+  letter-spacing: .18em;
+
+  color: var(--muted);
+
+  animation: float-cue 2s ease-in-out infinite;
+}
+
+
+@keyframes float-cue {
+  0%, 100% {
+    transform: translate(-50%, 0);
+  }
+
+  50% {
+    transform: translate(-50%, 8px);
+  }
+}
+
+
+/* ---------------- PORTFOLIO SECTIONS ---------------- */
+
+.portfolio-section {
+  position: relative;
+
+  width: min(1100px, calc(100% - 3rem));
+
+  margin: 0 auto;
+
+  padding: 8rem 0;
+}
+
+
+.portfolio-section h2 {
+  margin: 0 0 2rem;
+
+  padding: 0;
+
+  border: 0;
+
+  font-size: clamp(2.3rem, 5vw, 4rem);
+
+  font-weight: 750;
+
+  letter-spacing: -0.035em;
+
+  color: var(--text);
+}
+
+
+.portfolio-section h2::after {
+  content: "";
+
+  display: block;
+
+  width: 70px;
+  height: 3px;
+
+  margin-top: 1rem;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--bio-green),
+      var(--bio-purple)
+    );
+}
+
+
+.portfolio-section p {
+  max-width: 820px;
+
+  font-size: 1.08rem;
+
+  line-height: 1.85;
+
+  color: var(--muted);
+}
+
+
+/* ---------------- PROJECT WORLDS ---------------- */
+
+.project-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 2rem;
+
+  margin-top: 3rem;
+}
+
+
+.project-world {
+  position: relative;
+
+  min-height: 330px;
+
+  padding: 2.2rem;
+
+  overflow: hidden;
+
+  border: 1px solid var(--border);
+
+  border-radius: 32px;
+
+  background:
+    radial-gradient(
+      circle at 85% 15%,
+      rgba(157,217,181,.11),
+      transparent 30%
+    ),
+
+    linear-gradient(
+      145deg,
+      rgba(13,27,37,.9),
+      rgba(7,16,24,.72)
+    );
+
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,.22);
+
+  transition:
+    transform .35s ease,
+    border-color .35s ease,
+    box-shadow .35s ease;
+}
+
+
+.project-world::after {
+  content: "";
+
+  position: absolute;
+
+  width: 120px;
+  height: 120px;
+
+  right: -30px;
+  bottom: -30px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle at 35% 30%,
+      var(--bio-teal),
+      rgba(121,199,197,.15) 45%,
+      transparent 68%
+    );
+
+  opacity: .35;
+}
+
+
+.project-world:hover {
+  transform:
+    translateY(-10px)
+    rotate(.35deg);
+
+  border-color:
+    rgba(157,217,181,.45);
+
+  box-shadow:
+    0 28px 70px rgba(0,0,0,.32),
+    0 0 40px rgba(121,199,197,.07);
+}
+
+
+.project-world h3 {
+  position: relative;
+  z-index: 1;
+
+  margin-top: 0;
+
+  font-size: 1.55rem;
+
+  color: var(--text);
+}
+
+
+.project-world strong {
+  color: var(--bio-green);
+}
+
+
+.project-world code,
+.skills code {
+  display: inline-block;
+
+  margin: .2rem;
+
+  padding: .4rem .7rem;
+
+  border:
+    1px solid rgba(157,217,181,.14);
+
+  border-radius: 999px;
+
+  background:
+    rgba(157,217,181,.08);
+
+  color: var(--bio-green);
+
+  font-family: inherit;
+
+  font-size: .85rem;
+}
+
+
+/* ---------------- CONSERVATION ---------------- */
+
+#conservation {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+  padding-left: 3rem;
+  padding-right: 3rem;
+
+  border:
+    1px solid rgba(157,217,181,.12);
+
+  border-radius: 40px;
+
+  background:
+    radial-gradient(
+      circle at 10% 80%,
+      rgba(157,217,181,.10),
+      transparent 30%
+    ),
+
+    rgba(8,22,20,.42);
+}
+
+
+/* ---------------- SKILLS ---------------- */
+
+.skills {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: .7rem;
+
+  margin-top: 2rem;
+}
+
+
+.skills code {
+  padding: .65rem 1rem;
+
+  font-size: .95rem;
+}
+
+
+/* ---------------- CONNECT ---------------- */
+
+.connect-section {
+  text-align: center;
+
+  padding-bottom: 10rem;
+}
+
+
+.connect-section h2::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.connect-section p {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* ---------------- LINKS ---------------- */
+
+a {
+  color: var(--bio-teal);
+}
+
+a:hover {
+  color: var(--bio-green);
+}
+
+
+/* ---------------- FOOTER ---------------- */
+
+.nav-footer {
+  color: var(--muted);
+
+  background: var(--space-deep);
+
+  border-top:
+    1px solid rgba(255,255,255,.06);
+}
+
+
+/* ---------------- MOBILE ---------------- */
+
+@media (max-width: 760px) {
+
+  .space-hero {
+    min-height: 90vh;
+  }
+
+  .hero-content h1 {
+    font-size: 3.7rem;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-world {
+    min-height: auto;
+  }
+
+  .portfolio-section {
+    padding: 5rem 0;
+  }
+
+  #conservation {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+}
+
+
+/* ---------------- ACCESSIBILITY ---------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+}
+
+/* =========================================================
+   INTERACTIVE ENVIRONMENT — LAYER 1
+   ========================================================= */
+
+.environment {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+#quarto-content {
+  position: relative;
+  z-index: 1;
+}
+
+.parallax-layer {
+  position: absolute;
+  inset: -100px;
+  will-change: transform;
+}
+
+/* ---------- distant particles ---------- */
+
+.ambient-particle {
+  position: absolute;
+
+  width: 3px;
+  height: 3px;
+
+  border-radius: 50%;
+
+  background: rgba(238, 247, 244, 0.8);
+
+  box-shadow:
+    0 0 8px rgba(157, 217, 181, 0.45);
+
+  animation: particle-pulse 4s ease-in-out infinite;
+}
+
+.ambient-particle:nth-child(3n) {
+  width: 5px;
+  height: 5px;
+
+  background: var(--bio-green);
+}
+
+.ambient-particle:nth-child(4n) {
+  animation-delay: -2s;
+}
+
+
+@keyframes particle-pulse {
+
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: scale(0.8);
+  }
+
+  50% {
+    opacity: 0.9;
+    transform: scale(1.3);
+  }
+}
+
+
+/* ---------- midground biological orbs ---------- */
+
+.bio-orb {
+  position: absolute;
+
+  border-radius: 50%;
+
+  border:
+    1px solid rgba(157, 217, 181, 0.16);
+
+  background:
+    radial-gradient(
+      circle at 35% 30%,
+      rgba(157, 217, 181, 0.16),
+      rgba(121, 199, 197, 0.05) 45%,
+      transparent 72%
+    );
+
+  box-shadow:
+    inset 0 0 35px rgba(121, 199, 197, 0.05),
+    0 0 45px rgba(121, 199, 197, 0.04);
+}
+
+
+.orb-one {
+  width: 150px;
+  height: 150px;
+
+  top: 16%;
+  left: 8%;
+}
+
+
+.orb-two {
+  width: 95px;
+  height: 95px;
+
+  right: 11%;
+  bottom: 19%;
+}
+
+
+/* Give the orbs subtle internal structure */
+
+.bio-orb::before,
+.bio-orb::after {
+  content: "";
+
+  position: absolute;
+
+  border-radius: 50%;
+
+  border:
+    1px solid rgba(183, 167, 217, 0.14);
+}
+
+
+.bio-orb::before {
+  inset: 18%;
+}
+
+
+.bio-orb::after {
+  inset: 36%;
+
+  background:
+    rgba(157, 217, 181, 0.07);
+}
+
+
+/* ---------- foreground organic forms ---------- */
+
+.organic-object {
+  position: absolute;
+
+  opacity: 0.35;
+
+  filter: blur(0.2px);
+
+  border:
+    1px solid rgba(157, 217, 181, 0.16);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(157, 217, 181, 0.09),
+      rgba(121, 199, 197, 0.02)
+    );
+}
+
+
+.organic-one {
+  width: 180px;
+  height: 80px;
+
+  left: -45px;
+  bottom: 12%;
+
+  border-radius:
+    65% 35% 70% 30% /
+    55% 65% 35% 45%;
+
+  transform: rotate(22deg);
+}
+
+
+.organic-two {
+  width: 130px;
+  height: 60px;
+
+  right: -25px;
+  top: 25%;
+
+  border-radius:
+    35% 65% 40% 60% /
+    60% 35% 65% 40%;
+
+  transform: rotate(-28deg);
+}
+
+
+/* Keep actual hero content above environment */
+
+.hero-content,
+.scroll-cue {
+  position: relative;
+  z-index: 3;
+}
+
+/* =========================================================
+   SCROLL JOURNEY — CONTENT DEPTH
+   ========================================================= */
+
+.portfolio-section {
+  opacity: 0.35;
+
+  transform:
+    translateY(70px)
+    scale(0.94);
+
+  filter: blur(3px);
+
+  transition:
+    opacity 0.8s ease,
+    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.8s ease;
+}
+
+
+/* Section currently being approached */
+
+.portfolio-section.in-view {
+  opacity: 1;
+
+  transform:
+    translateY(0)
+    scale(1);
+
+  filter: blur(0);
+}
+
+
+/* Section that has already been passed */
+
+.portfolio-section.passed {
+  opacity: 0.6;
+
+  transform:
+    translateY(-25px)
+    scale(0.98);
+
+  filter: blur(0);
+}
+
+
+/* Conservation keeps its special container styling */
+
+#conservation.in-view {
+  opacity: 1;
+}
+
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .portfolio-section,
+  .portfolio-section.in-view,
+  .portfolio-section.passed {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+
+}
+
+/* =========================================================
+   PROJECT WORLD 01 — GENOME ANNOTATION
+   ========================================================= */
+
+.genome-world {
+  position: relative;
+  min-height: 540px;
+  overflow: visible;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    radial-gradient(
+      circle at 38% 48%,
+      rgba(121, 199, 197, 0.08),
+      transparent 42%
+    );
+
+  border-color: rgba(157, 217, 181, 0.16);
+}
+
+
+/* -------------------------
+   VISUAL SPECIMEN
+   ------------------------- */
+
+.genome-visual {
+  position: relative;
+
+  width: 280px;
+  height: 280px;
+
+  flex: 0 0 280px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.7s ease;
+}
+
+
+/* -------------------------
+   ORBIT SYSTEM
+   ------------------------- */
+
+.genome-orbit {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  border-radius: 50%;
+
+  border:
+    1px solid rgba(157, 217, 181, 0.18);
+
+  transform:
+    translate(-50%, -50%)
+    rotate(-18deg);
+
+  pointer-events: none;
+}
+
+
+.orbit-outer {
+  width: 250px;
+  height: 155px;
+
+  box-shadow:
+    0 0 35px rgba(121, 199, 197, 0.05);
+}
+
+
+.orbit-inner {
+  width: 185px;
+  height: 110px;
+
+  transform:
+    translate(-50%, -50%)
+    rotate(42deg);
+
+  border-color:
+    rgba(183, 167, 217, 0.20);
+}
+
+
+/* Small traveling point */
+
+.orbit-outer::after {
+  content: "";
+
+  position: absolute;
+
+  width: 8px;
+  height: 8px;
+
+  top: 48%;
+  left: -4px;
+
+  border-radius: 50%;
+
+  background: var(--bio-green);
+
+  box-shadow:
+    0 0 14px rgba(157, 217, 181, 0.8);
+
+  animation:
+    genome-signal 5s ease-in-out infinite;
+}
+
+
+@keyframes genome-signal {
+
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(0.8);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+
+}
+
+
+/* -------------------------
+   GENOME CORE
+   ------------------------- */
+
+.genome-core {
+  position: relative;
+
+  width: 95px;
+  height: 215px;
+
+  filter:
+    drop-shadow(
+      0 0 18px rgba(121, 199, 197, 0.15)
+    );
+}
+
+
+.genome-strand {
+  position: absolute;
+
+  top: 0;
+
+  width: 42px;
+  height: 100%;
+
+  border-radius: 50%;
+
+  border:
+    2px solid rgba(157, 217, 181, 0.65);
+}
+
+
+.strand-a {
+  left: 16px;
+
+  transform:
+    rotate(14deg);
+
+  border-left-color:
+    rgba(157, 217, 181, 0.9);
+
+  border-right-color:
+    rgba(121, 199, 197, 0.15);
+}
+
+
+.strand-b {
+  right: 16px;
+
+  transform:
+    rotate(-14deg);
+
+  border-right-color:
+    rgba(143, 189, 211, 0.85);
+
+  border-left-color:
+    rgba(183, 167, 217, 0.14);
+}
+
+
+/* -------------------------
+   ANNOTATION NODES
+   ------------------------- */
+
+.domain-node {
+  position: absolute;
+
+  width: 11px;
+  height: 11px;
+
+  border-radius: 50%;
+
+  background: var(--bio-green);
+
+  border:
+    2px solid rgba(238, 247, 244, 0.75);
+
+  box-shadow:
+    0 0 15px rgba(157, 217, 181, 0.45);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+
+.node-1 {
+  top: 22px;
+  left: 8px;
+}
+
+
+.node-2 {
+  top: 76px;
+  right: 5px;
+}
+
+
+.node-3 {
+  bottom: 68px;
+  left: 3px;
+}
+
+
+.node-4 {
+  bottom: 18px;
+  right: 12px;
+}
+
+
+/* -------------------------
+   PROJECT INFORMATION
+   ------------------------- */
+
+.project-world-info {
+  position: relative;
+
+  max-width: 420px;
+
+  margin-left: 3rem;
+
+  z-index: 3;
+
+  transition:
+    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+
+.project-kicker {
+  display: inline-block;
+
+  margin-bottom: 0.65rem;
+
+  color: var(--bio-green);
+
+  font-size: 0.72rem;
+  font-weight: 700;
+
+  letter-spacing: 0.16em;
+}
+
+
+.project-world-info h3 {
+  margin-top: 0;
+
+  font-size:
+    clamp(1.5rem, 2.5vw, 2.2rem);
+}
+
+
+.project-world-info p {
+  color: var(--muted);
+
+  line-height: 1.75;
+}
+
+
+.project-tech {
+  margin-top: 1.3rem;
+}
+
+
+.explore-project {
+  display: inline-block;
+
+  margin-top: 1.5rem;
+
+  color: var(--bio-green);
+
+  font-size: 0.78rem;
+  font-weight: 700;
+
+  letter-spacing: 0.14em;
+
+  opacity: 0.65;
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+/* -------------------------
+   WORLD INTERACTION
+   ------------------------- */
+
+.genome-world:hover .genome-visual {
+  filter:
+    drop-shadow(
+      0 0 30px rgba(121, 199, 197, 0.13)
+    );
+}
+
+.genome-world:hover .project-world-info {
+  transform:
+    translateX(8px);
+}
+
+
+.genome-world:hover .explore-project {
+  opacity: 1;
+
+  transform:
+    translateX(5px);
+}
+
+
+/* -------------------------
+   MOBILE
+   ------------------------- */
+
+@media (max-width: 800px) {
+
+  .genome-world {
+    flex-direction: column;
+
+    min-height: 620px;
+
+    text-align: center;
+  }
+
+
+  .project-world-info {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+
+
+  .genome-visual {
+    width: 240px;
+    height: 240px;
+
+    flex-basis: 240px;
+  }
+
+}
+
+/* =========================================================
+   GENOME WORLD — COMPOSITION REFINEMENT
+   ========================================================= */
+
+.genome-world {
+  grid-column: 1 / -1;
+
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 2rem auto 5rem;
+
+  padding: 4rem 5rem;
+
+  gap: 5rem;
+
+  background:
+    radial-gradient(
+      circle at 30% 50%,
+      rgba(121, 199, 197, 0.07),
+      transparent 38%
+    );
+
+  border:
+    1px solid rgba(157, 217, 181, 0.13);
+
+  border-radius: 40px;
+}
+
+
+.genome-visual {
+  width: 360px;
+  height: 360px;
+
+  flex: 0 0 360px;
+}
+
+
+.project-world-info {
+  width: min(100%, 470px);
+  max-width: 470px;
+
+  margin-left: 0;
+}
+
+
+.project-world-info h3 {
+  font-size:
+    clamp(1.8rem, 3vw, 2.7rem);
+
+  line-height: 1.12;
+
+  max-width: 470px;
+}
+
+
+.project-world-info p {
+  max-width: 460px;
+}
+
+
+/* Give the specimen more breathing room */
+
+.orbit-outer {
+  width: 310px;
+  height: 190px;
+}
+
+
+.orbit-inner {
+  width: 225px;
+  height: 135px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 800px) {
+
+  .genome-world {
+    padding: 3rem 1.5rem;
+
+    gap: 1.5rem;
+  }
+
+
+  .genome-visual {
+    width: 260px;
+    height: 260px;
+
+    flex-basis: 260px;
+  }
+
+
+  .project-world-info {
+    width: 100%;
+  }
+
+}
+
+/* =========================================================
+   INLINE SKILL / TECH TAGS — DARK THEME
+   ========================================================= */
+
+.project-world code,
+.skills code,
+.project-tech code {
+  background: rgba(7, 16, 24, 0.85) !important;
+  color: var(--bio-green) !important;
+  border: 1px solid rgba(157, 217, 181, 0.28);
+  border-radius: 999px;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.78rem;
+  box-shadow:
+    0 0 12px rgba(121, 199, 197, 0.06);
+}
+
+.project-world code:hover,
+.skills code:hover,
+.project-tech code:hover {
+  background: rgba(157, 217, 181, 0.12) !important;
+  border-color: rgba(157, 217, 181, 0.55);
+  box-shadow:
+    0 0 16px rgba(121, 199, 197, 0.14);
+}
+
+/* =========================================================
+   GENOME PIPELINE SIGNAL
+   ========================================================= */
+
+.domain-node {
+  animation:
+    pipeline-node 4.8s ease-in-out infinite;
+}
+
+.node-1 {
+  animation-delay: 0s;
+}
+
+.node-2 {
+  animation-delay: 1.2s;
+}
+
+.node-3 {
+  animation-delay: 2.4s;
+}
+
+.node-4 {
+  animation-delay: 3.6s;
+}
+
+@keyframes pipeline-node {
+
+  0%,
+  70%,
+  100% {
+    transform: scale(1);
+    opacity: 0.55;
+
+    box-shadow:
+      0 0 10px rgba(157, 217, 181, 0.25);
+  }
+
+  12% {
+    transform: scale(1.75);
+    opacity: 1;
+
+    box-shadow:
+      0 0 24px rgba(157, 217, 181, 0.95),
+      0 0 40px rgba(121, 199, 197, 0.35);
+  }
+
+}
+
+/* Slightly faster while inspecting the project */
+
+.genome-world:hover .domain-node {
+  animation-duration: 3.6s;
+}
+
+/* =========================================================
+   PROJECT WORLD 02 — DeCoDE / exRNA
+   ========================================================= */
+
+.decode-world {
+  grid-column: 1 / -1;
+
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 2rem auto 5rem;
+
+  padding: 4rem 5rem;
+
+  gap: 5rem;
+
+  background:
+    radial-gradient(
+      circle at 70% 48%,
+      rgba(183, 167, 217, 0.08),
+      transparent 40%
+    );
+
+  border:
+    1px solid rgba(183, 167, 217, 0.14);
+
+  border-radius: 40px;
+
+  flex-direction: row-reverse;
+}
+
+
+/* -------------------------
+   VISUAL
+   ------------------------- */
+
+.decode-visual {
+  position: relative;
+
+  width: 340px;
+  height: 340px;
+
+  flex: 0 0 340px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.7s ease;
+}
+
+
+/* -------------------------
+   CENTRAL CELL / VESICLE
+   ------------------------- */
+
+.decode-cell {
+  position: relative;
+
+  width: 190px;
+  height: 190px;
+
+  border-radius:
+    46% 54% 52% 48% /
+    58% 44% 56% 42%;
+
+  border:
+    1px solid rgba(183, 167, 217, 0.4);
+
+  background:
+    radial-gradient(
+      circle at 38% 35%,
+      rgba(238, 247, 244, 0.14),
+      rgba(183, 167, 217, 0.08) 35%,
+      rgba(121, 199, 197, 0.03) 68%,
+      transparent 75%
+    );
+
+  box-shadow:
+    inset 0 0 40px rgba(183, 167, 217, 0.06),
+    0 0 45px rgba(183, 167, 217, 0.08);
+
+  animation:
+    decode-breathe 6s ease-in-out infinite;
+}
+
+
+@keyframes decode-breathe {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.035);
+  }
+
+}
+
+
+/* -------------------------
+   CORE
+   ------------------------- */
+
+.decode-core {
+  position: absolute;
+
+  width: 55px;
+  height: 55px;
+
+  top: 50%;
+  left: 50%;
+
+  transform:
+    translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(157, 217, 181, 0.45),
+      rgba(121, 199, 197, 0.12) 55%,
+      transparent 72%
+    );
+
+  box-shadow:
+    0 0 25px rgba(157, 217, 181, 0.28);
+}
+
+
+/* -------------------------
+   RNA PARTICLES
+   ------------------------- */
+
+.rna-particle {
+  position: absolute;
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: var(--bio-green);
+
+  box-shadow:
+    0 0 12px rgba(157, 217, 181, 0.55);
+
+  animation:
+    rna-float 5s ease-in-out infinite;
+}
+
+
+.rna-1 {
+  top: 24%;
+  left: 25%;
+  animation-delay: 0s;
+}
+
+.rna-2 {
+  top: 38%;
+  right: 18%;
+  animation-delay: -1s;
+}
+
+.rna-3 {
+  bottom: 22%;
+  left: 34%;
+  animation-delay: -2s;
+}
+
+.rna-4 {
+  bottom: 30%;
+  right: 30%;
+  animation-delay: -3s;
+}
+
+.rna-5 {
+  top: 18%;
+  right: 38%;
+  animation-delay: -4s;
+}
+
+
+@keyframes rna-float {
+
+  0%,
+  100% {
+    transform:
+      translate(0, 0)
+      scale(0.85);
+
+    opacity: 0.45;
+  }
+
+  50% {
+    transform:
+      translate(5px, -8px)
+      scale(1.3);
+
+    opacity: 1;
+  }
+
+}
+
+
+/* -------------------------
+   EXTRACELLULAR VESICLES
+   ------------------------- */
+
+.vesicle {
+  position: absolute;
+
+  border-radius: 50%;
+
+  border:
+    1px solid rgba(183, 167, 217, 0.35);
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(183, 167, 217, 0.10),
+      transparent 70%
+    );
+
+  box-shadow:
+    0 0 20px rgba(183, 167, 217, 0.06);
+
+  animation:
+    vesicle-drift 7s ease-in-out infinite;
+}
+
+
+.vesicle-1 {
+  width: 34px;
+  height: 34px;
+
+  top: 18%;
+  left: 7%;
+}
+
+
+.vesicle-2 {
+  width: 22px;
+  height: 22px;
+
+  right: 7%;
+  top: 34%;
+
+  animation-delay: -2s;
+}
+
+
+.vesicle-3 {
+  width: 45px;
+  height: 45px;
+
+  right: 13%;
+  bottom: 12%;
+
+  animation-delay: -4s;
+}
+
+
+@keyframes vesicle-drift {
+
+  0%,
+  100% {
+    transform:
+      translateY(0)
+      scale(1);
+  }
+
+  50% {
+    transform:
+      translateY(-12px)
+      scale(1.08);
+  }
+
+}
+
+
+/* -------------------------
+   HOVER RESPONSE
+   ------------------------- */
+
+.decode-world:hover .decode-visual {
+  transform:
+    translateY(-7px)
+    scale(1.035);
+
+  filter:
+    drop-shadow(
+      0 0 28px rgba(183, 167, 217, 0.12)
+    );
+}
+
+
+.decode-world:hover .vesicle {
+  border-color:
+    rgba(157, 217, 181, 0.55);
+}
+
+
+.decode-world:hover .project-world-info {
+  transform:
+    translateX(-8px);
+}
+
+
+/* -------------------------
+   MOBILE
+   ------------------------- */
+
+@media (max-width: 800px) {
+
+  .decode-world {
+    flex-direction: column;
+
+    padding: 3rem 1.5rem;
+
+    gap: 1.5rem;
+
+    text-align: center;
+  }
+
+
+  .decode-visual {
+    width: 260px;
+    height: 260px;
+
+    flex-basis: 260px;
+  }
+
+}
+
+/* =========================================================
+   DeCoDE — COMPOSITION REFINEMENT
+   ========================================================= */
+
+.decode-world {
+  position: relative;
+  min-height: 650px;
+  display: block;
+}
+
+
+/* Float specimen in upper-right portion of its space */
+
+.decode-visual {
+  position: absolute;
+
+  width: 340px;
+  height: 340px;
+
+  top: 55px;
+  right: 10%;
+
+  flex: none;
+}
+
+
+/* Keep project information anchored lower-left */
+
+.decode-world .project-world-info {
+  position: absolute;
+
+  left: 7%;
+  bottom: 70px;
+
+  width: min(520px, 48%);
+  max-width: 520px;
+
+  margin: 0;
+}
+
+
+/* Keep text comfortably readable */
+
+.decode-world .project-world-info h3 {
+  max-width: 500px;
+}
+
+.decode-world .project-world-info p {
+  max-width: 500px;
+}
+
+
+/* Mobile returns to normal stacked layout */
+
+@media (max-width: 800px) {
+
+  .decode-world {
+    display: flex;
+    min-height: 650px;
+  }
+
+  .decode-visual,
+  .decode-world .project-world-info {
+    position: relative;
+
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+
+    width: 100%;
+  }
+
+  .decode-visual {
+    width: 260px;
+    height: 260px;
+
+    flex-basis: 260px;
+  }
+
+}
+
+/* =========================================================
+   PROJECT WORLD 03 — CFDE / SPATIAL BIOLOGY
+   ========================================================= */
+
+.cfde-world {
+  grid-column: 1 / -1;
+
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 2rem auto 5rem;
+
+  padding: 4rem 5rem;
+
+  gap: 5rem;
+
+  border:
+    1px solid rgba(143, 189, 211, 0.16);
+
+  border-radius: 40px;
+
+  background:
+    radial-gradient(
+      circle at 30% 48%,
+      rgba(143, 189, 211, 0.08),
+      transparent 40%
+    );
+}
+
+
+/* -------------------------
+   VISUAL
+   ------------------------- */
+
+.cfde-visual {
+  position: relative;
+
+  width: 360px;
+  height: 360px;
+
+  flex: 0 0 360px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  perspective: 900px;
+
+  transition:
+    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.6s ease;
+}
+
+
+/* -------------------------
+   TISSUE CLUSTER
+   ------------------------- */
+
+.tissue-cluster {
+  position: relative;
+
+  width: 260px;
+  height: 240px;
+
+  transform-style: preserve-3d;
+
+  animation:
+    tissue-float 7s ease-in-out infinite;
+}
+
+
+@keyframes tissue-float {
+
+  0%,
+  100% {
+    transform:
+      translateY(0)
+      rotateX(3deg)
+      rotateY(-5deg);
+  }
+
+  50% {
+    transform:
+      translateY(-10px)
+      rotateX(-3deg)
+      rotateY(5deg);
+  }
+
+}
+
+
+/* -------------------------
+   CELL POINTS
+   ------------------------- */
+
+.cell-dot {
+  position: absolute;
+
+  width: 16px;
+  height: 16px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle at 35% 30%,
+      rgba(238, 247, 244, 0.95),
+      rgba(143, 189, 211, 0.7) 45%,
+      rgba(121, 199, 197, 0.22) 72%
+    );
+
+  box-shadow:
+    0 0 16px rgba(143, 189, 211, 0.35);
+
+  transition:
+    transform 0.45s ease,
+    box-shadow 0.45s ease,
+    opacity 0.45s ease;
+}
+
+
+.cell-1 {
+  top: 15%;
+  left: 18%;
+}
+
+.cell-2 {
+  top: 28%;
+  left: 40%;
+}
+
+.cell-3 {
+  top: 12%;
+  right: 18%;
+}
+
+.cell-4 {
+  top: 48%;
+  left: 12%;
+}
+
+.cell-5 {
+  top: 50%;
+  left: 38%;
+}
+
+.cell-6 {
+  top: 42%;
+  right: 22%;
+}
+
+.cell-7 {
+  bottom: 16%;
+  left: 20%;
+}
+
+.cell-8 {
+  bottom: 8%;
+  left: 48%;
+}
+
+.cell-9 {
+  bottom: 22%;
+  right: 12%;
+}
+
+.cell-10 {
+  top: 34%;
+  left: 58%;
+
+  width: 11px;
+  height: 11px;
+}
+
+.cell-11 {
+  bottom: 35%;
+  left: 30%;
+
+  width: 10px;
+  height: 10px;
+}
+
+.cell-12 {
+  top: 66%;
+  right: 32%;
+
+  width: 12px;
+  height: 12px;
+}
+
+
+/* Add depth variation */
+
+.cell-2,
+.cell-6,
+.cell-8 {
+  transform: scale(1.3);
+}
+
+.cell-10,
+.cell-11,
+.cell-12 {
+  opacity: 0.65;
+}
+
+
+/* -------------------------
+   CONNECTIONS
+   ------------------------- */
+
+.cell-link {
+  position: absolute;
+
+  height: 1px;
+
+  transform-origin: left center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(143, 189, 211, 0.28),
+      rgba(157, 217, 181, 0.10)
+    );
+
+  opacity: 0.45;
+}
+
+
+.link-1 {
+  width: 90px;
+  top: 31%;
+  left: 23%;
+
+  transform: rotate(12deg);
+}
+
+
+.link-2 {
+  width: 105px;
+  top: 51%;
+  left: 17%;
+
+  transform: rotate(-6deg);
+}
+
+
+.link-3 {
+  width: 80px;
+  bottom: 28%;
+  left: 35%;
+
+  transform: rotate(20deg);
+}
+
+
+.link-4 {
+  width: 72px;
+  top: 43%;
+  right: 20%;
+
+  transform: rotate(74deg);
+}
+
+
+/* -------------------------
+   HOVER
+   ------------------------- */
+
+.cfde-world:hover .cfde-visual {
+  transform:
+    translateY(-8px)
+    scale(1.04);
+
+  filter:
+    drop-shadow(
+      0 0 30px rgba(143, 189, 211, 0.12)
+    );
+}
+
+
+.cfde-world:hover .cell-dot {
+  box-shadow:
+    0 0 22px rgba(143, 189, 211, 0.55);
+}
+
+
+.cfde-world:hover .cell-1 {
+  transform: translate(-8px, -5px);
+}
+
+.cfde-world:hover .cell-3 {
+  transform: translate(9px, -6px);
+}
+
+.cfde-world:hover .cell-4 {
+  transform: translate(-10px, 4px);
+}
+
+.cfde-world:hover .cell-6 {
+  transform: translate(10px, 2px) scale(1.3);
+}
+
+.cfde-world:hover .cell-7 {
+  transform: translate(-6px, 8px);
+}
+
+.cfde-world:hover .cell-9 {
+  transform: translate(8px, 7px);
+}
+
+
+/* -------------------------
+   MOBILE
+   ------------------------- */
+
+@media (max-width: 800px) {
+
+  .cfde-world {
+    flex-direction: column;
+
+    padding: 3rem 1.5rem;
+
+    gap: 1.5rem;
+
+    text-align: center;
+  }
+
+
+  .cfde-visual {
+    width: 270px;
+    height: 270px;
+
+    flex-basis: 270px;
+  }
+
+}
+
+/* =========================================================
+   PROJECT WORLD 04 — ECOSCOPE
+   ========================================================= */
+
+.ecoscope-world {
+  grid-column: 1 / -1;
+  width: 100%;
+  max-width: 1100px;
+  min-height: 650px;
+
+  margin: 2rem auto 5rem;
+  padding: 4rem 5rem;
+
+  gap: 5rem;
+
+  border:
+    1px solid rgba(157, 217, 181, 0.18);
+
+  border-radius: 40px;
+
+  background:
+    radial-gradient(
+      circle at 72% 48%,
+      rgba(157, 217, 181, 0.09),
+      transparent 38%
+    );
+
+  flex-direction: row-reverse;
+}
+
+
+/* -------------------------
+   ECOSYSTEM VISUAL
+   ------------------------- */
+
+.ecoscope-visual {
+  position: relative;
+
+  width: 380px;
+  height: 360px;
+
+  flex: 0 0 380px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.7s ease;
+}
+
+
+.eco-island {
+  position: relative;
+
+  width: 300px;
+  height: 250px;
+
+  animation:
+    ecosystem-float 7s ease-in-out infinite;
+}
+
+
+@keyframes ecosystem-float {
+
+  0%,
+  100% {
+    transform:
+      translateY(0)
+      rotate(-1deg);
+  }
+
+  50% {
+    transform:
+      translateY(-9px)
+      rotate(1deg);
+  }
+
+}
+
+
+/* -------------------------
+   FLOATING TERRAIN
+   ------------------------- */
+
+.eco-ground {
+  position: absolute;
+
+  width: 230px;
+  height: 70px;
+
+  left: 35px;
+  bottom: 30px;
+
+  border-radius:
+    55% 45% 52% 48% /
+    65% 60% 40% 35%;
+
+  background:
+    radial-gradient(
+      ellipse at 50% 20%,
+      rgba(157, 217, 181, 0.28),
+      rgba(121, 199, 197, 0.10) 48%,
+      rgba(7, 16, 24, 0.15) 72%
+    );
+
+  border:
+    1px solid rgba(157, 217, 181, 0.30);
+
+  box-shadow:
+    0 0 30px rgba(157, 217, 181, 0.08);
+}
+
+
+/* underside */
+
+.eco-ground::after {
+  content: "";
+
+  position: absolute;
+
+  width: 150px;
+  height: 55px;
+
+  top: 45px;
+  left: 40px;
+
+  border-radius:
+    20% 20% 60% 60%;
+
+  background:
+    linear-gradient(
+      rgba(121, 199, 197, 0.10),
+      transparent
+    );
+
+  filter: blur(3px);
+
+  transform:
+    perspective(100px)
+    rotateX(35deg);
+}
+
+
+/* -------------------------
+   BRANCHING STRUCTURE
+   ------------------------- */
+
+.eco-branch {
+  position: absolute;
+
+  width: 3px;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(121, 199, 197, 0.45),
+      rgba(157, 217, 181, 0.9)
+    );
+
+  transform-origin: bottom center;
+
+  box-shadow:
+    0 0 8px rgba(157, 217, 181, 0.12);
+}
+
+
+.branch-main {
+  height: 115px;
+
+  left: 150px;
+  bottom: 78px;
+}
+
+
+.branch-left {
+  height: 65px;
+
+  left: 149px;
+  bottom: 135px;
+
+  transform:
+    rotate(-43deg);
+}
+
+
+.branch-right {
+  height: 70px;
+
+  left: 151px;
+  bottom: 128px;
+
+  transform:
+    rotate(48deg);
+}
+
+
+/* -------------------------
+   LEAVES
+   ------------------------- */
+
+.eco-leaf {
+  position: absolute;
+
+  width: 28px;
+  height: 15px;
+
+  border-radius:
+    80% 20% 75% 25%;
+
+  border:
+    1px solid rgba(157, 217, 181, 0.55);
+
+  background:
+    rgba(157, 217, 181, 0.12);
+
+  box-shadow:
+    0 0 12px rgba(157, 217, 181, 0.08);
+
+  transition:
+    transform 0.5s ease,
+    background 0.5s ease;
+}
+
+
+.leaf-1 {
+  left: 93px;
+  top: 59px;
+
+  transform: rotate(22deg);
+}
+
+
+.leaf-2 {
+  left: 118px;
+  top: 92px;
+
+  transform: rotate(-18deg);
+}
+
+
+.leaf-3 {
+  right: 87px;
+  top: 66px;
+
+  transform: rotate(-28deg);
+}
+
+
+.leaf-4 {
+  right: 109px;
+  top: 103px;
+
+  transform: rotate(25deg);
+}
+
+
+/* -------------------------
+   BIODIVERSITY OBSERVATIONS
+   ------------------------- */
+
+.observation-point {
+  position: absolute;
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: var(--bio-green);
+
+  opacity: 0.45;
+
+  box-shadow:
+    0 0 12px rgba(157, 217, 181, 0.65);
+
+  animation:
+    observation-pulse 4s ease-in-out infinite;
+}
+
+
+.obs-1 {
+  left: 58px;
+  bottom: 93px;
+}
+
+.obs-2 {
+  left: 105px;
+  bottom: 72px;
+
+  animation-delay: -0.8s;
+}
+
+.obs-3 {
+  right: 70px;
+  bottom: 85px;
+
+  animation-delay: -1.6s;
+}
+
+.obs-4 {
+  right: 105px;
+  bottom: 62px;
+
+  animation-delay: -2.4s;
+}
+
+.obs-5 {
+  left: 160px;
+  bottom: 105px;
+
+  animation-delay: -3.2s;
+}
+
+
+@keyframes observation-pulse {
+
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(0.8);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.45);
+
+    box-shadow:
+      0 0 18px rgba(157, 217, 181, 0.85);
+  }
+
+}
+
+
+/* -------------------------
+   INTERACTION
+   ------------------------- */
+
+.ecoscope-world:hover .ecoscope-visual {
+  transform:
+    translateY(-7px)
+    scale(1.04);
+
+  filter:
+    drop-shadow(
+      0 0 30px rgba(157, 217, 181, 0.12)
+    );
+}
+
+
+.ecoscope-world:hover .eco-leaf {
+  background:
+    rgba(157, 217, 181, 0.22);
+}
+
+
+.ecoscope-world:hover .leaf-1 {
+  transform:
+    rotate(28deg)
+    translateY(-3px);
+}
+
+
+.ecoscope-world:hover .leaf-2 {
+  transform:
+    rotate(-24deg)
+    translateY(-3px);
+}
+
+
+.ecoscope-world:hover .leaf-3 {
+  transform:
+    rotate(-34deg)
+    translateY(-3px);
+}
+
+
+.ecoscope-world:hover .leaf-4 {
+  transform:
+    rotate(31deg)
+    translateY(-3px);
+}
+
+
+.ecoscope-world:hover .observation-point {
+  opacity: 1;
+}
+
+
+/* -------------------------
+   MOBILE
+   ------------------------- */
+
+@media (max-width: 800px) {
+
+  .ecoscope-world {
+    flex-direction: column;
+
+    min-height: 650px;
+
+    padding: 3rem 1.5rem;
+
+    gap: 1.5rem;
+
+    text-align: center;
+  }
+
+
+  .ecoscope-visual {
+    width: 280px;
+    height: 280px;
+
+    flex-basis: 280px;
+  }
+
+}
+
+/* =========================================================
+   SELECTED WORK — CONTINUOUS WORLD
+   Remove giant-card appearance
+   ========================================================= */
+
+#projects .project-grid {
+  display: block;
+}
+
+
+/* Let each project float inside the page instead of
+   looking like a separate bordered card */
+
+.genome-world,
+.decode-world,
+.cfde-world,
+.ecoscope-world {
+  position: relative;
+
+  width: 100%;
+  max-width: 1100px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  border: none !important;
+  border-radius: 0 !important;
+
+  background: transparent !important;
+
+  overflow: visible;
+}
+
+
+/* Give every project a large environmental zone */
+
+.genome-world {
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+}
+
+.decode-world {
+  margin-top: 2rem;
+  margin-bottom: 11rem;
+}
+
+.cfde-world {
+  margin-top: 2rem;
+  margin-bottom: 11rem;
+}
+
+.ecoscope-world {
+  margin-top: 2rem;
+  margin-bottom: 7rem;
+}
+
+
+/* Add extremely subtle localized light instead of a card */
+
+.genome-world::before,
+.decode-world::before,
+.cfde-world::before,
+.ecoscope-world::before {
+  content: "";
+
+  position: absolute;
+
+  width: 520px;
+  height: 420px;
+
+  border-radius: 50%;
+
+  filter: blur(30px);
+
+  opacity: 0.22;
+
+  pointer-events: none;
+
+  z-index: -1;
+}
+
+
+.genome-world::before {
+  left: 0;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(121, 199, 197, 0.10),
+      transparent 68%
+    );
+}
+
+
+.decode-world::before {
+  right: 2%;
+  top: 42%;
+
+  transform: translateY(-50%);
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(183, 167, 217, 0.10),
+      transparent 68%
+    );
+}
+
+
+.cfde-world::before {
+  left: 4%;
+  top: 44%;
+
+  transform: translateY(-50%);
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(143, 189, 211, 0.10),
+      transparent 68%
+    );
+}
+
+
+.ecoscope-world::before {
+  right: 3%;
+  top: 42%;
+
+  transform: translateY(-50%);
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(157, 217, 181, 0.10),
+      transparent 68%
+    );
+}

@@ -2,116 +2,94 @@
    MARINA RICE — PORTFOLIO
    Scientific exploration / organic space theme
    ========================================================= */
-
 :root {
   --space: #071018;
   --space-deep: #03080d;
   --space-soft: #0d1b25;
-
   --text: #eef7f4;
   --muted: #a8bbb8;
-
   --bio-green: #9dd9b5;
   --bio-teal: #79c7c5;
   --bio-blue: #8fbdd3;
   --bio-purple: #b7a7d9;
-
   --glass: rgba(13, 27, 37, 0.72);
   --border: rgba(157, 217, 181, 0.18);
 }
-
-
 /* ---------------- BASE ---------------- */
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
   margin: 0;
   color: var(--text);
+
   background:
-    radial-gradient(circle at 20% 15%,
-      rgba(121, 199, 197, 0.08),
-      transparent 28%),
-
-    radial-gradient(circle at 85% 35%,
-      rgba(183, 167, 217, 0.07),
-      transparent 30%),
-
+    radial-gradient(
+      ellipse at 15% 12%,
+      rgba(40, 100, 115, 0.10),
+      transparent 30%
+    ),
+    radial-gradient(
+      ellipse at 82% 38%,
+      rgba(70, 70, 125, 0.07),
+      transparent 32%
+    ),
+    radial-gradient(
+      ellipse at 25% 72%,
+      rgba(45, 105, 90, 0.07),
+      transparent 35%
+    ),
     linear-gradient(
       180deg,
-      var(--space) 0%,
-      var(--space-deep) 55%,
-      #07120f 100%
+      #050b12 0%,
+      #071018 30%,
+      #050d14 62%,
+      #06100f 100%
     );
+
+  background-attachment: fixed;
 }
-
-
-/* Quarto content width */
-
 main {
   max-width: none;
 }
-
 #quarto-content {
   overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
-
-
 /* ---------------- NAVIGATION ---------------- */
-
 .navbar {
   background: rgba(3, 8, 13, 0.72) !important;
   backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
-
 .navbar-brand,
 .navbar-nav .nav-link {
   color: var(--text) !important;
 }
-
 .navbar-nav .nav-link:hover {
   color: var(--bio-green) !important;
 }
-
-
 /* ---------------- HERO ---------------- */
-
 .space-hero {
   position: relative;
-
   min-height: calc(100vh - 55px);
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   padding: 4rem 2rem;
-
   text-align: center;
-
   isolation: isolate;
 }
-
-
-/* ambient glow */
-
 .space-hero::before {
   content: "";
-
   position: absolute;
-
   width: 620px;
   height: 620px;
-
   left: 50%;
   top: 50%;
-
   transform: translate(-50%, -50%);
-
   background:
     radial-gradient(
       circle,
@@ -119,210 +97,116 @@ main {
       rgba(143, 189, 211, 0.05) 35%,
       transparent 68%
     );
-
   filter: blur(15px);
-
   z-index: -1;
 }
-
-
-/* tiny star field */
-
-.space-hero::after {
-  content: "";
-
-  position: absolute;
-  inset: 0;
-
-  background-image:
-    radial-gradient(circle, rgba(255,255,255,.55) 1px, transparent 1px),
-    radial-gradient(circle, rgba(157,217,181,.35) 1px, transparent 1px);
-
-  background-size:
-    95px 95px,
-    145px 145px;
-
-  background-position:
-    20px 30px,
-    70px 10px;
-
-  opacity: .35;
-
-  z-index: -2;
-}
-
 
 .hero-content {
   max-width: 950px;
 }
-
-
 .hero-content h1 {
   margin: 0;
-
   font-size: clamp(4rem, 10vw, 8rem);
-
   font-weight: 800;
-
   letter-spacing: -0.06em;
-
   color: var(--text);
 }
-
-
 .hero-content h2 {
   margin: 1.5rem 0;
-
   border: 0;
-
   font-size: clamp(1rem, 2.2vw, 1.4rem);
-
   font-weight: 500;
-
   letter-spacing: .09em;
-
   text-transform: uppercase;
-
   color: var(--bio-green);
 }
-
-
 .hero-content h2::after {
   display: none;
 }
-
-
 .hero-content p {
   max-width: 700px;
-
   margin: 1.5rem auto 2rem;
-
   font-size: 1.15rem;
-
   line-height: 1.8;
-
   color: var(--muted);
 }
-
-
 /* ---------------- BUTTONS ---------------- */
-
 .btn {
   margin: .4rem;
-
   padding: .75rem 1.25rem;
-
   border-radius: 999px;
-
   font-weight: 600;
-
   transition:
     transform .2s ease,
     box-shadow .2s ease,
     background .2s ease;
 }
-
-
 .btn-primary {
   background: var(--bio-green);
   border-color: var(--bio-green);
-
   color: #071018;
 }
-
-
 .btn-primary:hover {
   transform: translateY(-3px);
-
   background: #b7e8c8;
   border-color: #b7e8c8;
-
   color: #071018;
-
   box-shadow:
     0 8px 30px rgba(157,217,181,.2);
 }
-
-
 .btn-outline-light:hover {
   transform: translateY(-3px);
 }
-
-
-/* ---------------- SCROLL CUE ---------------- */
-
 .scroll-cue {
   position: absolute;
-
   bottom: 3rem;
-
   left: 50%;
-
   transform: translateX(-50%);
-
   font-size: .72rem;
-
   letter-spacing: .18em;
-
   color: var(--muted);
-
   animation: float-cue 2s ease-in-out infinite;
 }
-
-
 @keyframes float-cue {
   0%, 100% {
     transform: translate(-50%, 0);
   }
-
   50% {
     transform: translate(-50%, 8px);
   }
 }
-
-
 /* ---------------- PORTFOLIO SECTIONS ---------------- */
-
 .portfolio-section {
   position: relative;
-
   width: min(1100px, calc(100% - 3rem));
-
   margin: 0 auto;
-
   padding: 8rem 0;
+  opacity: 0.35;
+  transform:
+    translateY(70px)
+    scale(0.94);
+  filter: blur(3px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.8s ease;
 }
-
-
 .portfolio-section h2 {
   margin: 0 0 2rem;
-
   padding: 0;
-
   border: 0;
-
   font-size: clamp(2.3rem, 5vw, 4rem);
-
   font-weight: 750;
-
   letter-spacing: -0.035em;
-
   color: var(--text);
 }
-
-
 .portfolio-section h2::after {
   content: "";
-
   display: block;
-
   width: 70px;
   height: 3px;
-
   margin-top: 1rem;
-
   border-radius: 999px;
-
   background:
     linear-gradient(
       90deg,
@@ -330,289 +214,129 @@ main {
       var(--bio-purple)
     );
 }
-
-
 .portfolio-section p {
   max-width: 820px;
-
   font-size: 1.08rem;
-
   line-height: 1.85;
-
   color: var(--muted);
 }
-
-
 /* ---------------- PROJECT WORLDS ---------------- */
-
 .project-grid {
   display: grid;
-
   grid-template-columns:
     repeat(2, minmax(0, 1fr));
-
   gap: 2rem;
-
   margin-top: 3rem;
 }
-
-
 .project-world {
   position: relative;
-
   min-height: 330px;
-
-  padding: 2.2rem;
-
-  overflow: hidden;
-
-  border: 1px solid var(--border);
-
-  border-radius: 32px;
-
-  background:
-    radial-gradient(
-      circle at 85% 15%,
-      rgba(157,217,181,.11),
-      transparent 30%
-    ),
-
-    linear-gradient(
-      145deg,
-      rgba(13,27,37,.9),
-      rgba(7,16,24,.72)
-    );
-
-  backdrop-filter: blur(12px);
-
-  box-shadow:
-    0 20px 50px rgba(0,0,0,.22);
-
-  transition:
-    transform .35s ease,
-    border-color .35s ease,
-    box-shadow .35s ease;
 }
-
-
-.project-world::after {
-  content: "";
-
-  position: absolute;
-
-  width: 120px;
-  height: 120px;
-
-  right: -30px;
-  bottom: -30px;
-
-  border-radius: 50%;
-
-  background:
-    radial-gradient(
-      circle at 35% 30%,
-      var(--bio-teal),
-      rgba(121,199,197,.15) 45%,
-      transparent 68%
-    );
-
-  opacity: .35;
-}
-
-
-.project-world:hover {
-  transform:
-    translateY(-10px)
-    rotate(.35deg);
-
-  border-color:
-    rgba(157,217,181,.45);
-
-  box-shadow:
-    0 28px 70px rgba(0,0,0,.32),
-    0 0 40px rgba(121,199,197,.07);
-}
-
 
 .project-world h3 {
   position: relative;
   z-index: 1;
-
   margin-top: 0;
-
   font-size: 1.55rem;
-
   color: var(--text);
 }
-
-
 .project-world strong {
   color: var(--bio-green);
 }
-
-
 .project-world code,
 .skills code {
   display: inline-block;
-
   margin: .2rem;
-
   padding: .4rem .7rem;
-
   border:
     1px solid rgba(157,217,181,.14);
-
   border-radius: 999px;
-
   background:
     rgba(157,217,181,.08);
-
   color: var(--bio-green);
-
   font-family: inherit;
-
   font-size: .85rem;
 }
-
-
 /* ---------------- CONSERVATION ---------------- */
-
 #conservation {
   margin-top: 3rem;
   margin-bottom: 3rem;
-
   padding-left: 3rem;
   padding-right: 3rem;
-
-  border:
-    1px solid rgba(157,217,181,.12);
-
-  border-radius: 40px;
-
-  background:
-    radial-gradient(
-      circle at 10% 80%,
-      rgba(157,217,181,.10),
-      transparent 30%
-    ),
-
-    rgba(8,22,20,.42);
+  border: none;
+  border-radius: 0;
+  background: transparent;
 }
-
-
 /* ---------------- SKILLS ---------------- */
-
 .skills {
   display: flex;
-
   flex-wrap: wrap;
-
   gap: .7rem;
-
   margin-top: 2rem;
 }
-
-
 .skills code {
   padding: .65rem 1rem;
-
   font-size: .95rem;
 }
-
-
 /* ---------------- CONNECT ---------------- */
-
 .connect-section {
   text-align: center;
-
   padding-bottom: 10rem;
 }
-
-
 .connect-section h2::after {
   margin-left: auto;
   margin-right: auto;
 }
-
-
 .connect-section p {
   margin-left: auto;
   margin-right: auto;
 }
-
-
-/* ---------------- LINKS ---------------- */
-
 a {
   color: var(--bio-teal);
 }
-
 a:hover {
   color: var(--bio-green);
 }
-
-
 /* ---------------- FOOTER ---------------- */
-
 .nav-footer {
   color: var(--muted);
-
   background: var(--space-deep);
-
   border-top:
     1px solid rgba(255,255,255,.06);
 }
-
-
-/* ---------------- MOBILE ---------------- */
-
 @media (max-width: 760px) {
-
   .space-hero {
     min-height: 90vh;
   }
-
   .hero-content h1 {
     font-size: 3.7rem;
   }
-
   .project-grid {
     grid-template-columns: 1fr;
   }
-
   .project-world {
     min-height: auto;
   }
-
   .portfolio-section {
     padding: 5rem 0;
   }
-
   #conservation {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
-
 }
-
-
 /* ---------------- ACCESSIBILITY ---------------- */
-
 @media (prefers-reduced-motion: reduce) {
-
   *,
   *::before,
   *::after {
     animation: none !important;
     transition: none !important;
   }
-
 }
-
 /* =========================================================
    INTERACTIVE ENVIRONMENT — LAYER 1
    ========================================================= */
-
 .environment {
   position: fixed;
   inset: 0;
@@ -620,188 +344,2872 @@ a:hover {
   pointer-events: none;
   z-index: 0;
 }
-
-#quarto-content {
-  position: relative;
-  z-index: 1;
-}
-
 .parallax-layer {
   position: absolute;
   inset: -100px;
   will-change: transform;
 }
-
-/* ---------- distant particles ---------- */
-
 .ambient-particle {
   position: absolute;
-
   width: 3px;
   height: 3px;
-
   border-radius: 50%;
-
   background: rgba(238, 247, 244, 0.8);
-
   box-shadow:
     0 0 8px rgba(157, 217, 181, 0.45);
-
   animation: particle-pulse 4s ease-in-out infinite;
 }
-
 .ambient-particle:nth-child(3n) {
   width: 5px;
   height: 5px;
-
   background: var(--bio-green);
 }
-
 .ambient-particle:nth-child(4n) {
   animation-delay: -2s;
 }
-
-
 @keyframes particle-pulse {
-
   0%,
   100% {
     opacity: 0.25;
     transform: scale(0.8);
   }
-
   50% {
     opacity: 0.9;
     transform: scale(1.3);
   }
 }
 
-
-/* ---------- midground biological orbs ---------- */
-
-.bio-orb {
-  position: absolute;
-
-  border-radius: 50%;
-
-  border:
-    1px solid rgba(157, 217, 181, 0.16);
-
-  background:
-    radial-gradient(
-      circle at 35% 30%,
-      rgba(157, 217, 181, 0.16),
-      rgba(121, 199, 197, 0.05) 45%,
-      transparent 72%
-    );
-
-  box-shadow:
-    inset 0 0 35px rgba(121, 199, 197, 0.05),
-    0 0 45px rgba(121, 199, 197, 0.04);
-}
-
-
-.orb-one {
-  width: 150px;
-  height: 150px;
-
-  top: 16%;
-  left: 8%;
-}
-
-
-.orb-two {
-  width: 95px;
-  height: 95px;
-
-  right: 11%;
-  bottom: 19%;
-}
-
-
-/* Give the orbs subtle internal structure */
-
-.bio-orb::before,
-.bio-orb::after {
-  content: "";
-
-  position: absolute;
-
-  border-radius: 50%;
-
-  border:
-    1px solid rgba(183, 167, 217, 0.14);
-}
-
-
-.bio-orb::before {
-  inset: 18%;
-}
-
-
-.bio-orb::after {
-  inset: 36%;
-
-  background:
-    rgba(157, 217, 181, 0.07);
-}
-
-
-/* ---------- foreground organic forms ---------- */
-
-.organic-object {
-  position: absolute;
-
-  opacity: 0.35;
-
-  filter: blur(0.2px);
-
-  border:
-    1px solid rgba(157, 217, 181, 0.16);
-
-  background:
-    linear-gradient(
-      135deg,
-      rgba(157, 217, 181, 0.09),
-      rgba(121, 199, 197, 0.02)
-    );
-}
-
-
-.organic-one {
-  width: 180px;
-  height: 80px;
-
-  left: -45px;
-  bottom: 12%;
-
-  border-radius:
-    65% 35% 70% 30% /
-    55% 65% 35% 45%;
-
-  transform: rotate(22deg);
-}
-
-
-.organic-two {
-  width: 130px;
-  height: 60px;
-
-  right: -25px;
-  top: 25%;
-
-  border-radius:
-    35% 65% 40% 60% /
-    60% 35% 65% 40%;
-
-  transform: rotate(-28deg);
-}
-
-
-/* Keep actual hero content above environment */
-
 .hero-content,
 .scroll-cue {
   position: relative;
   z-index: 3;
+}
+/* =========================================================
+   SCROLL JOURNEY — CONTENT DEPTH
+   ========================================================= */
+.portfolio-section.in-view {
+  opacity: 1;
+  transform:
+    translateY(0)
+    scale(1);
+  filter: blur(0);
+}
+.portfolio-section.passed {
+  opacity: 0.6;
+  transform:
+    translateY(-25px)
+    scale(0.98);
+  filter: blur(0);
+}
+#conservation.in-view {
+  opacity: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-section,
+  .portfolio-section.in-view,
+  .portfolio-section.passed {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+/* =========================================================
+   PROJECT WORLD 01 — GENOME ANNOTATION
+   ========================================================= */
+.genome-world {
+  min-height: 540px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1 / -1;
+  padding: 4rem 5rem;
+  gap: 5rem;
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+}
+.genome-visual {
+  position: relative;
+  width: 360px;
+  height: 360px;
+  flex: 0 0 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.7s ease;
+}
+.genome-orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  border:
+    1px solid rgba(157, 217, 181, 0.18);
+  transform:
+    translate(-50%, -50%)
+    rotate(-18deg);
+  pointer-events: none;
+}
+.orbit-outer {
+  width: 310px;
+  height: 190px;
+  box-shadow:
+    0 0 35px rgba(121, 199, 197, 0.05);
+}
+.orbit-inner {
+  width: 225px;
+  height: 135px;
+  transform:
+    translate(-50%, -50%)
+    rotate(42deg);
+  border-color:
+    rgba(183, 167, 217, 0.20);
+}
+.orbit-outer::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 48%;
+  left: -4px;
+  border-radius: 50%;
+  background: var(--bio-green);
+  box-shadow:
+    0 0 14px rgba(157, 217, 181, 0.8);
+  animation:
+    genome-signal 5s ease-in-out infinite;
+}
+@keyframes genome-signal {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+}
+.genome-core {
+  position: relative;
+  width: 95px;
+  height: 215px;
+  filter:
+    drop-shadow(
+      0 0 18px rgba(121, 199, 197, 0.15)
+    );
+}
+.genome-strand {
+  position: absolute;
+  top: 0;
+  width: 42px;
+  height: 100%;
+  border-radius: 50%;
+  border:
+    2px solid rgba(157, 217, 181, 0.65);
+}
+.strand-a {
+  left: 16px;
+  transform:
+    rotate(14deg);
+  border-left-color:
+    rgba(157, 217, 181, 0.9);
+  border-right-color:
+    rgba(121, 199, 197, 0.15);
+}
+.strand-b {
+  right: 16px;
+  transform:
+    rotate(-14deg);
+  border-right-color:
+    rgba(143, 189, 211, 0.85);
+  border-left-color:
+    rgba(183, 167, 217, 0.14);
+}
+.domain-node {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--bio-green);
+  border:
+    2px solid rgba(238, 247, 244, 0.75);
+  box-shadow:
+    0 0 15px rgba(157, 217, 181, 0.45);
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+  animation:
+    pipeline-node 4.8s ease-in-out infinite;
+}
+.node-1 {
+  top: 22px;
+  left: 8px;
+  animation-delay: 0s;
+}
+.node-2 {
+  top: 76px;
+  right: 5px;
+  animation-delay: 1.2s;
+}
+.node-3 {
+  bottom: 68px;
+  left: 3px;
+  animation-delay: 2.4s;
+}
+.node-4 {
+  bottom: 18px;
+  right: 12px;
+  animation-delay: 3.6s;
+}
+.project-world-info {
+  position: relative;
+  max-width: 470px;
+  margin-left: 0;
+  z-index: 3;
+  transition:
+    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  width: min(100%, 470px);
+}
+.project-kicker {
+  display: inline-block;
+  margin-bottom: 0.65rem;
+  color: var(--bio-green);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+.project-world-info h3 {
+  margin-top: 0;
+  font-size:
+    clamp(1.8rem, 3vw, 2.7rem);
+  line-height: 1.12;
+  max-width: 470px;
+}
+.project-world-info p {
+  color: var(--muted);
+  line-height: 1.75;
+  max-width: 460px;
+}
+.project-tech {
+  margin-top: 1.3rem;
+}
+.explore-project {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: var(--bio-green);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  opacity: 0.65;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+.genome-world:hover .genome-visual {
+  filter:
+    drop-shadow(
+      0 0 30px rgba(121, 199, 197, 0.13)
+    );
+}
+.genome-world:hover .project-world-info {
+  transform:
+    translateX(8px);
+}
+.genome-world:hover .explore-project {
+  opacity: 1;
+  transform:
+    translateX(5px);
+}
+@media (max-width: 800px) {
+  .genome-world {
+    flex-direction: column;
+    min-height: 620px;
+    text-align: center;
+  }
+  .project-world-info {
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+  .genome-visual {
+    width: 240px;
+    height: 240px;
+    flex-basis: 240px;
+  }
+}
+/* =========================================================
+   GENOME WORLD — COMPOSITION REFINEMENT
+   ========================================================= */
+@media (max-width: 800px) {
+  .genome-world {
+    padding: 3rem 1.5rem;
+    gap: 1.5rem;
+  }
+  .genome-visual {
+    width: 260px;
+    height: 260px;
+    flex-basis: 260px;
+  }
+  .project-world-info {
+    width: 100%;
+  }
+}
+/* =========================================================
+   INLINE SKILL / TECH TAGS — DARK THEME
+   ========================================================= */
+.project-world code,
+.skills code,
+.project-tech code {
+  background: rgba(7, 16, 24, 0.85) !important;
+  color: var(--bio-green) !important;
+  border: 1px solid rgba(157, 217, 181, 0.28);
+  border-radius: 999px;
+  padding: 0.35rem 0.65rem;
+  font-size: 0.78rem;
+  box-shadow:
+    0 0 12px rgba(121, 199, 197, 0.06);
+}
+.project-world code:hover,
+.skills code:hover,
+.project-tech code:hover {
+  background: rgba(157, 217, 181, 0.12) !important;
+  border-color: rgba(157, 217, 181, 0.55);
+  box-shadow:
+    0 0 16px rgba(121, 199, 197, 0.14);
+}
+/* =========================================================
+   GENOME PIPELINE SIGNAL
+   ========================================================= */
+@keyframes pipeline-node {
+  0%,
+  70%,
+  100% {
+    transform: scale(1);
+    opacity: 0.55;
+    box-shadow:
+      0 0 10px rgba(157, 217, 181, 0.25);
+  }
+  12% {
+    transform: scale(1.75);
+    opacity: 1;
+    box-shadow:
+      0 0 24px rgba(157, 217, 181, 0.95),
+      0 0 40px rgba(121, 199, 197, 0.35);
+  }
+}
+.genome-world:hover .domain-node {
+  animation-duration: 3.6s;
+}
+/* =========================================================
+   PROJECT WORLD 02 — DeCoDE / exRNA
+   ========================================================= */
+.decode-world {
+  grid-column: 1 / -1;
+  padding: 4rem 5rem;
+  gap: 5rem;
+  flex-direction: row-reverse;
+  min-height: 650px;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 11rem;
+}
+.decode-visual {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.7s ease;
+  top: 55px;
+  right: 10%;
+}
+.decode-cell {
+  position: relative;
+  width: 190px;
+  height: 190px;
+  border-radius:
+    46% 54% 52% 48% /
+    58% 44% 56% 42%;
+  border:
+    1px solid rgba(183, 167, 217, 0.4);
+  background:
+    radial-gradient(
+      circle at 38% 35%,
+      rgba(238, 247, 244, 0.14),
+      rgba(183, 167, 217, 0.08) 35%,
+      rgba(121, 199, 197, 0.03) 68%,
+      transparent 75%
+    );
+  box-shadow:
+    inset 0 0 40px rgba(183, 167, 217, 0.06),
+    0 0 45px rgba(183, 167, 217, 0.08);
+  animation:
+    decode-breathe 6s ease-in-out infinite;
+}
+@keyframes decode-breathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.035);
+  }
+}
+.decode-core {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  top: 50%;
+  left: 50%;
+  transform:
+    translate(-50%, -50%);
+  border-radius: 50%;
+  background:
+    radial-gradient(
+      circle,
+      rgba(157, 217, 181, 0.45),
+      rgba(121, 199, 197, 0.12) 55%,
+      transparent 72%
+    );
+  box-shadow:
+    0 0 25px rgba(157, 217, 181, 0.28);
+}
+.rna-particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--bio-green);
+  box-shadow:
+    0 0 12px rgba(157, 217, 181, 0.55);
+  animation:
+    rna-float 5s ease-in-out infinite;
+}
+.rna-1 {
+  top: 24%;
+  left: 25%;
+  animation-delay: 0s;
+}
+.rna-2 {
+  top: 38%;
+  right: 18%;
+  animation-delay: -1s;
+}
+.rna-3 {
+  bottom: 22%;
+  left: 34%;
+  animation-delay: -2s;
+}
+.rna-4 {
+  bottom: 30%;
+  right: 30%;
+  animation-delay: -3s;
+}
+.rna-5 {
+  top: 18%;
+  right: 38%;
+  animation-delay: -4s;
+}
+@keyframes rna-float {
+  0%,
+  100% {
+    transform:
+      translate(0, 0)
+      scale(0.85);
+    opacity: 0.45;
+  }
+  50% {
+    transform:
+      translate(5px, -8px)
+      scale(1.3);
+    opacity: 1;
+  }
+}
+.vesicle {
+  position: absolute;
+  border-radius: 50%;
+  border:
+    1px solid rgba(183, 167, 217, 0.35);
+  background:
+    radial-gradient(
+      circle,
+      rgba(183, 167, 217, 0.10),
+      transparent 70%
+    );
+  box-shadow:
+    0 0 20px rgba(183, 167, 217, 0.06);
+  animation:
+    vesicle-drift 7s ease-in-out infinite;
+}
+.vesicle-1 {
+  width: 34px;
+  height: 34px;
+  top: 18%;
+  left: 7%;
+}
+.vesicle-2 {
+  width: 22px;
+  height: 22px;
+  right: 7%;
+  top: 34%;
+  animation-delay: -2s;
+}
+.vesicle-3 {
+  width: 45px;
+  height: 45px;
+  right: 13%;
+  bottom: 12%;
+  animation-delay: -4s;
+}
+@keyframes vesicle-drift {
+  0%,
+  100% {
+    transform:
+      translateY(0)
+      scale(1);
+  }
+  50% {
+    transform:
+      translateY(-12px)
+      scale(1.08);
+  }
+}
+.decode-world:hover .decode-visual {
+  transform:
+    translateY(-7px)
+    scale(1.035);
+  filter:
+    drop-shadow(
+      0 0 28px rgba(183, 167, 217, 0.12)
+    );
+}
+.decode-world:hover .vesicle {
+  border-color:
+    rgba(157, 217, 181, 0.55);
+}
+.decode-world:hover .project-world-info {
+  transform:
+    translateX(-8px);
+}
+@media (max-width: 800px) {
+  .decode-world {
+    flex-direction: column;
+    padding: 3rem 1.5rem;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .decode-visual {
+    width: 260px;
+    height: 260px;
+    flex-basis: 260px;
+  }
+}
+/* =========================================================
+   DeCoDE — COMPOSITION REFINEMENT
+   ========================================================= */
+.decode-world .project-world-info {
+  position: absolute;
+  left: 7%;
+  bottom: 70px;
+  width: min(520px, 48%);
+  max-width: 520px;
+  margin: 0;
+}
+.decode-world .project-world-info h3 {
+  max-width: 500px;
+}
+.decode-world .project-world-info p {
+  max-width: 500px;
+}
+@media (max-width: 800px) {
+  .decode-world {
+    display: flex;
+    min-height: 650px;
+  }
+  .decode-visual,
+  .decode-world .project-world-info {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+  }
+  .decode-visual {
+    width: 260px;
+    height: 260px;
+    flex-basis: 260px;
+  }
+}
+/* =========================================================
+   PROJECT WORLD 03 — CFDE / SPATIAL BIOLOGY
+   ========================================================= */
+.cfde-world {
+  grid-column: 1 / -1;
+  padding: 4rem 5rem;
+  gap: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 11rem;
+}
+.cfde-visual {
+  position: relative;
+  width: 360px;
+  height: 360px;
+  flex: 0 0 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 900px;
+  transition:
+    transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.6s ease;
+}
+.tissue-cluster {
+  position: relative;
+  width: 260px;
+  height: 240px;
+  transform-style: preserve-3d;
+  animation:
+    tissue-float 7s ease-in-out infinite;
+}
+@keyframes tissue-float {
+  0%,
+  100% {
+    transform:
+      translateY(0)
+      rotateX(3deg)
+      rotateY(-5deg);
+  }
+  50% {
+    transform:
+      translateY(-10px)
+      rotateX(-3deg)
+      rotateY(5deg);
+  }
+}
+.cell-dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background:
+    radial-gradient(
+      circle at 35% 30%,
+      rgba(238, 247, 244, 0.95),
+      rgba(143, 189, 211, 0.7) 45%,
+      rgba(121, 199, 197, 0.22) 72%
+    );
+  box-shadow:
+    0 0 16px rgba(143, 189, 211, 0.35);
+  transition:
+    transform 0.45s ease,
+    box-shadow 0.45s ease,
+    opacity 0.45s ease;
+}
+.cell-1 {
+  top: 15%;
+  left: 18%;
+}
+.cell-2 {
+  top: 28%;
+  left: 40%;
+}
+.cell-3 {
+  top: 12%;
+  right: 18%;
+}
+.cell-4 {
+  top: 48%;
+  left: 12%;
+}
+.cell-5 {
+  top: 50%;
+  left: 38%;
+}
+.cell-6 {
+  top: 42%;
+  right: 22%;
+}
+.cell-7 {
+  bottom: 16%;
+  left: 20%;
+}
+.cell-8 {
+  bottom: 8%;
+  left: 48%;
+}
+.cell-9 {
+  bottom: 22%;
+  right: 12%;
+}
+.cell-10 {
+  top: 34%;
+  left: 58%;
+  width: 11px;
+  height: 11px;
+}
+.cell-11 {
+  bottom: 35%;
+  left: 30%;
+  width: 10px;
+  height: 10px;
+}
+.cell-12 {
+  top: 66%;
+  right: 32%;
+  width: 12px;
+  height: 12px;
+}
+.cell-2,
+.cell-6,
+.cell-8 {
+  transform: scale(1.3);
+}
+.cell-10,
+.cell-11,
+.cell-12 {
+  opacity: 0.65;
+}
+/* -------------------------
+   CONNECTIONS
+   ------------------------- */
+.cell-link {
+  position: absolute;
+  height: 1px;
+  transform-origin: left center;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(143, 189, 211, 0.28),
+      rgba(157, 217, 181, 0.10)
+    );
+  opacity: 0.45;
+}
+.link-1 {
+  width: 90px;
+  top: 31%;
+  left: 23%;
+  transform: rotate(12deg);
+}
+.link-2 {
+  width: 105px;
+  top: 51%;
+  left: 17%;
+  transform: rotate(-6deg);
+}
+.link-3 {
+  width: 80px;
+  bottom: 28%;
+  left: 35%;
+  transform: rotate(20deg);
+}
+.link-4 {
+  width: 72px;
+  top: 43%;
+  right: 20%;
+  transform: rotate(74deg);
+}
+.cfde-world:hover .cfde-visual {
+  transform:
+    translateY(-8px)
+    scale(1.04);
+  filter:
+    drop-shadow(
+      0 0 30px rgba(143, 189, 211, 0.12)
+    );
+}
+.cfde-world:hover .cell-dot {
+  box-shadow:
+    0 0 22px rgba(143, 189, 211, 0.55);
+}
+.cfde-world:hover .cell-1 {
+  transform: translate(-8px, -5px);
+}
+.cfde-world:hover .cell-3 {
+  transform: translate(9px, -6px);
+}
+.cfde-world:hover .cell-4 {
+  transform: translate(-10px, 4px);
+}
+.cfde-world:hover .cell-6 {
+  transform: translate(10px, 2px) scale(1.3);
+}
+.cfde-world:hover .cell-7 {
+  transform: translate(-6px, 8px);
+}
+.cfde-world:hover .cell-9 {
+  transform: translate(8px, 7px);
+}
+@media (max-width: 800px) {
+  .cfde-world {
+    flex-direction: column;
+    padding: 3rem 1.5rem;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .cfde-visual {
+    width: 270px;
+    height: 270px;
+    flex-basis: 270px;
+  }
+}
+/* =========================================================
+   PROJECT WORLD 04 — ECOSCOPE
+   ========================================================= */
+.ecoscope-world {
+  grid-column: 1 / -1;
+  min-height: 650px;
+  padding: 4rem 5rem;
+  gap: 5rem;
+  flex-direction: row-reverse;
+  margin-top: 2rem;
+  margin-bottom: 7rem;
+}
+.ecoscope-visual {
+  position: relative;
+  width: 380px;
+  height: 360px;
+  flex: 0 0 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.7s ease;
+}
+.eco-island {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  animation:
+    ecosystem-float 7s ease-in-out infinite;
+}
+@keyframes ecosystem-float {
+  0%,
+  100% {
+    transform:
+      translateY(0)
+      rotate(-1deg);
+  }
+  50% {
+    transform:
+      translateY(-9px)
+      rotate(1deg);
+  }
+}
+.eco-ground {
+  position: absolute;
+  width: 230px;
+  height: 70px;
+  left: 35px;
+  bottom: 30px;
+  border-radius:
+    55% 45% 52% 48% /
+    65% 60% 40% 35%;
+  background:
+    radial-gradient(
+      ellipse at 50% 20%,
+      rgba(157, 217, 181, 0.28),
+      rgba(121, 199, 197, 0.10) 48%,
+      rgba(7, 16, 24, 0.15) 72%
+    );
+  border:
+    1px solid rgba(157, 217, 181, 0.30);
+  box-shadow:
+    0 0 30px rgba(157, 217, 181, 0.08);
+}
+.eco-ground::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 55px;
+  top: 45px;
+  left: 40px;
+  border-radius:
+    20% 20% 60% 60%;
+  background:
+    linear-gradient(
+      rgba(121, 199, 197, 0.10),
+      transparent
+    );
+  filter: blur(3px);
+  transform:
+    perspective(100px)
+    rotateX(35deg);
+}
+.eco-branch {
+  position: absolute;
+  width: 3px;
+  border-radius: 999px;
+  background:
+    linear-gradient(
+      to top,
+      rgba(121, 199, 197, 0.45),
+      rgba(157, 217, 181, 0.9)
+    );
+  transform-origin: bottom center;
+  box-shadow:
+    0 0 8px rgba(157, 217, 181, 0.12);
+}
+.branch-main {
+  height: 115px;
+  left: 150px;
+  bottom: 78px;
+}
+.branch-left {
+  height: 65px;
+  left: 149px;
+  bottom: 135px;
+  transform:
+    rotate(-43deg);
+}
+.branch-right {
+  height: 70px;
+  left: 151px;
+  bottom: 128px;
+  transform:
+    rotate(48deg);
+}
+.eco-leaf {
+  position: absolute;
+  width: 28px;
+  height: 15px;
+  border-radius:
+    80% 20% 75% 25%;
+  border:
+    1px solid rgba(157, 217, 181, 0.55);
+  background:
+    rgba(157, 217, 181, 0.12);
+  box-shadow:
+    0 0 12px rgba(157, 217, 181, 0.08);
+  transition:
+    transform 0.5s ease,
+    background 0.5s ease;
+}
+.leaf-1 {
+  left: 93px;
+  top: 59px;
+  transform: rotate(22deg);
+}
+.leaf-2 {
+  left: 118px;
+  top: 92px;
+  transform: rotate(-18deg);
+}
+.leaf-3 {
+  right: 87px;
+  top: 66px;
+  transform: rotate(-28deg);
+}
+.leaf-4 {
+  right: 109px;
+  top: 103px;
+  transform: rotate(25deg);
+}
+.observation-point {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--bio-green);
+  opacity: 0.45;
+  box-shadow:
+    0 0 12px rgba(157, 217, 181, 0.65);
+  animation:
+    observation-pulse 4s ease-in-out infinite;
+}
+.obs-1 {
+  left: 58px;
+  bottom: 93px;
+}
+.obs-2 {
+  left: 105px;
+  bottom: 72px;
+  animation-delay: -0.8s;
+}
+.obs-3 {
+  right: 70px;
+  bottom: 85px;
+  animation-delay: -1.6s;
+}
+.obs-4 {
+  right: 105px;
+  bottom: 62px;
+  animation-delay: -2.4s;
+}
+.obs-5 {
+  left: 160px;
+  bottom: 105px;
+  animation-delay: -3.2s;
+}
+@keyframes observation-pulse {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.45);
+    box-shadow:
+      0 0 18px rgba(157, 217, 181, 0.85);
+  }
+}
+.ecoscope-world:hover .ecoscope-visual {
+  transform:
+    translateY(-7px)
+    scale(1.04);
+  filter:
+    drop-shadow(
+      0 0 30px rgba(157, 217, 181, 0.12)
+    );
+}
+.ecoscope-world:hover .eco-leaf {
+  background:
+    rgba(157, 217, 181, 0.22);
+}
+.ecoscope-world:hover .leaf-1 {
+  transform:
+    rotate(28deg)
+    translateY(-3px);
+}
+.ecoscope-world:hover .leaf-2 {
+  transform:
+    rotate(-24deg)
+    translateY(-3px);
+}
+.ecoscope-world:hover .leaf-3 {
+  transform:
+    rotate(-34deg)
+    translateY(-3px);
+}
+.ecoscope-world:hover .leaf-4 {
+  transform:
+    rotate(31deg)
+    translateY(-3px);
+}
+.ecoscope-world:hover .observation-point {
+  opacity: 1;
+}
+@media (max-width: 800px) {
+  .ecoscope-world {
+    flex-direction: column;
+    min-height: 650px;
+    padding: 3rem 1.5rem;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .ecoscope-visual {
+    width: 280px;
+    height: 280px;
+    flex-basis: 280px;
+  }
+}
+/* =========================================================
+   SELECTED WORK — CONTINUOUS WORLD
+   Remove giant-card appearance
+   ========================================================= */
+#projects .project-grid {
+  display: block;
+}
+.genome-world,
+.decode-world,
+.cfde-world,
+.ecoscope-world {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  overflow: visible;
+}
+.genome-world::before,
+.decode-world::before,
+.cfde-world::before,
+.ecoscope-world::before {
+  content: "";
+  position: absolute;
+  width: 520px;
+  height: 420px;
+  border-radius: 50%;
+  filter: blur(30px);
+  opacity: 0.22;
+  pointer-events: none;
+  z-index: -1;
+}
+.genome-world::before {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background:
+    radial-gradient(
+      circle,
+      rgba(121, 199, 197, 0.10),
+      transparent 68%
+    );
+}
+.decode-world::before {
+  right: 2%;
+  top: 42%;
+  transform: translateY(-50%);
+  background:
+    radial-gradient(
+      circle,
+      rgba(183, 167, 217, 0.10),
+      transparent 68%
+    );
+}
+.cfde-world::before {
+  left: 4%;
+  top: 44%;
+  transform: translateY(-50%);
+  background:
+    radial-gradient(
+      circle,
+      rgba(143, 189, 211, 0.10),
+      transparent 68%
+    );
+}
+.ecoscope-world::before {
+  right: 3%;
+  top: 42%;
+  transform: translateY(-50%);
+  background:
+    radial-gradient(
+      circle,
+      rgba(157, 217, 181, 0.10),
+      transparent 68%
+    );
+}
+
+/* =========================================================
+   SELECTED WORK — FINAL STAGGERED JOURNEY
+   ========================================================= */
+#projects .project-grid {
+  display: block;
+  position: relative;
+}
+
+#projects .project-world {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  min-height: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem 2rem;
+  overflow: visible;
+  box-shadow: none;
+  backdrop-filter: none;
+}
+
+/* 01 — Gene Annotation: visual left / text right */
+#projects .genome-world {
+  display: block;
+  min-height: 680px;
+  margin-bottom: 6rem;
+}
+
+#projects .genome-world .genome-visual {
+  position: absolute;
+  left: 5%;
+  top: calc(50% - 180px);
+}
+
+#projects .genome-world .project-world-info {
+  position: absolute;
+  right: 4%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: min(470px, 46%);
+  max-width: 470px;
+}
+
+/* 02 — DeCoDE: visual right / text left */
+#projects .decode-world {
+  display: block;
+  min-height: 720px;
+  margin-bottom: 8rem;
+}
+
+#projects .decode-world .decode-visual {
+  position: absolute;
+  right: 6%;
+  top: 18%;
+}
+
+#projects .decode-world .project-world-info {
+  position: absolute;
+  left: 5%;
+  bottom: 16%;
+  width: min(500px, 46%);
+  max-width: 500px;
+}
+
+/* 03 — CFDE: visual left / text right */
+#projects .cfde-world {
+  display: block;
+  min-height: 720px;
+  margin-bottom: 7rem;
+}
+
+#projects .cfde-world .cfde-visual {
+  position: absolute;
+  left: 4%;
+  top: 16%;
+}
+
+#projects .cfde-world .project-world-info {
+  position: absolute;
+  right: 5%;
+  bottom: 15%;
+  width: min(500px, 46%);
+  max-width: 500px;
+}
+
+/* 04 — EcoScope: visual right / text left */
+#projects .ecoscope-world {
+  display: block;
+  min-height: 720px;
+  margin-bottom: 3rem;
+}
+
+#projects .ecoscope-world .ecoscope-visual {
+  position: absolute;
+  right: 4%;
+  top: 15%;
+}
+
+#projects .ecoscope-world .project-world-info {
+  position: absolute;
+  left: 5%;
+  bottom: 14%;
+  width: min(500px, 46%);
+  max-width: 500px;
+}
+
+/* Subtle local glows — environmental, not card-like */
+#projects .genome-world::before { left: -4%; top: 48%; }
+#projects .decode-world::before { right: -2%; top: 40%; }
+#projects .cfde-world::before { left: -1%; top: 38%; }
+#projects .ecoscope-world::before { right: -3%; top: 41%; }
+
+/* Sparse, irregular journey markers between projects */
+#projects .project-grid::before {
+  content: "";
+  position: absolute;
+  top: 8rem;
+  bottom: 8rem;
+  left: 50%;
+  width: 46%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.22;
+  background:
+    radial-gradient(circle at 22% 8%, rgba(157,217,181,.55) 0 2px, transparent 3px),
+    radial-gradient(circle at 68% 20%, rgba(121,199,197,.45) 0 2px, transparent 3px),
+    radial-gradient(circle at 30% 36%, rgba(183,167,217,.40) 0 2px, transparent 3px),
+    radial-gradient(circle at 74% 53%, rgba(143,189,211,.50) 0 2px, transparent 3px),
+    radial-gradient(circle at 28% 70%, rgba(121,199,197,.40) 0 2px, transparent 3px),
+    radial-gradient(circle at 67% 86%, rgba(157,217,181,.50) 0 2px, transparent 3px);
+  filter: drop-shadow(0 0 7px rgba(121,199,197,.2));
+}
+
+#projects .project-grid::after {
+  content: "";
+  position: absolute;
+  top: 12%;
+  left: 49%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(157,217,181,.55);
+  box-shadow:
+    -130px 540px 0 rgba(183,167,217,.32),
+     115px 1060px 0 rgba(143,189,211,.36),
+    -105px 1600px 0 rgba(157,217,181,.32),
+      85px 2140px 0 rgba(121,199,197,.30);
+  pointer-events: none;
+  z-index: -1;
+  animation: journey-pulse 5s ease-in-out infinite;
+}
+
+@keyframes journey-pulse {
+  0%, 100% { opacity: .28; }
+  50% { opacity: .78; }
+}
+
+@media (max-width: 800px) {
+  #projects .project-world {
+    min-height: auto;
+    padding: 4rem 0;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  #projects .genome-world,
+  #projects .decode-world,
+  #projects .cfde-world,
+  #projects .ecoscope-world {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  #projects .genome-world .genome-visual,
+  #projects .decode-world .decode-visual,
+  #projects .cfde-world .cfde-visual,
+  #projects .ecoscope-world .ecoscope-visual,
+  #projects .genome-world .project-world-info,
+  #projects .decode-world .project-world-info,
+  #projects .cfde-world .project-world-info,
+  #projects .ecoscope-world .project-world-info {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    max-width: 520px;
+    transform: none;
+    margin: 0 auto;
+  }
+
+  #projects .genome-world .genome-visual,
+  #projects .decode-world .decode-visual,
+  #projects .cfde-world .cfde-visual,
+  #projects .ecoscope-world .ecoscope-visual {
+    width: 260px;
+    height: 260px;
+    flex-basis: 260px;
+  }
+
+  #projects .project-grid::before,
+  #projects .project-grid::after {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #projects .project-grid::after {
+    animation: none;
+  }
+}
+
+/* =========================================================
+   FINAL PAGE POLISH — COHESIVE SPACE ENVIRONMENT
+   ========================================================= */
+
+/* Keep major sections visually continuous instead of blocky */
+.space-hero,
+#about,
+#projects,
+#toolkit,
+.connect-section {
+  background: transparent;
+}
+
+/* Subtle atmospheric glows around major sections */
+#about,
+#projects,
+#conservation,
+#toolkit {
+  position: relative;
+  isolation: isolate;
+}
+
+#about::before,
+#projects::before,
+#conservation::before,
+#toolkit::before {
+  content: "";
+  position: absolute;
+  width: 650px;
+  height: 650px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+  filter: blur(80px);
+  opacity: 0.18;
+}
+
+#about::before {
+  top: 10%;
+  right: -25%;
+  background: rgba(121, 199, 197, 0.12);
+}
+
+#projects::before {
+  top: 20%;
+  left: -30%;
+  background: rgba(143, 189, 211, 0.11);
+}
+
+#conservation::before {
+  top: 5%;
+  right: -25%;
+  background: rgba(157, 217, 181, 0.12);
+}
+
+#toolkit::before {
+  top: 0;
+  left: -25%;
+  background: rgba(121, 199, 197, 0.08);
+}
+
+
+/* =========================================================
+   PROJECT JOURNEY — COMPACT SPACING
+   ========================================================= */
+
+#projects .project-world {
+  min-height: 560px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#projects .genome-world {
+  min-height: 580px;
+  margin-bottom: 2rem;
+}
+
+#projects .decode-world {
+  min-height: 600px;
+  margin-bottom: 2.5rem;
+}
+
+#projects .cfde-world {
+  min-height: 600px;
+  margin-bottom: 2.5rem;
+}
+
+#projects .ecoscope-world {
+  min-height: 580px;
+  margin-bottom: 1rem;
+}
+
+#projects .decode-world .decode-visual,
+#projects .cfde-world .cfde-visual,
+#projects .ecoscope-world .ecoscope-visual {
+  top: 10%;
+}
+
+#projects .decode-world .project-world-info,
+#projects .cfde-world .project-world-info,
+#projects .ecoscope-world .project-world-info {
+  bottom: 10%;
+}
+
+#projects.portfolio-section {
+  padding-bottom: 5rem;
+}
+
+@media (max-width: 800px) {
+  #projects .project-world,
+  #projects .genome-world,
+  #projects .decode-world,
+  #projects .cfde-world,
+  #projects .ecoscope-world {
+    min-height: auto;
+    margin-bottom: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+
+/* =========================================================
+   FINAL HERO + ENVIRONMENT + TYPOGRAPHY POLISH
+   ========================================================= */
+
+/* Slightly larger type across the whole portfolio */
+html {
+  font-size: 18px;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.navbar {
+  font-size: 0.95rem;
+}
+
+.portfolio-section h2 {
+  font-size: clamp(2.2rem, 4vw, 3.3rem);
+}
+
+.portfolio-section h3 {
+  font-size: clamp(1.55rem, 2.6vw, 2.15rem);
+}
+
+.portfolio-section p,
+.project-world-info p {
+  font-size: 1.03rem;
+}
+
+.project-kicker {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+}
+
+.skills code,
+.project-tech code,
+.project-world code {
+  font-size: 0.82rem;
+}
+
+
+/* ---------------- HERO COMPOSITION ---------------- */
+
+.space-hero {
+  min-height: calc(100vh - 55px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.space-hero .hero-content {
+  position: relative;
+  z-index: 5;
+  width: min(92vw, 1000px);
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Make the hero name the true focal point */
+.space-hero .hero-content h1 {
+  margin: 0 0 1.15rem;
+  font-size: clamp(4rem, 8vw, 7.2rem);
+  line-height: 0.94;
+  font-weight: 800;
+  letter-spacing: -0.055em;
+  text-align: center;
+  color: var(--text);
+  text-shadow:
+    0 0 30px rgba(143, 189, 211, 0.08),
+    0 0 58px rgba(121, 199, 197, 0.05);
+}
+
+.space-hero .hero-content h2 {
+  margin: 0 auto 1.5rem;
+  font-size: clamp(0.95rem, 1.65vw, 1.28rem);
+  line-height: 1.5;
+  letter-spacing: 0.13em;
+  color: var(--bio-green);
+  text-transform: uppercase;
+}
+
+.space-hero .hero-content p {
+  max-width: 720px;
+  margin: 0 auto 1.8rem;
+  font-size: clamp(1.02rem, 1.4vw, 1.2rem);
+  line-height: 1.75;
+  color: var(--muted);
+}
+
+.space-hero .btn {
+  font-size: 0.94rem;
+}
+
+
+/* ---------------- HERO SIGNAL ARCS ---------------- */
+
+.space-hero::before {
+  content: "";
+  position: absolute;
+  width: min(78vw, 980px);
+  height: min(78vw, 980px);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at center,
+      rgba(121, 199, 197, 0.055) 0%,
+      rgba(121, 199, 197, 0.02) 34%,
+      transparent 66%);
+  box-shadow:
+    0 0 100px rgba(121, 199, 197, 0.035);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-signal-ring {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: min(72vw, 900px);
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%) rotate(-13deg);
+  border: 1px solid rgba(143, 189, 211, 0.07);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-signal-ring::before,
+.hero-signal-ring::after {
+  content: "";
+  position: absolute;
+  inset: 12%;
+  border: 1px solid rgba(157, 217, 181, 0.045);
+  border-radius: 50%;
+}
+
+.hero-signal-ring::after {
+  inset: 27%;
+  border-color: rgba(183, 167, 217, 0.04);
+}
+
+
+/* ---------------- TRAJECTORY PATH ---------------- */
+
+.scientific-trajectory {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.scientific-trajectory svg {
+  width: 100%;
+  height: 100%;
+  opacity: 0.42;
+}
+
+.trajectory-line {
+  fill: none;
+  stroke: rgba(143, 189, 211, 0.14);
+  stroke-width: 1;
+  stroke-dasharray: 3 12;
+}
+
+.trajectory-node {
+  fill: rgba(157, 217, 181, 0.62);
+  filter: drop-shadow(0 0 4px rgba(157, 217, 181, 0.35));
+}
+
+/* ---------------- PARTICLE VARIANTS ---------------- */
+
+.ambient-particle.particle-ring {
+  width: 7px;
+  height: 7px;
+  background: transparent;
+  border: 1px solid rgba(143, 189, 211, 0.55);
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(143, 189, 211, 0.16);
+}
+
+.ambient-particle.particle-cross {
+  width: 8px;
+  height: 8px;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.ambient-particle.particle-cross::before,
+.ambient-particle.particle-cross::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: rgba(157, 217, 181, 0.48);
+  transform: translate(-50%, -50%);
+}
+
+.ambient-particle.particle-cross::before {
+  width: 8px;
+  height: 1px;
+}
+
+.ambient-particle.particle-cross::after {
+  width: 1px;
+  height: 8px;
+}
+
+.ambient-particle.particle-diamond {
+  width: 5px;
+  height: 5px;
+  border-radius: 1px;
+  background: rgba(183, 167, 217, 0.52);
+  transform: rotate(45deg);
+  box-shadow: 0 0 8px rgba(183, 167, 217, 0.18);
+}
+
+
+/* ---------------- SCROLL CUE ---------------- */
+
+.scroll-cue {
+  animation: scroll-cue-drift 2.8s ease-in-out infinite;
+}
+
+@keyframes scroll-cue-drift {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.55;
+  }
+  50% {
+    transform: translateY(8px);
+    opacity: 0.9;
+  }
+}
+
+
+/* ---------------- CUSTOM CURSOR ---------------- */
+
+@media (pointer: fine) {
+  html,
+  body,
+  a,
+  button,
+  .btn,
+  .project-world {
+    cursor: none !important;
+  }
+
+  .cursor-dot,
+  .cursor-ring {
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 99999;
+    transform: translate(-50%, -50%);
+  }
+
+  .cursor-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: rgba(238, 247, 244, 0.95);
+    box-shadow: 0 0 8px rgba(157, 217, 181, 0.65);
+  }
+
+  .cursor-ring {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(157, 217, 181, 0.52);
+    border-radius: 50%;
+    transition:
+      width 0.18s ease,
+      height 0.18s ease,
+      border-color 0.18s ease,
+      background 0.18s ease;
+    box-shadow:
+      0 0 12px rgba(121, 199, 197, 0.08),
+      inset 0 0 8px rgba(121, 199, 197, 0.035);
+  }
+
+  .cursor-ring.is-hovering {
+    width: 44px;
+    height: 44px;
+    border-color: rgba(143, 189, 211, 0.72);
+    background: rgba(121, 199, 197, 0.055);
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 17px;
+  }
+
+  .space-hero .hero-content h1 {
+    font-size: clamp(3.2rem, 15vw, 5rem);
+  }
+
+  .scientific-trajectory {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-cue {
+    animation: none;
+  }
+
+  .cursor-dot,
+  .cursor-ring {
+    display: none !important;
+  }
+
+  html,
+  body,
+  a,
+  button,
+  .btn,
+  .project-world {
+    cursor: auto !important;
+  }
+}
+
+
+
+/* =========================================================
+   FINAL READABILITY PASS
+   Larger type + clean hero environment
+   ========================================================= */
+
+html {
+  font-size: 22px;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.72;
+}
+
+.navbar {
+  font-size: 0.92rem;
+}
+
+.navbar-brand {
+  font-size: 1.08rem;
+}
+
+.space-hero .hero-content h1 {
+  font-size: clamp(4.8rem, 8.5vw, 8rem);
+}
+
+.space-hero .hero-content h2 {
+  font-size: clamp(1.08rem, 1.75vw, 1.42rem);
+}
+
+.space-hero .hero-content p {
+  font-size: clamp(1.08rem, 1.45vw, 1.25rem);
+  line-height: 1.75;
+}
+
+.space-hero .btn {
+  font-size: 0.92rem;
+}
+
+.portfolio-section {
+  font-size: 1rem;
+}
+
+.portfolio-section h2 {
+  font-size: clamp(2.35rem, 4.2vw, 3.5rem);
+}
+
+.portfolio-section h3,
+.project-world-info h3 {
+  font-size: clamp(1.65rem, 2.8vw, 2.3rem);
+}
+
+.portfolio-section p,
+.project-world-info p {
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.project-kicker {
+  font-size: 0.78rem;
+}
+
+.skills code,
+.project-tech code,
+.project-world code {
+  font-size: 0.82rem;
+}
+
+.scroll-cue {
+  font-size: 0.68rem;
+}
+
+/* The trajectory stays atmospheric; no HUD/coordinate labels. */
+.scientific-trajectory {
+  opacity: 0.72;
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 19px;
+  }
+
+  .space-hero .hero-content h1 {
+    font-size: clamp(3.4rem, 15vw, 5.6rem);
+  }
+
+  .space-hero .hero-content h2 {
+    font-size: 1rem;
+  }
+
+  .space-hero .hero-content p {
+    font-size: 1rem;
+  }
+
+  .portfolio-section p,
+  .project-world-info p {
+    font-size: 1rem;
+  }
+}
+
+
+/* =========================================================
+   FINAL SCROLL CUE POSITION FIX
+   ========================================================= */
+
+.space-hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.space-hero .scroll-cue {
+  position: absolute !important;
+  left: 50% !important;
+  right: auto !important;
+  bottom: 1.6rem !important;
+
+  width: auto !important;
+  max-width: none !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  white-space: nowrap !important;
+  text-align: center !important;
+
+  transform: translateX(-50%) !important;
+
+  font-size: 0.72rem !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0.14em !important;
+
+  overflow: visible !important;
+  z-index: 20 !important;
+}
+
+@keyframes scroll-cue-drift {
+  0%, 100% {
+    transform: translate(-50%, 0) !important;
+    opacity: 0.58;
+  }
+
+  50% {
+    transform: translate(-50%, 7px) !important;
+    opacity: 0.92;
+  }
+}
+
+@media (max-width: 800px) {
+  .space-hero .scroll-cue {
+    bottom: 1rem !important;
+    font-size: 0.64rem !important;
+  }
+}
+
+/* =========================================================
+   PROJECT DETAIL PAGE — GENE ANNOTATION
+   ========================================================= */
+
+.project-detail-page {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   PROJECT HERO
+   ========================================================= */
+
+.project-detail-hero {
+  position: relative;
+
+  min-height: 88vh;
+  width: min(92vw, 1280px);
+
+  margin: 0 auto;
+  padding: 7rem 2rem 5rem;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 5rem;
+
+  align-items: center;
+}
+
+
+/* ---------------- LEFT VISUAL ---------------- */
+
+.project-detail-visual {
+  position: relative;
+
+  min-height: 520px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*
+   Reuse the genome model from the homepage,
+   but give it more room here.
+*/
+
+.project-detail-visual .genome-visual {
+  position: relative !important;
+
+  left: auto !important;
+  top: auto !important;
+
+  width: 430px;
+  height: 430px;
+
+  margin: 0 auto;
+
+  transform: none;
+}
+
+
+/* Atmospheric glow behind model */
+
+.project-detail-visual::before {
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(121, 199, 197, 0.11),
+      rgba(143, 189, 211, 0.04) 40%,
+      transparent 72%
+    );
+
+  filter: blur(18px);
+
+  pointer-events: none;
+}
+
+
+/* ---------------- RIGHT CONTENT ---------------- */
+
+.project-detail-intro {
+  position: relative;
+  z-index: 3;
+
+  max-width: 680px;
+}
+
+.project-detail-intro h2 {
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+}
+
+.project-detail-intro .project-kicker {
+  display: inline-block;
+
+  margin-bottom: 1.2rem;
+
+  color: var(--bio-green);
+
+  font-size: 0.78rem;
+  font-weight: 700;
+
+  letter-spacing: 0.18em;
+}
+
+.project-detail-intro h1 {
+  margin: 0 0 1rem;
+
+  font-size: clamp(3.2rem, 6vw, 5.8rem);
+
+  line-height: 0.95;
+
+  letter-spacing: -0.05em;
+
+  color: var(--text);
+}
+
+.project-detail-intro h2 {
+  max-width: 640px;
+
+  margin: 0 0 1.6rem;
+
+  font-size: clamp(1.15rem, 2vw, 1.5rem);
+
+  line-height: 1.55;
+
+  font-weight: 400;
+
+  color: var(--bio-blue);
+}
+
+.project-detail-intro p {
+  max-width: 650px;
+
+  margin-bottom: 1.8rem;
+
+  font-size: 1.04rem;
+
+  line-height: 1.75;
+
+  color: var(--muted);
+}
+
+
+/* Buttons inside detail page */
+
+.project-detail-intro .btn {
+  margin-right: 0.65rem;
+  margin-top: 0.5rem;
+}
+
+
+/* =========================================================
+   PROJECT SECTIONS
+   ========================================================= */
+
+.project-detail-section {
+  position: relative;
+
+  width: min(88vw, 1080px);
+
+  margin: 0 auto;
+
+  padding: 6rem 0;
+}
+
+.project-detail-section + .project-detail-section {
+  border-top: 1px solid rgba(238, 247, 244, 0.055);
+}
+
+.project-detail-section h2 {
+  margin-bottom: 1.6rem;
+
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+
+  color: var(--text);
+}
+
+.project-detail-section p {
+  max-width: 850px;
+
+  font-size: 1.04rem;
+
+  line-height: 1.8;
+
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   PROJECT OVERVIEW
+   ========================================================= */
+
+.project-detail-section:first-of-type {
+  padding-top: 4rem;
+}
+
+
+/* =========================================================
+   PROJECT GALLERY
+   ========================================================= */
+
+.project-gallery {
+  position: relative;
+
+  margin-top: 2.5rem;
+
+  min-height: 540px;
+
+  border: 1px solid rgba(238, 247, 244, 0.08);
+
+  border-radius: 30px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(13, 27, 37, 0.72),
+      rgba(7, 16, 24, 0.58)
+    );
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.025);
+
+  overflow: hidden;
+}
+
+
+/* soft gallery background */
+
+.project-gallery::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at 25% 25%,
+      rgba(121, 199, 197, 0.08),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 80% 75%,
+      rgba(183, 167, 217, 0.05),
+      transparent 35%
+    );
+
+  pointer-events: none;
+}
+
+
+/* slides */
+
+.gallery-slide {
+  position: absolute;
+
+  inset: 0;
+
+  padding: 4rem;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-end;
+
+  opacity: 0;
+
+  transform: translateX(30px);
+
+  pointer-events: none;
+
+  transition:
+    opacity 0.5s ease,
+    transform 0.6s cubic-bezier(.16, 1, .3, 1);
+}
+
+.gallery-slide.active {
+  opacity: 1;
+
+  transform: translateX(0);
+
+  pointer-events: auto;
+}
+
+.gallery-slide h3 {
+  margin-bottom: 0.8rem;
+
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+
+  color: var(--text);
+}
+
+.gallery-slide p,
+.gallery-slide em {
+  max-width: 700px;
+
+  color: var(--muted);
+
+  font-size: 1rem;
+
+  line-height: 1.7;
+}
+
+
+/*
+   Temporary visual placeholder.
+   Once we add real images, this can be replaced.
+*/
+
+.gallery-slide::before {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  top: 46%;
+
+  width: 72%;
+  height: 55%;
+
+  transform: translate(-50%, -50%);
+
+  border: 1px solid rgba(157, 217, 181, 0.12);
+
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(121, 199, 197, 0.04),
+      rgba(143, 189, 211, 0.025)
+    );
+
+  box-shadow:
+    inset 0 0 40px rgba(121, 199, 197, 0.025);
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   PIPELINE FLOW
+   ========================================================= */
+
+.pipeline-flow {
+  margin-top: 3rem;
+
+  padding: 3rem;
+
+  max-width: 760px;
+
+  border: 1px solid rgba(157, 217, 181, 0.12);
+
+  border-radius: 26px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(13, 27, 37, 0.5),
+      rgba(7, 16, 24, 0.45)
+    );
+
+  color: var(--text);
+
+  text-align: center;
+
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    Consolas,
+    monospace;
+
+  font-size: 1rem;
+
+  line-height: 2.3;
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.14);
+}
+
+.pipeline-flow strong {
+  color: var(--bio-green);
+}
+
+
+/* =========================================================
+   PROJECT FOOTER
+   ========================================================= */
+
+.project-detail-footer {
+  position: relative;
+
+  width: min(88vw, 1080px);
+
+  margin: 4rem auto 8rem;
+
+  padding: 4rem;
+
+  border: 1px solid rgba(238, 247, 244, 0.08);
+
+  border-radius: 30px;
+
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(121, 199, 197, 0.08),
+      transparent 38%
+    ),
+    rgba(7, 16, 24, 0.45);
+}
+
+.project-detail-footer h2 {
+  margin-bottom: 1rem;
+
+  font-size: clamp(2rem, 4vw, 3rem);
+
+  color: var(--text);
+}
+
+.project-detail-footer p {
+  max-width: 720px;
+
+  margin-bottom: 1.8rem;
+
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   MOBILE / TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
+
+  .project-detail-hero {
+    grid-template-columns: 1fr;
+
+    gap: 1rem;
+
+    padding-top: 5rem;
+  }
+
+  .project-detail-visual {
+    min-height: 420px;
+  }
+
+  .project-detail-visual .genome-visual {
+    width: 340px;
+    height: 340px;
+  }
+
+  .project-detail-intro {
+    text-align: center;
+
+    margin: 0 auto;
+  }
+
+  .project-detail-intro p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-detail-section {
+    padding: 4.5rem 0;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+  .project-detail-hero {
+    width: 94vw;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .project-detail-visual {
+    min-height: 330px;
+  }
+
+  .project-detail-visual .genome-visual {
+    width: 270px;
+    height: 270px;
+  }
+
+  .project-detail-intro h1 {
+    font-size: clamp(2.8rem, 15vw, 4rem);
+  }
+
+  .project-detail-section {
+    width: 90vw;
+
+    padding: 3.5rem 0;
+  }
+
+  .project-gallery {
+    min-height: 470px;
+
+    border-radius: 22px;
+  }
+
+  .gallery-slide {
+    padding: 2rem;
+  }
+
+  .gallery-slide::before {
+    width: 84%;
+    height: 50%;
+  }
+
+  .pipeline-flow {
+    padding: 2rem 1.4rem;
+
+    font-size: 0.9rem;
+  }
+
+  .project-detail-footer {
+    width: 90vw;
+
+    padding: 2.5rem 1.5rem;
+
+    margin-bottom: 5rem;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .gallery-slide,
+  .gallery-slide.active {
+    transition: none;
+
+    transform: none;
+  }
+}
+
+/* =========================================================
+   GENE ANNOTATION DETAIL HERO — EDITORIAL VERSION
+   ========================================================= */
+
+.project-detail-hero.case-study-hero {
+  display: block;
+  min-height: auto;
+  width: min(88vw, 1080px);
+  margin: 0 auto;
+  padding: 8rem 0 5rem;
+}
+
+.project-detail-hero.case-study-hero .project-detail-intro {
+  max-width: 900px;
+  margin: 0;
+  text-align: left;
+}
+
+.project-detail-hero.case-study-hero .project-kicker {
+  display: inline-block;
+  margin-bottom: 1.4rem;
+
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+
+  color: var(--bio-green);
+}
+
+.project-detail-hero.case-study-hero h1 {
+  max-width: 900px;
+  margin: 0 0 1.5rem;
+
+  font-size: clamp(3.4rem, 7vw, 6.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+
+  color: var(--text);
+}
+
+.project-detail-hero.case-study-hero p {
+  max-width: 760px;
+  margin-bottom: 1.7rem;
+
+  font-size: 1.12rem;
+  line-height: 1.75;
+
+  color: var(--muted);
+}
+
+.project-detail-hero.case-study-hero .project-tech {
+  margin: 1.6rem 0 1.8rem;
+}
+
+.project-detail-hero.case-study-hero .btn {
+  margin-right: 0.7rem;
+  margin-top: 0.4rem;
+}
+
+@media (max-width: 700px) {
+  .project-detail-hero.case-study-hero {
+    width: 90vw;
+    padding-top: 5.5rem;
+  }
+
+  .project-detail-hero.case-study-hero h1 {
+    font-size: clamp(2.8rem, 13vw, 4.4rem);
+  }
+
+  .project-detail-hero.case-study-hero p {
+    font-size: 1rem;
+  }
+}
+
+/* =========================================================
+   PROJECT GALLERY — GENE ANNOTATION
+   ========================================================= */
+
+.project-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.4rem;
+  margin-top: 2.5rem;
+}
+
+.gallery-card {
+  position: relative;
+  padding: 1.8rem;
+  border: 1px solid rgba(124, 231, 201, 0.16);
+  border-radius: 22px;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(10, 31, 45, 0.92),
+      rgba(7, 22, 34, 0.78)
+    );
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.gallery-card h3 {
+  margin: 0 0 1.4rem;
+  font-size: 1.35rem;
+  color: var(--text);
+}
+
+.gallery-number {
+  display: block;
+  margin-bottom: 0.65rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--bio-green);
+}
+
+.gallery-caption {
+  margin: 1.4rem 0 0;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--muted);
+}
+
+
+/* WORKFLOW */
+
+.workflow-diagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 1rem 0;
+}
+
+.workflow-node {
+  width: min(100%, 270px);
+  padding: 0.85rem 1rem;
+  text-align: center;
+  border: 1px solid rgba(124, 231, 201, 0.25);
+  border-radius: 14px;
+  background: rgba(9, 35, 47, 0.75);
+}
+
+.workflow-node strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.workflow-label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  color: var(--bio-green);
+}
+
+.workflow-tools {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.55rem;
+}
+
+.workflow-tool {
+  padding: 0.75rem 0.45rem;
+  text-align: center;
+  border: 1px solid rgba(124, 231, 201, 0.17);
+  border-radius: 12px;
+  background: rgba(13, 43, 56, 0.55);
+}
+
+.workflow-tool span {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.workflow-tool small {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.68rem;
+  color: var(--muted);
+}
+
+.workflow-connector {
+  font-size: 1rem;
+  color: var(--bio-green);
+}
+
+
+/* EVIDENCE */
+
+.evidence-visual {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.evidence-row {
+  display: grid;
+  grid-template-columns: 76px 1fr;
+  gap: 0.9rem;
+  align-items: center;
+  padding: 0.9rem;
+  border-radius: 14px;
+  background: rgba(12, 39, 51, 0.6);
+}
+
+.evidence-tool {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--bio-green);
+}
+
+.evidence-row strong {
+  font-size: 0.88rem;
+  color: var(--text);
+}
+
+.evidence-row p {
+  margin: 0.15rem 0 0;
+  font-size: 0.76rem;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+
+/* DECISION */
+
+.decision-visual {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.decision-step {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 0.8rem;
+  align-items: center;
+  padding: 0.75rem 0;
+}
+
+.decision-step span {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(124, 231, 201, 0.3);
+  border-radius: 50%;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--bio-green);
+}
+
+.decision-step p {
+  margin: 0;
+  font-size: 0.84rem;
+  color: var(--text);
+}
+
+.decision-line {
+  width: 1px;
+  height: 20px;
+  margin-left: 16px;
+  background: rgba(124, 231, 201, 0.22);
+}
+
+
+/* OUTPUT */
+
+.output-preview {
+  overflow: hidden;
+  border: 1px solid rgba(124, 231, 201, 0.14);
+  border-radius: 14px;
+}
+
+.output-header,
+.output-row {
+  display: grid;
+  grid-template-columns: 0.8fr 1.15fr 1.5fr;
+  gap: 0.65rem;
+  padding: 0.75rem;
+}
+
+.output-header {
+  background: rgba(124, 231, 201, 0.08);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--bio-green);
+}
+
+.output-row {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 850px) {
+  .project-gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .workflow-tools {
+    grid-template-columns: 1fr;
+  }
+
+  .output-header,
+  .output-row {
+    grid-template-columns: 0.75fr 1fr 1.3fr;
+    font-size: 0.62rem;
+  }
+}
+
+.output-header,
+.output-row {
+  display: grid;
+  grid-template-columns: 0.8fr 1.1fr 1.4fr;
+  align-items: start;
+}
+
+.output-header span,
+.output-row span {
+  min-width: 0;
+  word-break: normal;
+  overflow-wrap: break-word;
 }

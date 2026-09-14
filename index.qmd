@@ -29,9 +29,11 @@ Building computational tools and visualizations that transform biological data i
 
 ## Where Biology Meets Data
 
-I'm a clinical genomics professional and M.S. Bioinformatics student building toward a career in computational biology and bioinformatics.
+I'm a clinical genomics professional and M.S. Bioinformatics student building toward a career in bioinformatics and computational biology.
 
-My experience began with biological and clinical data, where accuracy, quality, and careful interpretation matter every day. I'm now expanding that foundation through computational biology, scientific programming, and projects that explore how biological data can be analyzed, visualized, and transformed into useful scientific insight.
+At GeneDx, I work with high-throughput genetic testing workflows across whole genome sequencing, whole exome sequencing, microarray, mitochondrial, repeat expansion, and reanalysis cases. This experience has given me a strong appreciation for data quality, reproducibility, and careful interpretation in clinical genomics.
+
+Alongside my work, I'm developing computational skills through Python-based genomics projects, bioinformatics coursework, collaborative technical programs, and biological data visualization. I'm especially interested in genomic data analysis, scientific computing, and computational approaches that connect biological questions with reproducible analysis.
 
 :::
 
@@ -42,45 +44,212 @@ My experience began with biological and clinical data, where accuracy, quality, 
 
 ::: {.project-grid}
 
-::: {.project-world}
+
+::: {.project-world .genome-world}
+
+::: {.genome-visual}
+::: {.genome-orbit .orbit-outer}
+:::
+::: {.genome-orbit .orbit-inner}
+:::
+::: {.genome-core}
+::: {.genome-strand .strand-a}
+:::
+::: {.genome-strand .strand-b}
+:::
+::: {.domain-node .node-1}
+:::
+::: {.domain-node .node-2}
+:::
+::: {.domain-node .node-3}
+:::
+::: {.domain-node .node-4}
+:::
+:::
+:::
+
+::: {.project-world-info}
+
+<span class="project-kicker">BIOINFORMATICS · PYTHON</span>
+
 ### Rule-Based Gene Annotation Pipeline
 
-**Bioinformatics · Python**
+Developed a Python-based bioinformatics pipeline that integrates BLAST, HMMER, and TMHMM outputs through a rule-based decision hierarchy to assign functional annotations to unknown genomic sequences.
 
-Integrated BLAST, HMMER, and TMHMM results through a rule-based decision system to functionally annotate unknown genomic sequences.
-
+::: {.project-tech}
 `Python` `BLAST` `HMMER` `TMHMM`
 :::
 
-::: {.project-world}
+[EXPLORE →](projects/gene-annotation.qmd){.explore-project}
+
+:::
+
+:::
+
+
+
+::: {.project-world .decode-world}
+
+::: {.decode-visual}
+::: {.decode-cell}
+::: {.decode-core}
+:::
+::: {.rna-particle .rna-1}
+:::
+::: {.rna-particle .rna-2}
+:::
+::: {.rna-particle .rna-3}
+:::
+::: {.rna-particle .rna-4}
+:::
+::: {.rna-particle .rna-5}
+:::
+:::
+::: {.vesicle .vesicle-1}
+:::
+::: {.vesicle .vesicle-2}
+:::
+::: {.vesicle .vesicle-3}
+:::
+:::
+
+::: {.project-world-info}
+
+<span class="project-kicker">1ST PLACE · exRNA BIOMARKER RESEARCH</span>
+
 ### DeCoDE Institute Capstone
 
-**1st Place · exRNA Biomarker Research**
+Collaborated on a 1st-place team capstone investigating shared extracellular RNA biomarkers across neurodegenerative and cognitive disorders. Contributed biological research and interpretation to contextualize computational findings and support the final presentation.
 
-Investigated shared extracellular RNA biomarkers across neurodegenerative and cognitive disorders as part of a collaborative computational research project.
-
+::: {.project-tech}
 `Bioinformatics` `R` `DESeq2` `Biological Interpretation`
 :::
 
-::: {.project-world}
+[EXPLORE →](projects/decode.qmd){.explore-project}
+
+:::
+
+:::
+
+
+
+::: {.project-world .cfde-world}
+
+::: {.cfde-visual}
+::: {.tissue-cluster}
+
+::: {.cell-dot .cell-1}
+:::
+::: {.cell-dot .cell-2}
+:::
+::: {.cell-dot .cell-3}
+:::
+::: {.cell-dot .cell-4}
+:::
+::: {.cell-dot .cell-5}
+:::
+::: {.cell-dot .cell-6}
+:::
+::: {.cell-dot .cell-7}
+:::
+::: {.cell-dot .cell-8}
+:::
+::: {.cell-dot .cell-9}
+:::
+::: {.cell-dot .cell-10}
+:::
+::: {.cell-dot .cell-11}
+:::
+::: {.cell-dot .cell-12}
+:::
+
+::: {.cell-link .link-1}
+:::
+::: {.cell-link .link-2}
+:::
+::: {.cell-link .link-3}
+:::
+::: {.cell-link .link-4}
+:::
+
+:::
+:::
+
+::: {.project-world-info}
+
+<span class="project-kicker">3RD PLACE · SPATIAL BIOLOGY</span>
+
 ### CFDE Data Visualization Challenge
 
-**3rd Place · Spatial Biology**
+Developed an interactive 3D visualization of HuBMAP lymph node tissue to explore spatial relationships among cell populations and make complex biological data more intuitive to investigate.
 
-Developed an interactive 3D visualization of HuBMAP lymph node tissue to explore spatial relationships among cell populations.
-
+::: {.project-tech}
 `Python` `Streamlit` `Plotly` `HuBMAP`
 :::
 
-::: {.project-world}
+[EXPLORE →](projects/cfde.qmd){.explore-project}
+
+:::
+
+:::
+
+
+
+::: {.project-world .ecoscope-world}
+
+::: {.ecoscope-visual}
+::: {.eco-island}
+
+::: {.eco-ground}
+:::
+
+::: {.eco-branch .branch-main}
+:::
+::: {.eco-branch .branch-left}
+:::
+::: {.eco-branch .branch-right}
+:::
+
+::: {.eco-leaf .leaf-1}
+:::
+::: {.eco-leaf .leaf-2}
+:::
+::: {.eco-leaf .leaf-3}
+:::
+::: {.eco-leaf .leaf-4}
+:::
+
+::: {.observation-point .obs-1}
+:::
+::: {.observation-point .obs-2}
+:::
+::: {.observation-point .obs-3}
+:::
+::: {.observation-point .obs-4}
+:::
+::: {.observation-point .obs-5}
+:::
+
+:::
+:::
+
+::: {.project-world-info}
+
+<span class="project-kicker">BIODIVERSITY · ECOLOGICAL DATA</span>
+
 ### EcoScope
 
-**Biodiversity · Ecological Data**
+Explored a decade of biodiversity observations in Key Largo through interactive geospatial visualization, connecting ecological monitoring data with computational analysis.
 
-Explored a decade of biodiversity observations in Key Largo using interactive geospatial visualization.
-
+::: {.project-tech}
 `Python` `GBIF` `Folium` `Geospatial Data`
 :::
+
+[EXPLORE →](projects/ecoscope.qmd){.explore-project}
+:::
+
+:::
+
 
 :::
 :::
@@ -92,7 +261,9 @@ Explored a decade of biodiversity observations in Key Largo using interactive ge
 
 My interest in biological data extends beyond human genomics. I've participated in wildlife monitoring, ecological surveys, habitat restoration, and community-science projects across Southern California.
 
-I'm particularly interested in the intersection of **conservation, biodiversity data, and computational biology**.
+My experience has included reviewing wildlife camera footage, supporting bird and bat surveys, conducting vegetation monitoring, using GPS in field activities, monitoring invasive species, and contributing to wetland and habitat restoration.
+
+I'm particularly interested in the intersection of **conservation, biodiversity data, and computational biology**, including how structured ecological observations can be transformed into reproducible analyses and visualizations.
 
 :::
 
@@ -101,14 +272,22 @@ I'm particularly interested in the intersection of **conservation, biodiversity 
 
 ## Computational Toolkit
 
+### Programming & Data
+
 ::: {.skills}
+`Python` `Pandas` `R` `SQL` `Linux`
+:::
 
-`Python` `R` `SQL` `Linux` `Git` `GitHub`
+### Bioinformatics
 
-`BLAST` `HMMER` `TMHMM` `Nextflow`
+::: {.skills}
+`BLAST` `HMMER` `TMHMM` `Nextflow` `Genomics`
+:::
 
-`Genomics` `Data Visualization` `Scientific Computing`
+### Scientific Computing & Visualization
 
+::: {.skills}
+`Git` `GitHub` `Streamlit` `Plotly` `Data Visualization`
 :::
 
 :::
@@ -118,7 +297,7 @@ I'm particularly interested in the intersection of **conservation, biodiversity 
 
 ## Let's Build Something Interesting
 
-I'm interested in opportunities across bioinformatics, computational biology, genomic data analysis, and scientific computing.
+I'm interested in opportunities across bioinformatics, computational biology, genomic data analysis, and scientific computing — particularly work that combines biological context with reproducible computational analysis.
 
 [GitHub](https://github.com/riceroni18){.btn .btn-primary}
 [LinkedIn](https://www.linkedin.com/in/marina-rice-3071a1a9){.btn .btn-outline-light}
