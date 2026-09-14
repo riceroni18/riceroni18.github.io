@@ -33,3 +33,6 @@ format:
     css: styles.css
     toc: false
     smooth-scroll: true
+    include-in-header:
+      text: |
+        <script src="/interactions.js" defer></script>
