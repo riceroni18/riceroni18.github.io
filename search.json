@@ -2,16 +2,135 @@
   {
     "objectID": "resume.html",
     "href": "resume.html",
-    "title": "Resume",
+    "title": "Marina Rice",
     "section": "",
-    "text": "A concise overview of my bioinformatics, computational biology, and clinical genomics experience.\n📄 Download Networking Resume"
+    "text": "EXPERIENCE · EDUCATION · TECHNICAL SKILLS\nA clinical genomics professional building toward bioinformatics and computational biology through graduate study, scientific computing, and hands-on genomics projects.\nView Resume LinkedIn\n\n\n\n\nI work in clinical genomics while pursuing an M.S. in Bioinformatics and developing experience in Python, biological data analysis, scientific computing, and reproducible computational workflows.\nMy background combines high-throughput genetic testing with project experience in functional gene annotation, extracellular RNA biomarker research, spatial biology visualization, and biodiversity data.\n\n\n\nProgramming & Data\nPython · Pandas · R · SQL · Linux\nBioinformatics\nBLAST · HMMER · TMHMM · Nextflow · Genomics\nScientific Computing & Visualization\nGit · GitHub · Streamlit · Plotly · Data Visualization"
+  },
+  {
+    "objectID": "resume.html#current-focus",
+    "href": "resume.html#current-focus",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "I work in clinical genomics while pursuing an M.S. in Bioinformatics and developing experience in Python, biological data analysis, scientific computing, and reproducible computational workflows.\nMy background combines high-throughput genetic testing with project experience in functional gene annotation, extracellular RNA biomarker research, spatial biology visualization, and biodiversity data."
+  },
+  {
+    "objectID": "resume.html#technical-toolkit",
+    "href": "resume.html#technical-toolkit",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "Programming & Data\nPython · Pandas · R · SQL · Linux\nBioinformatics\nBLAST · HMMER · TMHMM · Nextflow · Genomics\nScientific Computing & Visualization\nGit · GitHub · Streamlit · Plotly · Data Visualization"
   },
   {
     "objectID": "resume.html#networking-resume",
     "href": "resume.html#networking-resume",
-    "title": "Resume",
+    "title": "Marina Rice",
     "section": "Networking Resume",
     "text": "Networking Resume"
+  },
+  {
+    "objectID": "projects/ecoscope.html",
+    "href": "projects/ecoscope.html",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "BIODIVERSITY · ECOLOGICAL DATA · GEOSPATIAL VISUALIZATION\nAn interactive exploration of biodiversity observations in Key Largo, using ecological occurrence data to examine species patterns across a climate-sensitive ecosystem.\n\nPython GBIF Folium Geospatial Data\n\nView on GitHub ← Back to Projects\n\n\n\n\nEcoScope is a Python-based biodiversity visualization project exploring approximately a decade of species observations in the Key Largo area.\nThe project uses biodiversity occurrence records from GBIF to examine where species have been observed and to transform those records into an interactive geographic visualization.\nThe goal was to make ecological observation data easier to explore while connecting computational analysis with my broader interest in conservation and biodiversity.\n\n\n\nBiodiversity databases contain large numbers of individual species observations collected across different locations and time periods.\nWhen viewed as rows in a dataset, it can be difficult to understand how those observations relate to the landscape in which they were recorded.\nEcoScope explores how geospatial visualization can provide additional context by placing biodiversity observations back onto the geographic environment they represent.\n\n\n\n\n\n01\n\n\n\n\nSOURCE GBIF Biodiversity Records\n\n\n↓\n\n\nPROCESSING Python\n\n\n↓\n\n\n\nSpecies Occurrence records\n\n\nLocation Coordinates\n\n\nTime Observation period\n\n\n\n↓\n\n\nOUTPUT Interactive Biodiversity Map\n\n\n\nGBIF occurrence records were processed in Python and transformed into an interactive geographic view of biodiversity observations.\n\n\n\n\n02\n\n\n\n\nGBIF\n\nSpecies observations\n\nProvides biodiversity occurrence records collected from biological observations and contributing datasets.\n\n\n\n\nSPACE\n\nGeographic coordinates\n\nConnects individual observations with locations across the study area.\n\n\n\n\nTIME\n\nObservation history\n\nProvides temporal context for examining records across the project period.\n\n\n\n\n\nCombining species, location, and observation information makes biodiversity records easier to explore within their ecological context.\n\n\n\n\n03\n\n\n\n\n1\n\nRetrieve biodiversity occurrence records\n\n\n\n\n\n\n2\n\nPrepare relevant species and geographic information\n\n\n\n\n\n\n3\n\nMap observations using geographic coordinates\n\n\n\n\n\n\n4\n\nInteractively explore biodiversity patterns\n\n\n\n\nThe workflow turns structured occurrence records into a spatial representation that can be explored geographically.\n\n\n\n\n04\n\n\n\n\nTool Role Application\n\n\nPython Data processing Occurrence records\n\n\nGBIF Data source Biodiversity observations\n\n\nFolium Visualization Interactive mapping\n\n\n\nThe project combines programmatic biodiversity data access with Python-based processing and interactive geospatial visualization.\n\n\n\n\n\n\n\nI used Python to work with biodiversity occurrence data from GBIF and prepare relevant species, location, and observation information for visualization.\nFolium was used to translate geographic coordinates into an interactive map, allowing biodiversity records to be explored spatially rather than only through tabular data.\nThe project provided an opportunity to combine biological data, programmatic data access, and geospatial visualization within a single workflow.\n\n\n\nEcoScope also connects my computational work with my interest in conservation and ecological monitoring.\nMy previous conservation experience has included wildlife monitoring, vegetation surveys, habitat restoration, GPS-supported field activities, and community-science projects in Southern California.\nWorking with biodiversity occurrence data provided another perspective on the same broader challenge: transforming individual biological observations into structured information that can support exploration and interpretation.\n\n\n\nThis project strengthened my experience working with biological data outside of human genomics and introduced additional considerations involved in ecological and geospatial datasets.\nI gained practice retrieving and processing biodiversity records, working with geographic coordinates, and building interactive maps with Python and Folium.\nIt also reinforced my interest in applying computational methods across different areas of biology, including biodiversity informatics and conservation data.\n\n\n\nView the project implementation and documentation on GitHub.\nView GitHub Repository →\n← Back to Selected Work"
+  },
+  {
+    "objectID": "projects/ecoscope.html#project-overview",
+    "href": "projects/ecoscope.html#project-overview",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "EcoScope is a Python-based biodiversity visualization project exploring approximately a decade of species observations in the Key Largo area.\nThe project uses biodiversity occurrence records from GBIF to examine where species have been observed and to transform those records into an interactive geographic visualization.\nThe goal was to make ecological observation data easier to explore while connecting computational analysis with my broader interest in conservation and biodiversity."
+  },
+  {
+    "objectID": "projects/ecoscope.html#the-ecological-question",
+    "href": "projects/ecoscope.html#the-ecological-question",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "Biodiversity databases contain large numbers of individual species observations collected across different locations and time periods.\nWhen viewed as rows in a dataset, it can be difficult to understand how those observations relate to the landscape in which they were recorded.\nEcoScope explores how geospatial visualization can provide additional context by placing biodiversity observations back onto the geographic environment they represent."
+  },
+  {
+    "objectID": "projects/ecoscope.html#project-gallery",
+    "href": "projects/ecoscope.html#project-gallery",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "01\n\n\n\n\nSOURCE GBIF Biodiversity Records\n\n\n↓\n\n\nPROCESSING Python\n\n\n↓\n\n\n\nSpecies Occurrence records\n\n\nLocation Coordinates\n\n\nTime Observation period\n\n\n\n↓\n\n\nOUTPUT Interactive Biodiversity Map\n\n\n\nGBIF occurrence records were processed in Python and transformed into an interactive geographic view of biodiversity observations.\n\n\n\n\n02\n\n\n\n\nGBIF\n\nSpecies observations\n\nProvides biodiversity occurrence records collected from biological observations and contributing datasets.\n\n\n\n\nSPACE\n\nGeographic coordinates\n\nConnects individual observations with locations across the study area.\n\n\n\n\nTIME\n\nObservation history\n\nProvides temporal context for examining records across the project period.\n\n\n\n\n\nCombining species, location, and observation information makes biodiversity records easier to explore within their ecological context.\n\n\n\n\n03\n\n\n\n\n1\n\nRetrieve biodiversity occurrence records\n\n\n\n\n\n\n2\n\nPrepare relevant species and geographic information\n\n\n\n\n\n\n3\n\nMap observations using geographic coordinates\n\n\n\n\n\n\n4\n\nInteractively explore biodiversity patterns\n\n\n\n\nThe workflow turns structured occurrence records into a spatial representation that can be explored geographically.\n\n\n\n\n04\n\n\n\n\nTool Role Application\n\n\nPython Data processing Occurrence records\n\n\nGBIF Data source Biodiversity observations\n\n\nFolium Visualization Interactive mapping\n\n\n\nThe project combines programmatic biodiversity data access with Python-based processing and interactive geospatial visualization."
+  },
+  {
+    "objectID": "projects/ecoscope.html#technical-approach",
+    "href": "projects/ecoscope.html#technical-approach",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "I used Python to work with biodiversity occurrence data from GBIF and prepare relevant species, location, and observation information for visualization.\nFolium was used to translate geographic coordinates into an interactive map, allowing biodiversity records to be explored spatially rather than only through tabular data.\nThe project provided an opportunity to combine biological data, programmatic data access, and geospatial visualization within a single workflow."
+  },
+  {
+    "objectID": "projects/ecoscope.html#conservation-context",
+    "href": "projects/ecoscope.html#conservation-context",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "EcoScope also connects my computational work with my interest in conservation and ecological monitoring.\nMy previous conservation experience has included wildlife monitoring, vegetation surveys, habitat restoration, GPS-supported field activities, and community-science projects in Southern California.\nWorking with biodiversity occurrence data provided another perspective on the same broader challenge: transforming individual biological observations into structured information that can support exploration and interpretation."
+  },
+  {
+    "objectID": "projects/ecoscope.html#what-i-learned",
+    "href": "projects/ecoscope.html#what-i-learned",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "This project strengthened my experience working with biological data outside of human genomics and introduced additional considerations involved in ecological and geospatial datasets.\nI gained practice retrieving and processing biodiversity records, working with geographic coordinates, and building interactive maps with Python and Folium.\nIt also reinforced my interest in applying computational methods across different areas of biology, including biodiversity informatics and conservation data."
+  },
+  {
+    "objectID": "projects/ecoscope.html#explore-the-code",
+    "href": "projects/ecoscope.html#explore-the-code",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "View the project implementation and documentation on GitHub.\nView GitHub Repository →\n← Back to Selected Work"
+  },
+  {
+    "objectID": "projects/cfde.html",
+    "href": "projects/cfde.html",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "CFDE DATA VISUALIZATION CHALLENGE · 3RD PLACE\nAn interactive spatial-biology visualization exploring cell populations within HuBMAP lymph node tissue.\n\nPython Streamlit Plotly HuBMAP\n\nView on GitHub ← Back to Projects\n\n\n\n\nThis project was developed for the CFDE Data Visualization Challenge using HuBMAP lymph node data.\nThe goal was to make complex spatial biological data easier to explore by transforming cell-center and cluster information into an interactive 3D visualization.\nThe project placed 3rd overall in the challenge.\n\n\n\nSpatial biology datasets contain information not only about which cell types are present, but also about where those cells are located relative to one another.\nVisualizing those relationships can help reveal tissue organization and patterns that may be difficult to understand from tables alone.\nThis project focused on creating an intuitive way to explore the spatial organization of cell populations within lymph node tissue.\n\n\n\n\n\n01\n\n\n\n\nINPUT HuBMAP Lymph Node Data\n\n\n↓\n\n\n\nCell Centers Spatial coordinates\n\n\nClusters Cell population labels\n\n\n\n↓\n\n\nOUTPUT Interactive 3D Tissue View\n\n\n\nCell-center coordinates and cluster information were combined to represent tissue organization in three dimensions.\n\n\n\n\n02\n\n\n\n\nPYTHON\n\nData processing\n\nPrepared and structured spatial data for visualization.\n\n\n\n\nPLOTLY\n\n3D visualization\n\nRendered interactive spatial plots for exploring cell populations.\n\n\n\n\nSTREAMLIT\n\nInteractive interface\n\nProvided an accessible environment for exploring the visualization.\n\n\n\n\n\nThe project combined Python-based data handling with interactive scientific visualization tools.\n\n\n\n\n03\n\n\n\n\n1\n\nLoad cell-center and cluster data\n\n\n\n\n\n\n2\n\nAssociate spatial coordinates with cell populations\n\n\n\n\n\n\n3\n\nRender cell populations in three dimensions\n\n\n\n\n\n\n4\n\nInteractively explore tissue organization\n\n\n\n\nThe visualization translated structured spatial data into an interactive representation of tissue architecture.\n\n\n\n\n04\n\n\n\n\nArea Approach Result\n\n\nData HuBMAP spatial biology 3D exploration\n\n\nTools Python + Plotly Interactive visualization\n\n\nChallenge CFDE 3rd Place\n\n\n\nThe final visualization was recognized with 3rd place in the CFDE Data Visualization Challenge.\n\n\n\n\n\n\n\nI used Python to work with cell-center and cluster data and Plotly to represent the spatial organization of cell populations in three dimensions.\nStreamlit provided the interactive application layer, allowing the visualization to be explored more intuitively than a static figure.\nThe project emphasized scientific communication as much as technical implementation: the goal was to make a complex biological dataset easier to investigate visually.\n\n\n\nThis project strengthened my skills in biological data visualization and reinforced the importance of choosing representations that help users understand complex scientific datasets.\nI gained additional experience working with spatial biological data, interactive Plotly visualizations, and Streamlit application development.\nIt also strengthened my interest in scientific computing tools that make high-dimensional biological data easier to explore.\n\n\n\nView the project implementation and documentation on GitHub.\nView GitHub Repository →\n← Back to Selected Work"
+  },
+  {
+    "objectID": "projects/cfde.html#project-overview",
+    "href": "projects/cfde.html#project-overview",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "This project was developed for the CFDE Data Visualization Challenge using HuBMAP lymph node data.\nThe goal was to make complex spatial biological data easier to explore by transforming cell-center and cluster information into an interactive 3D visualization.\nThe project placed 3rd overall in the challenge."
+  },
+  {
+    "objectID": "projects/cfde.html#the-biological-question",
+    "href": "projects/cfde.html#the-biological-question",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "Spatial biology datasets contain information not only about which cell types are present, but also about where those cells are located relative to one another.\nVisualizing those relationships can help reveal tissue organization and patterns that may be difficult to understand from tables alone.\nThis project focused on creating an intuitive way to explore the spatial organization of cell populations within lymph node tissue."
+  },
+  {
+    "objectID": "projects/cfde.html#project-gallery",
+    "href": "projects/cfde.html#project-gallery",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "01\n\n\n\n\nINPUT HuBMAP Lymph Node Data\n\n\n↓\n\n\n\nCell Centers Spatial coordinates\n\n\nClusters Cell population labels\n\n\n\n↓\n\n\nOUTPUT Interactive 3D Tissue View\n\n\n\nCell-center coordinates and cluster information were combined to represent tissue organization in three dimensions.\n\n\n\n\n02\n\n\n\n\nPYTHON\n\nData processing\n\nPrepared and structured spatial data for visualization.\n\n\n\n\nPLOTLY\n\n3D visualization\n\nRendered interactive spatial plots for exploring cell populations.\n\n\n\n\nSTREAMLIT\n\nInteractive interface\n\nProvided an accessible environment for exploring the visualization.\n\n\n\n\n\nThe project combined Python-based data handling with interactive scientific visualization tools.\n\n\n\n\n03\n\n\n\n\n1\n\nLoad cell-center and cluster data\n\n\n\n\n\n\n2\n\nAssociate spatial coordinates with cell populations\n\n\n\n\n\n\n3\n\nRender cell populations in three dimensions\n\n\n\n\n\n\n4\n\nInteractively explore tissue organization\n\n\n\n\nThe visualization translated structured spatial data into an interactive representation of tissue architecture.\n\n\n\n\n04\n\n\n\n\nArea Approach Result\n\n\nData HuBMAP spatial biology 3D exploration\n\n\nTools Python + Plotly Interactive visualization\n\n\nChallenge CFDE 3rd Place\n\n\n\nThe final visualization was recognized with 3rd place in the CFDE Data Visualization Challenge."
+  },
+  {
+    "objectID": "projects/cfde.html#technical-approach",
+    "href": "projects/cfde.html#technical-approach",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "I used Python to work with cell-center and cluster data and Plotly to represent the spatial organization of cell populations in three dimensions.\nStreamlit provided the interactive application layer, allowing the visualization to be explored more intuitively than a static figure.\nThe project emphasized scientific communication as much as technical implementation: the goal was to make a complex biological dataset easier to investigate visually."
+  },
+  {
+    "objectID": "projects/cfde.html#what-i-learned",
+    "href": "projects/cfde.html#what-i-learned",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "This project strengthened my skills in biological data visualization and reinforced the importance of choosing representations that help users understand complex scientific datasets.\nI gained additional experience working with spatial biological data, interactive Plotly visualizations, and Streamlit application development.\nIt also strengthened my interest in scientific computing tools that make high-dimensional biological data easier to explore."
+  },
+  {
+    "objectID": "projects/cfde.html#explore-the-code",
+    "href": "projects/cfde.html#explore-the-code",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "View the project implementation and documentation on GitHub.\nView GitHub Repository →\n← Back to Selected Work"
   },
   {
     "objectID": "contact.html",
@@ -39,62 +158,160 @@
     "href": "index.html",
     "title": "Marina Rice",
     "section": "",
-    "text": "Building computational tools and visualizations that transform biological data into meaningful scientific insight.\n\n\nEarly-career computational biologist with experience supporting clinical genomics workflows, scientific data quality, and research data management. Currently pursuing an M.S. in Bioinformatics and building skills in reproducible scientific computing.\nView My GitHub Connect on LinkedIn"
+    "text": "Building computational tools and visualizations that transform biological data into meaningful scientific insight.\nExplore My Work View Resume\n\n\n\n↓ SCROLL TO EXPLORE"
   },
   {
-    "objectID": "index.html#computational-biology-bioinformatics-clinical-genomics",
-    "href": "index.html#computational-biology-bioinformatics-clinical-genomics",
+    "objectID": "index.html#bioinformatics-computational-biology-clinical-genomics",
+    "href": "index.html#bioinformatics-computational-biology-clinical-genomics",
     "title": "Marina Rice",
     "section": "",
-    "text": "Early-career computational biologist with experience supporting clinical genomics workflows, scientific data quality, and research data management. Currently pursuing an M.S. in Bioinformatics and building skills in reproducible scientific computing.\nView My GitHub Connect on LinkedIn"
+    "text": "Building computational tools and visualizations that transform biological data into meaningful scientific insight.\nExplore My Work View Resume"
   },
   {
-    "objectID": "index.html#about-me",
-    "href": "index.html#about-me",
+    "objectID": "index.html#where-biology-meets-data",
+    "href": "index.html#where-biology-meets-data",
     "title": "Marina Rice",
-    "section": "About Me",
-    "text": "About Me\nHello! I’m Marina, an early-career computational biologist passionate about using data to better understand biology and improve human health.\nI currently work as a Genetic Counseling Assistant at GeneDx, where I support high-throughput clinical genomics workflows and contribute to data quality and process improvement. Alongside my professional work, I am pursuing an M.S. in Bioinformatics at the University of Maryland Global Campus while expanding my experience in computational biology, genomics, and reproducible scientific computing.\nI’m especially interested in genome annotation, transcriptomics, scientific data visualization, and building computational tools that make biological data more accessible, reproducible, and impactful. I’m energized by collaborative projects that combine biology, technology, and creative problem-solving."
+    "section": "Where Biology Meets Data",
+    "text": "Where Biology Meets Data\nI’m a clinical genomics professional and M.S. Bioinformatics student building toward a career in bioinformatics and computational biology.\nAt GeneDx, I work with high-throughput genetic testing workflows across whole genome sequencing, whole exome sequencing, microarray, mitochondrial, repeat expansion, and reanalysis cases. This experience has given me a strong appreciation for data quality, reproducibility, and careful interpretation in clinical genomics.\nAlongside my work, I’m developing computational skills through Python-based genomics projects, bioinformatics coursework, collaborative technical programs, and biological data visualization. I’m especially interested in genomic data analysis, scientific computing, and computational approaches that connect biological questions with reproducible analysis."
   },
   {
-    "objectID": "index.html#featured-projects",
-    "href": "index.html#featured-projects",
+    "objectID": "index.html#selected-work",
+    "href": "index.html#selected-work",
     "title": "Marina Rice",
-    "section": "Featured Projects",
-    "text": "Featured Projects\n\n\nDATA EXPLORATION\n\nEcoScope\nInvestigated ten years (2016–2026) of GBIF biodiversity observations within the Key Largo conservation area to evaluate whether selected indicator species exhibited changes in occurrence patterns associated with increasing climate-related pressures. Built an interactive mapping application using the GBIF API and Folium to visualize species distributions across space and time.\nOutcome: Created an interactive mapping application for exploring long-term biodiversity patterns in a climate-sensitive ecosystem.\nTools: Python, GBIF API, Folium, Geospatial Analysis\n\n\n\nBIOINFORMATICS WORKFLOW\n\nGenome Annotation Pipeline\nDeveloped a genome annotation workflow that integrated BLAST, HMMER, and TMHMM results to identify and annotate putative protein-coding genes. Automated sequence matching and annotation processing using Python, SQL, and Linux-based workflows.\nOutcome: Produced a reproducible annotation workflow capable of integrating multiple protein prediction tools into a unified annotation pipeline.\nTechnologies: Python, SQL, Linux, BLAST, HMMER, TMHMM\n\n\n\nDATA VISUALIZATION\n\nCFDE Data Visualization Challenge\nBuilt an interactive 3D visualization of HuBMAP lymph node tissue by mapping cell clusters and cellular coordinates into three-dimensional space. Developed a Streamlit application with Plotly to explore tissue organization and spatial relationships within single-cell datasets.\nOutcome: Delivered an interactive 3D visualization that improved exploration of spatial organization within HuBMAP lymph node tissue.\nTechnologies: Python, Streamlit, Plotly, HuBMAP"
+    "section": "Selected Work",
+    "text": "Selected Work\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBIOINFORMATICS · PYTHON\n\nRule-Based Gene Annotation Pipeline\nDeveloped a Python-based bioinformatics pipeline that integrates BLAST, HMMER, and TMHMM outputs through a rule-based decision hierarchy to assign functional annotations to unknown genomic sequences.\n\nPython BLAST HMMER TMHMM\n\nEXPLORE →\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n1ST PLACE · exRNA BIOMARKER RESEARCH\n\nDeCoDE Institute Capstone\nCollaborated on a 1st-place team capstone investigating shared extracellular RNA biomarkers across neurodegenerative and cognitive disorders. Contributed biological research and interpretation to contextualize computational findings and support the final presentation.\n\nBioinformatics R DESeq2 Biological Interpretation\n\nEXPLORE →\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3RD PLACE · SPATIAL BIOLOGY\n\nCFDE Data Visualization Challenge\nDeveloped an interactive 3D visualization of HuBMAP lymph node tissue to explore spatial relationships among cell populations and make complex biological data more intuitive to investigate.\n\nPython Streamlit Plotly HuBMAP\n\nEXPLORE →\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBIODIVERSITY · ECOLOGICAL DATA\n\nEcoScope\nExplored a decade of biodiversity observations in Key Largo through interactive geospatial visualization, connecting ecological monitoring data with computational analysis.\n\nPython GBIF Folium Geospatial Data\n\nEXPLORE →"
   },
   {
-    "objectID": "index.html#currently-working-on",
-    "href": "index.html#currently-working-on",
+    "objectID": "index.html#conservation-community-science",
+    "href": "index.html#conservation-community-science",
     "title": "Marina Rice",
-    "section": "Currently Working On",
-    "text": "Currently Working On\n\n🔬 CFDE Capstone Project – Collaborating through the Common Fund Data Ecosystem (CFDE) DeCoDE Institute to apply bioinformatics and data science skills to real-world biomedical datasets.\n☀️ Hack Your Summer Challenge – Building new computational and software development skills through hands-on technical projects.\n🦠 Ebolathon – Participating in a collaborative computational biology challenge focused on infectious disease and genomic data analysis.\n🎓 M.S. in Bioinformatics – University of Maryland Global Campus (Expected 2028)."
+    "section": "Conservation & Community Science",
+    "text": "Conservation & Community Science\nMy interest in biological data extends beyond human genomics. I’ve participated in wildlife monitoring, ecological surveys, habitat restoration, and community-science projects across Southern California.\nMy experience has included reviewing wildlife camera footage, supporting bird and bat surveys, conducting vegetation monitoring, using GPS in field activities, monitoring invasive species, and contributing to wetland and habitat restoration.\nI’m particularly interested in the intersection of conservation, biodiversity data, and computational biology, including how structured ecological observations can be transformed into reproducible analyses and visualizations."
   },
   {
-    "objectID": "index.html#technical-skills",
-    "href": "index.html#technical-skills",
+    "objectID": "index.html#computational-toolkit",
+    "href": "index.html#computational-toolkit",
     "title": "Marina Rice",
-    "section": "Technical Skills",
-    "text": "Technical Skills\n\nPython R SQL Bash Linux Git GitHub Galaxy NGS Clinical Genomics Data Quality Scientific Data Visualization Workflow Development"
+    "section": "Computational Toolkit",
+    "text": "Computational Toolkit\n\nProgramming & Data\n\nPython Pandas R SQL Linux\n\n\n\nBioinformatics\n\nBLAST HMMER TMHMM Nextflow Genomics\n\n\n\nScientific Computing & Visualization\n\nGit GitHub Streamlit Plotly Data Visualization"
   },
   {
-    "objectID": "index.html#experience-education",
-    "href": "index.html#experience-education",
+    "objectID": "index.html#lets-build-something-interesting",
+    "href": "index.html#lets-build-something-interesting",
     "title": "Marina Rice",
-    "section": "Experience & Education",
-    "text": "Experience & Education\nGenetic Counseling Assistant\nGeneDx\nSupporting high-throughput clinical genomics workflows, case review, data quality, quality assurance, and process improvement.\nM.S. Bioinformatics\nUniversity of Maryland Global Campus\nExpected 2028"
+    "section": "Let’s Build Something Interesting",
+    "text": "Let’s Build Something Interesting\nI’m interested in opportunities across bioinformatics, computational biology, genomic data analysis, and scientific computing — particularly work that combines biological context with reproducible computational analysis.\nGitHub LinkedIn Email"
   },
   {
-    "objectID": "index.html#career-goals",
-    "href": "index.html#career-goals",
+    "objectID": "projects/decode.html",
+    "href": "projects/decode.html",
     "title": "Marina Rice",
-    "section": "Career Goals",
-    "text": "Career Goals\nI’m seeking opportunities to contribute to computational biology and bioinformatics projects that combine genomics, reproducible research, and scientific software development. My goal is to build tools that help researchers generate meaningful biological insights from complex datasets."
+    "section": "",
+    "text": "DECODE INSTITUTE · 1ST PLACE CAPSTONE\nA team research project investigating shared extracellular RNA biomarkers across neurodegenerative and cognitive disorders.\n\nBioinformatics R DESeq2 Biological Interpretation\n\n← Back to Projects\n\n\n\n\nThe DeCoDE Institute capstone focused on identifying shared extracellular RNA signals across neurodegenerative and cognitive disorders.\nOur team explored patterns across multiple biological datasets and worked to interpret potential biomarker signals within the broader disease context.\nThe project placed 1st overall in the capstone program.\n\n\n\nMy primary role focused on biological research and interpretation.\nI reviewed disease biology and relevant literature to help contextualize computational findings, support team discussions, and strengthen the biological interpretation presented in the final project.\nI also explored differential expression analysis with DESeq2 using one project dataset as additional hands-on practice.\n\n\n\nThe project investigated whether extracellular RNA biomarkers could reveal biological signals shared across multiple neurodegenerative and cognitive conditions.\nExtracellular RNA is particularly interesting because it may provide measurable molecular information outside of cells and has potential applications in biomarker discovery.\nOur work centered on connecting computational findings with biologically meaningful interpretations.\n\n\n\n\n\n01\n\n\n\n\nFOCUS\n\nShared exRNA signals\n\nInvestigated whether multiple neurological and cognitive conditions showed overlapping extracellular RNA patterns.\n\n\n\n\nGOAL\n\nBiomarker interpretation\n\nConnected computational findings with biological context and disease relevance.\n\n\n\n\n\nThe project combined computational analysis with biological interpretation to explore potential shared biomarker signals.\n\n\n\n\n02\n\n\n\n\n1\n\nReview disease biology and relevant literature\n\n\n\n\n\n\n2\n\nExamine candidate extracellular RNA findings\n\n\n\n\n\n\n3\n\nEvaluate biological plausibility and shared relevance\n\n\n\n\n\n\n4\n\nSupport interpretation for the final presentation\n\n\n\n\nMy contribution centered on translating computational findings into biologically meaningful context.\n\n\n\n\n03\n\n\n\n\nDATA Project Dataset\n\n\n↓\n\n\nANALYSIS DESeq2 Exploration\n\n\n↓\n\n\nLEARNING Differential Expression Interpretation\n\n\n\nI independently practiced DESeq2 using one project dataset to build additional experience with differential expression analysis.\n\n\n\n\n04\n\n\n\n\nArea Contribution Outcome\n\n\nResearch Biological context Interpretation support\n\n\nTeam Collaborative analysis Final presentation\n\n\nResult Capstone project 1st Place\n\n\n\nThe project combined computational analysis, biological research, and collaborative interpretation and received 1st place.\n\n\n\n\n\n\n\nThis project strengthened my ability to connect computational findings with biological context rather than treating analytical results in isolation.\nI gained experience working within a collaborative research team, evaluating biological relevance, communicating scientific interpretations, and thinking more critically about how molecular signals may relate across complex disorders.\nMy independent DESeq2 practice also gave me additional exposure to differential expression workflows and interpretation.\n\n\n\nThis capstone was completed collaboratively as part of the DeCoDE Institute program. My contribution focused on biological research and interpretation supporting the team’s analysis and final presentation.\n← Back to Selected Work"
   },
   {
-    "objectID": "index.html#lets-connect",
-    "href": "index.html#lets-connect",
+    "objectID": "projects/decode.html#project-overview",
+    "href": "projects/decode.html#project-overview",
     "title": "Marina Rice",
-    "section": "Let’s Connect",
-    "text": "Let’s Connect\nI’m always happy to connect with researchers, bioinformaticians, and professionals working in computational biology, genomics, and scientific data science.\nEmail Me LinkedIn GitHub"
+    "section": "",
+    "text": "The DeCoDE Institute capstone focused on identifying shared extracellular RNA signals across neurodegenerative and cognitive disorders.\nOur team explored patterns across multiple biological datasets and worked to interpret potential biomarker signals within the broader disease context.\nThe project placed 1st overall in the capstone program."
+  },
+  {
+    "objectID": "projects/decode.html#my-contribution",
+    "href": "projects/decode.html#my-contribution",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "My primary role focused on biological research and interpretation.\nI reviewed disease biology and relevant literature to help contextualize computational findings, support team discussions, and strengthen the biological interpretation presented in the final project.\nI also explored differential expression analysis with DESeq2 using one project dataset as additional hands-on practice."
+  },
+  {
+    "objectID": "projects/decode.html#research-focus",
+    "href": "projects/decode.html#research-focus",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "The project investigated whether extracellular RNA biomarkers could reveal biological signals shared across multiple neurodegenerative and cognitive conditions.\nExtracellular RNA is particularly interesting because it may provide measurable molecular information outside of cells and has potential applications in biomarker discovery.\nOur work centered on connecting computational findings with biologically meaningful interpretations."
+  },
+  {
+    "objectID": "projects/decode.html#project-gallery",
+    "href": "projects/decode.html#project-gallery",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "01\n\n\n\n\nFOCUS\n\nShared exRNA signals\n\nInvestigated whether multiple neurological and cognitive conditions showed overlapping extracellular RNA patterns.\n\n\n\n\nGOAL\n\nBiomarker interpretation\n\nConnected computational findings with biological context and disease relevance.\n\n\n\n\n\nThe project combined computational analysis with biological interpretation to explore potential shared biomarker signals.\n\n\n\n\n02\n\n\n\n\n1\n\nReview disease biology and relevant literature\n\n\n\n\n\n\n2\n\nExamine candidate extracellular RNA findings\n\n\n\n\n\n\n3\n\nEvaluate biological plausibility and shared relevance\n\n\n\n\n\n\n4\n\nSupport interpretation for the final presentation\n\n\n\n\nMy contribution centered on translating computational findings into biologically meaningful context.\n\n\n\n\n03\n\n\n\n\nDATA Project Dataset\n\n\n↓\n\n\nANALYSIS DESeq2 Exploration\n\n\n↓\n\n\nLEARNING Differential Expression Interpretation\n\n\n\nI independently practiced DESeq2 using one project dataset to build additional experience with differential expression analysis.\n\n\n\n\n04\n\n\n\n\nArea Contribution Outcome\n\n\nResearch Biological context Interpretation support\n\n\nTeam Collaborative analysis Final presentation\n\n\nResult Capstone project 1st Place\n\n\n\nThe project combined computational analysis, biological research, and collaborative interpretation and received 1st place."
+  },
+  {
+    "objectID": "projects/decode.html#what-i-learned",
+    "href": "projects/decode.html#what-i-learned",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "This project strengthened my ability to connect computational findings with biological context rather than treating analytical results in isolation.\nI gained experience working within a collaborative research team, evaluating biological relevance, communicating scientific interpretations, and thinking more critically about how molecular signals may relate across complex disorders.\nMy independent DESeq2 practice also gave me additional exposure to differential expression workflows and interpretation."
+  },
+  {
+    "objectID": "projects/decode.html#explore-the-project",
+    "href": "projects/decode.html#explore-the-project",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "This capstone was completed collaboratively as part of the DeCoDE Institute program. My contribution focused on biological research and interpretation supporting the team’s analysis and final presentation.\n← Back to Selected Work"
+  },
+  {
+    "objectID": "projects/gene-annotation.html",
+    "href": "projects/gene-annotation.html",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "UC SAN DIEGO EXTENDED STUDIES · BIOINFORMATICS FUNDAMENTALS\nA rule-based workflow integrating BLAST, HMMER, and TMHMM evidence to assign functional annotations to unknown genomic sequences.\n\nPython BLAST HMMER TMHMM\n\nView on GitHub ← Back to Projects\n\n\n\n\nFunctional annotation often requires combining evidence from multiple bioinformatics tools, each providing a different type of biological information.\nThis project explored how sequence similarity, conserved protein domains, and transmembrane predictions could be integrated into a consistent annotation workflow.\nThe pipeline uses outputs from BLAST, HMMER, and TMHMM and applies a rule-based hierarchy to determine the most appropriate functional annotation for each sequence.\n\n\n\n\n\n01\n\n\n\n\nINPUT Unknown Sequence\n\n\n↓\n\n\n\nHMMER Protein domains\n\n\nBLAST Sequence similarity\n\n\nTMHMM Membrane topology\n\n\n\n↓\n\n\nINTEGRATION Evidence Comparison\n\n\n↓\n\n\nDECISION Rule-Based Logic\n\n\n↓\n\n\nOUTPUT Functional Annotation\n\n\n\nBLAST, HMMER, and TMHMM provide complementary biological evidence that is evaluated through a structured annotation workflow.\n\n\n\n\n02\n\n\n\n\nHMMER\n\nConserved protein domains\n\nIdentifies protein-family and domain-level evidence.\n\n\n\n\nBLAST\n\nSequence similarity\n\nCompares unknown sequences with known biological sequences.\n\n\n\n\nTMHMM\n\nMembrane topology\n\nPredicts transmembrane regions that may support functional interpretation.\n\n\n\n\n\nEach analysis method contributes a different type of biological evidence to the annotation process.\n\n\n\n\n03\n\n\n\n\n1\n\nEvaluate available bioinformatics evidence\n\n\n\n\n\n\n2\n\nCompare results across analysis methods\n\n\n\n\n\n\n3\n\nApply predefined annotation rules\n\n\n\n\n\n\n4\n\nAssign the most supported functional annotation\n\n\n\n\nA rule-based hierarchy converts multiple analysis outputs into a consistent annotation decision.\n\n\n\n\n04\n\n\n\n\nSequence Evidence Annotation\n\n\nSEQ_01 HMMER + BLAST Functional assignment\n\n\nSEQ_02 TMHMM Membrane-associated protein\n\n\nSEQ_03 Limited evidence Unresolved / hypothetical\n\n\n\nRepresentative layout showing how computational evidence is translated into final functional annotations.\n\n\n\n\n\n\n\nDifferent bioinformatics tools capture different biological signals.\nBLAST can identify sequence similarity to known sequences, HMMER can detect conserved protein domains, and TMHMM can predict transmembrane topology.\nA major challenge is determining how to interpret these results together when the evidence does not point to a single obvious annotation.\n\n\n\nI designed a rule-based decision hierarchy that combines evidence from each analysis method.\nThe workflow evaluates available evidence and prioritizes stronger biological signals before assigning a final functional annotation.\n\nUnknown Sequence\n↓\nBLAST · HMMER · TMHMM\n↓\nEvidence Comparison\n↓\nRule-Based Decision Hierarchy\n↓\nFunctional Annotation\n\n\n\n\nThe workflow was implemented in Python and structured around outputs produced by BLAST, HMMER, and TMHMM.\nThe annotation logic compares available evidence and applies predefined rules to determine which result should guide the final assignment.\nThis approach helped make the annotation process more consistent and reproducible than interpreting each tool result independently.\n\n\n\nThe final workflow produced functional annotations by integrating multiple forms of bioinformatics evidence within a single decision framework.\nThe project demonstrated how complementary analysis tools can be combined to create a structured annotation process rather than relying on one source of evidence alone.\n\n\n\nThis project strengthened my understanding of how bioinformatics tools can be combined within a larger computational workflow.\nI gained additional experience working with biological sequence-analysis outputs, translating scientific reasoning into Python logic, and designing a reproducible process for interpreting multiple sources of evidence.\n\n\n\nThe complete project implementation and documentation are available on GitHub.\nView GitHub Repository →\n← Back to Selected Work"
+  },
+  {
+    "objectID": "projects/gene-annotation.html#project-overview",
+    "href": "projects/gene-annotation.html#project-overview",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "Functional annotation often requires combining evidence from multiple bioinformatics tools, each providing a different type of biological information.\nThis project explored how sequence similarity, conserved protein domains, and transmembrane predictions could be integrated into a consistent annotation workflow.\nThe pipeline uses outputs from BLAST, HMMER, and TMHMM and applies a rule-based hierarchy to determine the most appropriate functional annotation for each sequence."
+  },
+  {
+    "objectID": "projects/gene-annotation.html#project-gallery",
+    "href": "projects/gene-annotation.html#project-gallery",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "01\n\n\n\n\nINPUT Unknown Sequence\n\n\n↓\n\n\n\nHMMER Protein domains\n\n\nBLAST Sequence similarity\n\n\nTMHMM Membrane topology\n\n\n\n↓\n\n\nINTEGRATION Evidence Comparison\n\n\n↓\n\n\nDECISION Rule-Based Logic\n\n\n↓\n\n\nOUTPUT Functional Annotation\n\n\n\nBLAST, HMMER, and TMHMM provide complementary biological evidence that is evaluated through a structured annotation workflow.\n\n\n\n\n02\n\n\n\n\nHMMER\n\nConserved protein domains\n\nIdentifies protein-family and domain-level evidence.\n\n\n\n\nBLAST\n\nSequence similarity\n\nCompares unknown sequences with known biological sequences.\n\n\n\n\nTMHMM\n\nMembrane topology\n\nPredicts transmembrane regions that may support functional interpretation.\n\n\n\n\n\nEach analysis method contributes a different type of biological evidence to the annotation process.\n\n\n\n\n03\n\n\n\n\n1\n\nEvaluate available bioinformatics evidence\n\n\n\n\n\n\n2\n\nCompare results across analysis methods\n\n\n\n\n\n\n3\n\nApply predefined annotation rules\n\n\n\n\n\n\n4\n\nAssign the most supported functional annotation\n\n\n\n\nA rule-based hierarchy converts multiple analysis outputs into a consistent annotation decision.\n\n\n\n\n04\n\n\n\n\nSequence Evidence Annotation\n\n\nSEQ_01 HMMER + BLAST Functional assignment\n\n\nSEQ_02 TMHMM Membrane-associated protein\n\n\nSEQ_03 Limited evidence Unresolved / hypothetical\n\n\n\nRepresentative layout showing how computational evidence is translated into final functional annotations."
+  },
+  {
+    "objectID": "projects/gene-annotation.html#the-problem",
+    "href": "projects/gene-annotation.html#the-problem",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "Different bioinformatics tools capture different biological signals.\nBLAST can identify sequence similarity to known sequences, HMMER can detect conserved protein domains, and TMHMM can predict transmembrane topology.\nA major challenge is determining how to interpret these results together when the evidence does not point to a single obvious annotation."
+  },
+  {
+    "objectID": "projects/gene-annotation.html#my-approach",
+    "href": "projects/gene-annotation.html#my-approach",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "I designed a rule-based decision hierarchy that combines evidence from each analysis method.\nThe workflow evaluates available evidence and prioritizes stronger biological signals before assigning a final functional annotation.\n\nUnknown Sequence\n↓\nBLAST · HMMER · TMHMM\n↓\nEvidence Comparison\n↓\nRule-Based Decision Hierarchy\n↓\nFunctional Annotation"
+  },
+  {
+    "objectID": "projects/gene-annotation.html#technical-implementation",
+    "href": "projects/gene-annotation.html#technical-implementation",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "The workflow was implemented in Python and structured around outputs produced by BLAST, HMMER, and TMHMM.\nThe annotation logic compares available evidence and applies predefined rules to determine which result should guide the final assignment.\nThis approach helped make the annotation process more consistent and reproducible than interpreting each tool result independently."
+  },
+  {
+    "objectID": "projects/gene-annotation.html#results",
+    "href": "projects/gene-annotation.html#results",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "The final workflow produced functional annotations by integrating multiple forms of bioinformatics evidence within a single decision framework.\nThe project demonstrated how complementary analysis tools can be combined to create a structured annotation process rather than relying on one source of evidence alone."
+  },
+  {
+    "objectID": "projects/gene-annotation.html#what-i-learned",
+    "href": "projects/gene-annotation.html#what-i-learned",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "This project strengthened my understanding of how bioinformatics tools can be combined within a larger computational workflow.\nI gained additional experience working with biological sequence-analysis outputs, translating scientific reasoning into Python logic, and designing a reproducible process for interpreting multiple sources of evidence."
+  },
+  {
+    "objectID": "projects/gene-annotation.html#explore-the-code",
+    "href": "projects/gene-annotation.html#explore-the-code",
+    "title": "Marina Rice",
+    "section": "",
+    "text": "The complete project implementation and documentation are available on GitHub.\nView GitHub Repository →\n← Back to Selected Work"
   }
 ]
