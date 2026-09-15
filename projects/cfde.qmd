@@ -3,272 +3,177 @@ title: ""
 page-layout: full
 ---
 
-::: {.project-detail-page .cfde-detail}
+::: {.project-detail-page}
 
-
-::: {.project-detail-hero .case-study-hero}
-
+::: {.project-detail-hero .case-study-hero .cfde-case-study}
 ::: {.project-detail-intro}
 
 <span class="project-kicker">CFDE DATA VISUALIZATION CHALLENGE · 3RD PLACE</span>
 
-An interactive spatial-biology visualization exploring cell populations within HuBMAP lymph node tissue.
+# Spatial Biology Visualization
 
-::: {.project-tech}
-`Python` `Streamlit` `Plotly` `HuBMAP`
+Interactive exploration of human lymph-node spatial data using Python, Pandas, Plotly, and Streamlit.
+
+::: {.project-tags}
+<span>Python</span>
+<span>Pandas</span>
+<span>Plotly</span>
+<span>Streamlit</span>
+<span>HuBMAP</span>
 :::
 
-[View on GitHub](https://github.com/riceroni18/cfde-data-visualization-challenge){.btn .btn-primary}
+[Launch Interactive Visualization ↗](https://cfde-data-visualization-challenge-upobkr6r29i2vbgckcrz4t.streamlit.app/){.btn .btn-primary}
+[View Source Code](https://github.com/riceroni18/cfde-data-visualization-challenge){.btn .btn-outline-light}
 [← Back to Projects](../index.qmd#projects){.btn .btn-outline-light}
 
 :::
+:::
+
+
+::: {.project-feature-visual .cfde-feature}
+
+![](images/cfde/streamlit_dashboard.png){fig-alt="Interactive Streamlit dashboard visualizing spatial cellular data from a human lymph node."}
+
+<span class="visual-caption">
+36,124 CELLS · HUMAN LYMPH NODE · INTERACTIVE 3D EXPLORATION
+</span>
+
+:::
+
+
+::: {.project-detail-section .case-study-summary}
+
+::: {.case-study-column}
+
+<span class="section-label">THE CHALLENGE</span>
+
+## Making spatial biology easier to explore
+
+Spatial datasets combine biological information with physical coordinates inside tissue, making patterns difficult to understand from tables alone.
+
+The challenge was to turn these data into an interactive view where relationships among cell populations could be investigated visually.
+
+:::
+
+::: {.case-study-column}
+
+<span class="section-label">THE RESULT</span>
+
+## A visual exploration environment
+
+I worked with cell-cluster and cell-center data to prepare spatial information and build an interactive Streamlit dashboard.
+
+The project received **3rd place** in the CFDE Data Visualization Challenge.
+
+:::
 
 :::
 
 
 ::: {.project-detail-section}
 
-## Project Overview
+<span class="section-label">WORKFLOW</span>
 
-This project was developed for the CFDE Data Visualization Challenge using HuBMAP lymph node data.
+## From raw data to spatial exploration
 
-The goal was to make complex spatial biological data easier to explore by transforming cell-center and cluster information into an interactive 3D visualization.
+::: {.cfde-workflow}
 
-The project placed **3rd overall** in the challenge.
+::: {.cfde-step}
+<span class="step-number">01</span>
+Inspect -
+Review structure and spatial coordinates
+:::
 
+<span class="workflow-arrow">→</span>
+
+::: {.cfde-step}
+<span class="step-number">02</span>
+Prepare -
+Clean and organize data with Pandas
+:::
+
+<span class="workflow-arrow">→</span>
+
+::: {.cfde-step}
+<span class="step-number">03</span>
+Integrate -
+Connect cell information with spatial positions
+:::
+
+<span class="workflow-arrow">→</span>
+
+::: {.cfde-step}
+<span class="step-number">04</span>
+Explore -
+Visualize interactively with Plotly + Streamlit
+:::
+
+:::
 :::
 
 
-::: {.project-detail-section}
+::: {.project-detail-section .build-section}
 
-## The Biological Question
+<span class="section-label">WHAT I BUILT</span>
 
-Spatial biology datasets contain information not only about which cell types are present, but also about where those cells are located relative to one another.
+## Translating biological coordinates into an interactive view
 
-Visualizing those relationships can help reveal tissue organization and patterns that may be difficult to understand from tables alone.
+Using **Python and Pandas**, I organized biological and spatial data for visualization. I used **Plotly** to represent more than 36,000 cells in three-dimensional space and **Streamlit** to build and deploy an interactive interface where users can filter cellular populations and change the spatial perspective. 
 
-This project focused on creating an intuitive way to explore the spatial organization of cell populations within lymph node tissue.
+::: {.project-metrics}
 
+::: {.metric-item}
+<span class="metric-value">3D</span>
+<span class="metric-label">spatial visualization</span>
+:::
+
+::: {.metric-item}
+<span class="metric-value">4</span>
+<span class="metric-label">core technologies</span>
+:::
+
+::: {.metric-item}
+<span class="metric-value">3RD</span>
+<span class="metric-label">challenge placement</span>
+:::
+
+:::
 :::
 
 
-::: {.project-detail-section}
+::: {.project-detail-section .project-evidence}
 
-## Project Gallery
+<span class="section-label">PROJECT EVIDENCE</span>
 
-<div class="project-gallery-grid">
+## From spatial data to an interactive dashboard
 
-<div class="gallery-card">
+::: {.evidence-notes}
 
-<span class="gallery-number">01</span>
+### Data preparation
+Inspected and organized cell-cluster and cell-center information before visualization.
 
-### Spatial Data
+### Spatial visualization
+Mapped biological observations in three-dimensional space to explore their organization within tissue.
 
-<div class="workflow-diagram">
-
-<div class="workflow-node">
-<span class="workflow-label">INPUT</span>
-<strong>HuBMAP Lymph Node Data</strong>
-</div>
-
-<div class="workflow-connector">↓</div>
-
-<div class="workflow-tools">
-
-<div class="workflow-tool">
-<span>Cell Centers</span>
-<small>Spatial coordinates</small>
-</div>
-
-<div class="workflow-tool">
-<span>Clusters</span>
-<small>Cell population labels</small>
-</div>
-
-</div>
-
-<div class="workflow-connector">↓</div>
-
-<div class="workflow-node workflow-output">
-<span class="workflow-label">OUTPUT</span>
-<strong>Interactive 3D Tissue View</strong>
-</div>
-
-</div>
-
-<p class="gallery-caption">
-Cell-center coordinates and cluster information were combined to represent tissue organization in three dimensions.
-</p>
-
-</div>
-
-
-<div class="gallery-card">
-
-<span class="gallery-number">02</span>
-
-### Visualization Stack
-
-<div class="evidence-visual">
-
-<div class="evidence-row">
-<span class="evidence-tool">PYTHON</span>
-<div>
-<strong>Data processing</strong>
-<p>Prepared and structured spatial data for visualization.</p>
-</div>
-</div>
-
-<div class="evidence-row">
-<span class="evidence-tool">PLOTLY</span>
-<div>
-<strong>3D visualization</strong>
-<p>Rendered interactive spatial plots for exploring cell populations.</p>
-</div>
-</div>
-
-<div class="evidence-row">
-<span class="evidence-tool">STREAMLIT</span>
-<div>
-<strong>Interactive interface</strong>
-<p>Provided an accessible environment for exploring the visualization.</p>
-</div>
-</div>
-
-</div>
-
-<p class="gallery-caption">
-The project combined Python-based data handling with interactive scientific visualization tools.
-</p>
-
-</div>
-
-
-<div class="gallery-card">
-
-<span class="gallery-number">03</span>
-
-### Exploration Workflow
-
-<div class="decision-visual">
-
-<div class="decision-step">
-<span>1</span>
-<p>Load cell-center and cluster data</p>
-</div>
-
-<div class="decision-line"></div>
-
-<div class="decision-step">
-<span>2</span>
-<p>Associate spatial coordinates with cell populations</p>
-</div>
-
-<div class="decision-line"></div>
-
-<div class="decision-step">
-<span>3</span>
-<p>Render cell populations in three dimensions</p>
-</div>
-
-<div class="decision-line"></div>
-
-<div class="decision-step">
-<span>4</span>
-<p>Interactively explore tissue organization</p>
-</div>
-
-</div>
-
-<p class="gallery-caption">
-The visualization translated structured spatial data into an interactive representation of tissue architecture.
-</p>
-
-</div>
-
-
-<div class="gallery-card">
-
-<span class="gallery-number">04</span>
-
-### Challenge Outcome
-
-<div class="output-preview">
-
-<div class="output-header">
-<span>Area</span>
-<span>Approach</span>
-<span>Result</span>
-</div>
-
-<div class="output-row">
-<span>Data</span>
-<span>HuBMAP spatial biology</span>
-<span>3D exploration</span>
-</div>
-
-<div class="output-row">
-<span>Tools</span>
-<span>Python + Plotly</span>
-<span>Interactive visualization</span>
-</div>
-
-<div class="output-row">
-<span>Challenge</span>
-<span>CFDE</span>
-<span>3rd Place</span>
-</div>
-
-</div>
-
-<p class="gallery-caption">
-The final visualization was recognized with 3rd place in the CFDE Data Visualization Challenge.
-</p>
-
-</div>
-
-</div>
+### Interactive application
+Combined Plotly visualizations with Streamlit to create an accessible interface for exploring the spatial data.
 
 :::
 
-
-::: {.project-detail-section}
-
-## Technical Approach
-
-I used Python to work with cell-center and cluster data and Plotly to represent the spatial organization of cell populations in three dimensions.
-
-Streamlit provided the interactive application layer, allowing the visualization to be explored more intuitively than a static figure.
-
-The project emphasized scientific communication as much as technical implementation: the goal was to make a complex biological dataset easier to investigate visually.
-
+:::
 :::
 
 
-::: {.project-detail-section}
+::: {.project-detail-section .takeaway-section}
 
-## What I Learned
+<span class="section-label">TAKEAWAY</span>
 
-This project strengthened my skills in biological data visualization and reinforced the importance of choosing representations that help users understand complex scientific datasets.
+## Biological data becomes more useful when it becomes explorable
 
-I gained additional experience working with spatial biological data, interactive Plotly visualizations, and Streamlit application development.
+This project strengthened my experience working with biomedical datasets, spatial coordinates, interactive scientific visualization, and communicating complex biological information through computational tools.
 
-It also strengthened my interest in scientific computing tools that make high-dimensional biological data easier to explore.
+[Launch the interactive dashboard →](https://cfde-data-visualization-challenge-upobkr6r29i2vbgckcrz4t.streamlit.app/){.explore-project}
 
-:::
-
-
-::: {.project-detail-footer}
-
-## Explore the Code
-
-View the project implementation and documentation on GitHub.
-
-[View GitHub Repository →](https://github.com/riceroni18/cfde-data-visualization-challenge){.btn .btn-primary}
-
-[← Back to Selected Work](../index.qmd#projects){.btn .btn-outline-light}
-
-:::
-
+[View the source code →](https://github.com/riceroni18/cfde-data-visualization-challenge){.explore-project}
 
 :::

@@ -5,331 +5,342 @@ page-layout: full
 
 ::: {.project-detail-page .gene-detail}
 
-
 ::: {.project-detail-hero .case-study-hero}
-
 ::: {.project-detail-intro}
 
 <span class="project-kicker">UC SAN DIEGO EXTENDED STUDIES · BIOINFORMATICS FUNDAMENTALS</span>
 
-A rule-based workflow integrating BLAST, HMMER, and TMHMM evidence to assign functional annotations to unknown genomic sequences.
+# Rule-Based Gene Annotation Pipeline
 
-::: {.project-tech}
-`Python` `BLAST` `HMMER` `TMHMM`
+A Python workflow that integrates HMMER, BLAST, and TMHMM-derived evidence to assign functional annotations to predicted genes.
+
+::: {.project-tags}
+<span>Python</span>
+<span>BLAST</span>
+<span>HMMER</span>
+<span>TMHMM</span>
+<span>Sequence Annotation</span>
 :::
 
-[View on GitHub](https://github.com/riceroni18/genomic-annotation-pipeline){.btn .btn-primary}
+[View Source Code](https://github.com/riceroni18/genomic-annotation-pipeline){.btn .btn-primary}
 [← Back to Projects](../index.qmd#projects){.btn .btn-outline-light}
 
 :::
-
 :::
 
 
-::: {.project-detail-section}
+::: {.project-detail-section .case-study-summary}
 
-## Project Overview
+::: {.case-study-column}
+<span class="section-label">THE PROBLEM</span>
 
-Functional annotation often requires combining evidence from multiple bioinformatics tools, each providing a different type of biological information.
+## Combining multiple sources of biological evidence
 
-This project explored how sequence similarity, conserved protein domains, and transmembrane predictions could be integrated into a consistent annotation workflow.
+Functional annotation often depends on several bioinformatics tools, each capturing a different signal.
 
-The pipeline uses outputs from BLAST, HMMER, and TMHMM and applies a rule-based hierarchy to determine the most appropriate functional annotation for each sequence.
+HMMER can provide protein-family evidence, BLAST can identify sequence similarity, and TMHMM-derived results can indicate transmembrane structure.
 
+The challenge was to combine these outputs into one consistent annotation process.
 :::
 
+::: {.case-study-column}
+<span class="section-label">THE APPROACH</span>
 
-::: {.project-detail-section}
+## A defined evidence hierarchy
 
-## Project Gallery
+I implemented a rule-based decision system in Python that prioritizes available evidence in a fixed order.
 
-<div class="project-gallery-grid">
-
-<div class="gallery-card gallery-workflow">
-
-<span class="gallery-number">01</span>
-
-### Pipeline Workflow
-
-<div class="workflow-diagram">
-
-<div class="workflow-node workflow-input">
-<span class="workflow-label">INPUT</span>
-<strong>Unknown Sequence</strong>
-</div>
-
-<div class="workflow-connector">↓</div>
-
-<div class="workflow-tools">
-
-<div class="workflow-tool">
-<span>HMMER</span>
-<small>Protein domains</small>
-</div>
-
-<div class="workflow-tool">
-<span>BLAST</span>
-<small>Sequence similarity</small>
-</div>
-
-<div class="workflow-tool">
-<span>TMHMM</span>
-<small>Membrane topology</small>
-</div>
-
-</div>
-
-<div class="workflow-connector">↓</div>
-
-<div class="workflow-node">
-<span class="workflow-label">INTEGRATION</span>
-<strong>Evidence Comparison</strong>
-</div>
-
-<div class="workflow-connector">↓</div>
-
-<div class="workflow-node">
-<span class="workflow-label">DECISION</span>
-<strong>Rule-Based Logic</strong>
-</div>
-
-<div class="workflow-connector">↓</div>
-
-<div class="workflow-node workflow-output">
-<span class="workflow-label">OUTPUT</span>
-<strong>Functional Annotation</strong>
-</div>
-
-</div>
-
-<p class="gallery-caption">
-BLAST, HMMER, and TMHMM provide complementary biological evidence that is evaluated through a structured annotation workflow.
-</p>
-
-</div>
-
-
-<div class="gallery-card">
-
-<span class="gallery-number">02</span>
-
-### Evidence Sources
-
-<div class="evidence-visual">
-
-<div class="evidence-row">
-<span class="evidence-tool">HMMER</span>
-<div>
-<strong>Conserved protein domains</strong>
-<p>Identifies protein-family and domain-level evidence.</p>
-</div>
-</div>
-
-<div class="evidence-row">
-<span class="evidence-tool">BLAST</span>
-<div>
-<strong>Sequence similarity</strong>
-<p>Compares unknown sequences with known biological sequences.</p>
-</div>
-</div>
-
-<div class="evidence-row">
-<span class="evidence-tool">TMHMM</span>
-<div>
-<strong>Membrane topology</strong>
-<p>Predicts transmembrane regions that may support functional interpretation.</p>
-</div>
-</div>
-
-</div>
-
-<p class="gallery-caption">
-Each analysis method contributes a different type of biological evidence to the annotation process.
-</p>
-
-</div>
-
-
-<div class="gallery-card">
-
-<span class="gallery-number">03</span>
-
-### Decision Logic
-
-<div class="decision-visual">
-
-<div class="decision-step">
-<span>1</span>
-<p>Evaluate available bioinformatics evidence</p>
-</div>
-
-<div class="decision-line"></div>
-
-<div class="decision-step">
-<span>2</span>
-<p>Compare results across analysis methods</p>
-</div>
-
-<div class="decision-line"></div>
-
-<div class="decision-step">
-<span>3</span>
-<p>Apply predefined annotation rules</p>
-</div>
-
-<div class="decision-line"></div>
-
-<div class="decision-step">
-<span>4</span>
-<p>Assign the most supported functional annotation</p>
-</div>
-
-</div>
-
-<p class="gallery-caption">
-A rule-based hierarchy converts multiple analysis outputs into a consistent annotation decision.
-</p>
-
-</div>
-
-
-<div class="gallery-card">
-
-<span class="gallery-number">04</span>
-
-### Annotation Output
-
-<div class="output-preview">
-
-<div class="output-header">
-<span>Sequence</span>
-<span>Evidence</span>
-<span>Annotation</span>
-</div>
-
-<div class="output-row">
-<span>SEQ_01</span>
-<span>HMMER + BLAST</span>
-<span>Functional assignment</span>
-</div>
-
-<div class="output-row">
-<span>SEQ_02</span>
-<span>TMHMM</span>
-<span>Membrane-associated protein</span>
-</div>
-
-<div class="output-row">
-<span>SEQ_03</span>
-<span>Limited evidence</span>
-<span>Unresolved / hypothetical</span>
-</div>
-
-</div>
-
-<p class="gallery-caption">
-Representative layout showing how computational evidence is translated into final functional annotations.
-</p>
-
-</div>
-
-</div>
-
-:::
-
-
-::: {.project-detail-section}
-
-## The Problem
-
-Different bioinformatics tools capture different biological signals.
-
-BLAST can identify sequence similarity to known sequences, HMMER can detect conserved protein domains, and TMHMM can predict transmembrane topology.
-
-A major challenge is determining how to interpret these results together when the evidence does not point to a single obvious annotation.
-
-:::
-
-
-::: {.project-detail-section}
-
-## My Approach
-
-I designed a rule-based decision hierarchy that combines evidence from each analysis method.
-
-The workflow evaluates available evidence and prioritizes stronger biological signals before assigning a final functional annotation.
-
-::: {.pipeline-flow}
-
-**Unknown Sequence**
-
-↓
-
-**BLAST · HMMER · TMHMM**
-
-↓
-
-**Evidence Comparison**
-
-↓
-
-**Rule-Based Decision Hierarchy**
-
-↓
-
-**Functional Annotation**
-
+Rather than interpreting each tool independently, the pipeline selects a final annotation according to a reproducible hierarchy.
 :::
 
 :::
 
 
 ::: {.project-detail-section}
+<span class="section-label">PIPELINE LOGIC</span>
 
-## Technical Implementation
+## From sequence evidence to final annotation
 
-The workflow was implemented in Python and structured around outputs produced by BLAST, HMMER, and TMHMM.
+::: {.annotation-hierarchy}
 
-The annotation logic compares available evidence and applies predefined rules to determine which result should guide the final assignment.
+::: {.annotation-tier}
+<span class="tier-number">01</span>
 
-This approach helped make the annotation process more consistent and reproducible than interpreting each tool result independently.
+### HMMER
 
+Use a protein-family or conserved-domain match when available.
+
+<span class="tier-priority">Highest priority</span>
+:::
+
+<span class="workflow-arrow">→</span>
+
+::: {.annotation-tier}
+<span class="tier-number">02</span>
+
+### BLAST
+
+If no HMMER match exists, use the available sequence-similarity annotation.
+:::
+
+<span class="workflow-arrow">→</span>
+
+::: {.annotation-tier}
+<span class="tier-number">03</span>
+
+### TMHMM-derived evidence
+
+If neither sequence-based source provides an annotation, classify genes with transmembrane evidence as:
+
+`predicted transmembrane protein`
+:::
+
+<span class="workflow-arrow">→</span>
+
+::: {.annotation-tier}
+<span class="tier-number">04</span>
+
+### Fallback
+
+If no higher-priority evidence is available:
+
+`Hypothetical protein`
+:::
+
+:::
 :::
 
 
-::: {.project-detail-section}
+::: {.project-detail-section .implementation-section}
+<span class="section-label">IMPLEMENTATION</span>
 
-## Results
+## Translating biological reasoning into Python logic
 
-The final workflow produced functional annotations by integrating multiple forms of bioinformatics evidence within a single decision framework.
+The final annotation decision is implemented directly in the pipeline:
 
-The project demonstrated how complementary analysis tools can be combined to create a structured annotation process rather than relying on one source of evidence alone.
+```{.python}
+if current_gene_id in hmm_matches:
+    final_name = hmm_matches[current_gene_id]
+elif current_gene_id in blast_matches:
+    final_name = blast_matches[current_gene_id]
+elif tmhmm_matches.get(current_gene_id) == True:
+    final_name = "predicted transmembrane protein"
+else:
+    final_name = "Hypothetical protein"
+```
 
-:::
-
-
-::: {.project-detail-section}
-
-## What I Learned
-
-This project strengthened my understanding of how bioinformatics tools can be combined within a larger computational workflow.
-
-I gained additional experience working with biological sequence-analysis outputs, translating scientific reasoning into Python logic, and designing a reproducible process for interpreting multiple sources of evidence.
-
-:::
-
-
-::: {.project-detail-footer}
-
-## Explore the Code
-
-The complete project implementation and documentation are available on GitHub.
-
-[View GitHub Repository →](https://github.com/riceroni18/genomic-annotation-pipeline){.btn .btn-primary}
-
-[← Back to Selected Work](../index.qmd#projects){.btn .btn-outline-light}
+The script loads previously generated HMMER, BLAST, and TMHMM-derived evidence, then applies this hierarchy to each predicted gene before writing the selected annotation to the final results file.
 
 :::
 
+::: {.annotation-file-viewer}
+
+<div class="annotation-file-header">
+<span>results/final_annotations.txt</span>
+<span>Pipeline output</span>
+</div>
+
+<pre class="annotation-results"><code>Gene_ID    Final_Annotation
+1_1	  Hypothetical protein
+1_2	  Probable aspartokinase
+1_3	  Homoserine kinase {ECO:0000255|HAMAP-Rule:MF_00384}
+1_4	  NULL
+1_5	  Uncharacterized protein YaaX
+1_6	  UPF0246 protein YpAngola_A0805 {ECO:0000255|HAMAP-Rule:MF_00652}
+1_7	  Uncharacterized transporter YflA
+1_8	  Transaldolase {ECO:0000255|HAMAP-Rule:MF_00492}
+1_9	  Molybdopterin adenylyltransferase
+1_10	Succinate-acetate/proton symporter SatP
+1_11	UPF0174 protein YaaW {ECO:0000305}
+1_12	UPF0412 protein YaaI {ECO:0000255|HAMAP-Rule:MF_01372}
+1_13	Chaperone protein DnaK {ECO:0000255|HAMAP-Rule:MF_00332}
+1_14	Chaperone protein DnaJ {ECO:0000255|HAMAP-Rule:MF_01152}
+1_15	Transposase for insertion sequence element IS421
+1_16	Hypothetical protein
+1_17	Hypothetical protein
+1_18	Na(+)/H(+) antiporter NhaA {ECO:0000255|HAMAP-Rule:MF_01844}
+1_19	Transcriptional activator protein NhaR
+1_20	Insertion element IS1 protein InsB
+1_21	Insertion element iso-IS1d protein InsA
+1_22	Hypothetical protein
+1_23	FMN adenylyltransferase {ECO:0000250|UniProtKB:Q59263}
+1_24	Isoleucine--tRNA ligase {ECO:0000255|HAMAP-Rule:MF_02002}
+1_25	Lipoprotein signal peptidase {ECO:0000255|HAMAP-Rule:MF_00161}
+1_26	FKBP-type 16 kDa peptidyl-prolyl cis-trans isomerase
+1_27	4-hydroxy-3-methylbut-2-enyl diphosphate reductase {ECO:0000255|HAMAP-Rule:MF_00191}
+1_28	Pyrimidine-specific ribonucleoside hydrolase RihA {ECO:0000255|HAMAP-Rule:MF_01431}
+1_29	4-hydroxy-tetrahydrodipicolinate reductase {ECO:0000255|HAMAP-Rule:MF_00102}
+1_30	Carbamoyl-phosphate synthase small chain {ECO:0000255|HAMAP-Rule:MF_01209}
+1_31	Carbamoyl-phosphate synthase large chain {ECO:0000255|HAMAP-Rule:MF_01210}
+1_32	Transcriptional activatory protein CaiF
+1_33	Phenylacetic acid degradation protein PaaY
+1_34	Enoyl-CoA-hydratase {ECO:0000303|PubMed:11752437}
+1_35	Crotonobetaine/carnitine--CoA ligase {ECO:0000255|HAMAP-Rule:MF_01524}
+1_36	Bile acid CoA-transferase BaiK {ECO:0000305|PubMed:22021638}
+1_37	Probable acyl-CoA dehydrogenase YdiO
+1_38	Uncharacterized transporter YeaV
+1_39	Putative electron transfer flavoprotein subunit YdiQ
+1_40	Putative electron transfer flavoprotein subunit YdiR
+1_41	Protein FixC
+1_42	Ferredoxin-like protein FixX
+1_43	Putative metabolite transport protein YaaU
+1_44	Glutathione-regulated potassium-efflux system ancillary protein KefF {ECO:0000255|HAMAP-Rule:MF_01414}
+1_45	Glutathione-regulated potassium-efflux system protein KefB {ECO:0000255|HAMAP-Rule:MF_01412}
+1_46	Dihydrofolate reductase
+1_47	Bis(5'-nucleosyl)-tetraphosphatase, symmetrical {ECO:0000255|HAMAP-Rule:MF_00199}
+1_48	Protein ApaG {ECO:0000255|HAMAP-Rule:MF_00791}
+1_49	Ribosomal RNA small subunit methyltransferase A {ECO:0000255|HAMAP-Rule:MF_00607}
+1_50	4-hydroxythreonine-4-phosphate dehydrogenase {ECO:0000255|HAMAP-Rule:MF_00536}
+1_51	Chaperone SurA {ECO:0000255|HAMAP-Rule:MF_01183}
+1_52	LPS-assembly protein LptD {ECO:0000255|HAMAP-Rule:MF_01411}
+1_53	Co-chaperone protein DjlA {ECO:0000255|HAMAP-Rule:MF_01153}
+1_54	Protein YabP
+1_55	Hypothetical protein
+1_56	Dual-specificity RNA pseudouridine synthase RluA {ECO:0000250|UniProtKB:P0AA37}
+1_57	RNA polymerase-associated protein RapA {ECO:0000255|HAMAP-Rule:MF_01821}
+1_58	Catabolite repressor/activator
+1_59	Transcriptional regulator MraZ
+1_60	Ribosomal RNA small subunit methyltransferase H {ECO:0000255|HAMAP-Rule:MF_01007}
+1_61	Cell division protein FtsL {ECO:0000255|HAMAP-Rule:MF_00910}
+1_62	Probable peptidoglycan D,D-transpeptidase PenA {ECO:0000305}
+1_63	UDP-N-acetylmuramoyl-L-alanyl-D-glutamate--2,6-diaminopimelate ligase {ECO:0000255|HAMAP-Rule:MF_00208}
+1_64	UDP-N-acetylmuramoyl-tripeptide--D-alanyl-D-alanine ligase {ECO:0000255|HAMAP-Rule:MF_02019}
+1_65	Phospho-N-acetylmuramoyl-pentapeptide-transferase {ECO:0000255|HAMAP-Rule:MF_00038}
+1_66	UDP-N-acetylmuramoylalanine--D-glutamate ligase {ECO:0000255|HAMAP-Rule:MF_00639}
+1_67	Probable peptidoglycan glycosyltransferase FtsW {ECO:0000255|HAMAP-Rule:MF_00913}
+1_68	UDP-N-acetylglucosamine--N-acetylmuramyl-(pentapeptide) pyrophosphoryl-undecaprenol N-acetylglucosamine transferase {ECO:0000255|HAMAP-Rule:MF_00033}
+1_69	UDP-N-acetylmuramate--L-alanine ligase {ECO:0000255|HAMAP-Rule:MF_00046}
+1_70	D-alanine--D-alanine ligase {ECO:0000255|HAMAP-Rule:MF_00047}
+1_71	Cell division protein FtsQ {ECO:0000255|HAMAP-Rule:MF_00911}
+1_72	Cell division protein FtsA {ECO:0000255|HAMAP-Rule:MF_02033}
+1_73	Cell division protein FtsZ {ECO:0000255|HAMAP-Rule:MF_00909}
+1_74	UDP-3-O-acyl-N-acetylglucosamine deacetylase {ECO:0000255|HAMAP-Rule:MF_00388}
+1_75	Secretion monitor {ECO:0000255|HAMAP-Rule:MF_01332}
+1_76	Protein translocase subunit SecA {ECO:0000255|HAMAP-Rule:MF_01382}
+1_77	8-oxo-dGTP diphosphatase
+1_78	Hypothetical protein
+1_79	Cell division protein ZapD {ECO:0000255|HAMAP-Rule:MF_01092}
+1_80	Dephospho-CoA kinase {ECO:0000255|HAMAP-Rule:MF_00376}
+1_81	GMP reductase {ECO:0000255|HAMAP-Rule:MF_00596}
+1_82	Protein transport protein HofC homolog
+1_83	Type II secretion system protein E
+1_84	Prepilin peptidase-dependent protein D
+1_85	Nicotinate-nucleotide pyrophosphorylase [carboxylating]
+1_86	1,6-anhydro-N-acetylmuramyl-L-alanine amidase AmpD {ECO:0000250|UniProtKB:P13016}
+1_87	Protein AmpE
+1_88	L-asparagine permease 2
+1_89	NULL
+1_90	Pyruvate dehydrogenase E1 component
+1_91	Lipoamide acyltransferase component of branched-chain alpha-keto acid dehydrogenase complex
+1_92	Dihydrolipoyl dehydrogenase
+1_93	Uncharacterized protein YacH
+1_94	Aconitate hydratase B {ECO:0000250|UniProtKB:P36683}
+1_95	UPF0231 protein YPO3414/y0772/YP_0271 {ECO:0000255|HAMAP-Rule:MF_01053}
+1_96	S-adenosylmethionine decarboxylase alpha chain {ECO:0000255|HAMAP-Rule:MF_00465}
+1_97	Polyamine aminopropyltransferase {ECO:0000255|HAMAP-Rule:MF_00198}
+1_98	Uncharacterized protein YacC
+1_99	Cell division protein FtsP {ECO:0000255|HAMAP-Rule:MF_00915}
+1_100	Glycerol dehydrogenase large subunit
+1_101	Hypoxanthine-guanine phosphoribosyltransferase
+1_102	NULL
+1_103	Uncharacterized ABC transporter ATP-binding protein YadG
+1_104	Inner membrane transport permease YadH
+1_105	Putative phosphotransferase enzyme IIA component YadI
+1_106	Uncharacterized protein YadE
+1_107	Aspartate 1-decarboxylase alpha chain {ECO:0000255|HAMAP-Rule:MF_00446}
+1_108	Recombination-promoting nuclease RpnA {ECO:0000303|PubMed:28096446}
+1_109	Pantothenate synthetase {ECO:0000255|HAMAP-Rule:MF_00158}
+1_110	3-methyl-2-oxobutanoate hydroxymethyltransferase {ECO:0000255|HAMAP-Rule:MF_00156}
+1_111	Uncharacterized fimbrial-like protein YadC
+1_112	Uncharacterized fimbrial-like protein YadK
+1_113	Uncharacterized fimbrial-like protein YadL
+1_114	Uncharacterized fimbrial-like protein YadM
+1_115	Uncharacterized outer membrane usher protein YbgQ
+1_116	Probable fimbrial chaperone YadV
+1_117	Uncharacterized fimbrial-like protein YadN
+1_118	2-amino-4-hydroxy-6-hydroxymethyldihydropteridine pyrophosphokinase
+1_119	Poly(A) polymerase I {ECO:0000255|HAMAP-Rule:MF_00957}
+1_120	Glutamyl-Q tRNA(Asp) synthetase {ECO:0000255|HAMAP-Rule:MF_01428}
+1_121	NULL
+1_122	Sugar fermentation stimulation protein homolog {ECO:0000255|HAMAP-Rule:MF_00095}
+1_123	RNA 2',3'-cyclic phosphodiesterase {ECO:0000255|HAMAP-Rule:MF_01940, ECO:0000303|PubMed:25239919}
+1_124	Putative DEAH-box ATP-dependent helicase UM11114
+1_125	Penicillin-sensitive transpeptidase
+1_126	Ferrioxamine receptor
+1_127	Fe(3+)-citrate import ATP-binding protein YfmF
+1_128	Iron(3+)-hydroxamate-binding protein FhuD {ECO:0000305}
+1_129	Iron(3+)-hydroxamate import system permease protein FhuG
+1_130	Glutamate-1-semialdehyde 2,1-aminomutase {ECO:0000255|HAMAP-Rule:MF_00375}
+1_131	H(+)/Cl(-) exchange transporter ClcA {ECO:0000255|HAMAP-Rule:MF_01128}
+1_132	Iron-sulfur cluster insertion protein ErpA {ECO:0000255|HAMAP-Rule:MF_01380}
+1_133	UPF0126 membrane protein
+1_134	Vitamin B12-binding protein {ECO:0000255|HAMAP-Rule:MF_01000}
+1_135	5'-methylthioadenosine/S-adenosylhomocysteine nucleosidase {ECO:0000255|HAMAP-Rule:MF_01684}
+1_136	Deoxyguanosinetriphosphate triphosphohydrolase {ECO:0000255|HAMAP-Rule:MF_00030}
+1_137	Putative serine protease HhoA
+1_138	Uncharacterized protein HI_0093
+1_139	UPF0325 protein Spro_3794 {ECO:0000255|HAMAP-Rule:MF_01519}
+1_140	Phosphodiesterase YaeI
+1_141	2,3,4,5-tetrahydropyridine-2,6-dicarboxylate N-succinyltransferase {ECO:0000255|HAMAP-Rule:MF_00811}
+1_142	[Protein-PII]-UMP uridylyl-removing enzyme {ECO:0000255|HAMAP-Rule:MF_00277}
+1_143	Methionine aminopeptidase 1 {ECO:0000255|HAMAP-Rule:MF_03174}
+1_144	30S ribosomal protein S2 {ECO:0000255|HAMAP-Rule:MF_00291}
+1_145	Elongation factor Ts {ECO:0000255|HAMAP-Rule:MF_00050}
+1_146	Uridylate kinase {ECO:0000255|HAMAP-Rule:MF_01220}
+1_147	Ribosome-recycling factor {ECO:0000255|HAMAP-Rule:MF_00040}
+1_148	1-deoxy-D-xylulose 5-phosphate reductoisomerase {ECO:0000255|HAMAP-Rule:MF_00183}
+1_149	Isoprenyl transferase {ECO:0000255|HAMAP-Rule:MF_01139}
+1_150	Hypothetical protein
+1_151	Phosphatidate cytidylyltransferase
+1_152	Putative zinc metalloprotease R01501
+1_153	Outer membrane protein assembly factor BamA {ECO:0000255|HAMAP-Rule:MF_01430}
+1_154	Chaperone protein Skp
+1_155	UDP-3-O-acylglucosamine N-acyltransferase {ECO:0000255|HAMAP-Rule:MF_00523}
+1_156	3-hydroxyacyl-[acyl-carrier-protein] dehydratase FabZ {ECO:0000255|HAMAP-Rule:MF_00406}
+1_157	Acyl-[acyl-carrier-protein]--UDP-N-acetylglucosamine O-acyltransferase {ECO:0000255|HAMAP-Rule:MF_00387}
+1_158	Lipid-A-disaccharide synthase {ECO:0000255|HAMAP-Rule:MF_00392}
+1_159	Ribonuclease HII {ECO:0000255|HAMAP-Rule:MF_00052}
+1_160	DNA polymerase III subunit alpha
+1_161	Acetyl-coenzyme A carboxylase carboxyl transferase subunit alpha {ECO:0000255|HAMAP-Rule:MF_00823}
+1_162	Inducible ornithine decarboxylase
+1_163	Uncharacterized protein YaeR
+1_164	tRNA(Ile)-lysidine synthase {ECO:0000255|HAMAP-Rule:MF_01161}
+1_165	Hypothetical protein
+1_166	Hypothetical protein
+1_167	Uncharacterized protein YaeQ
+1_168	Peptidyl-tRNA hydrolase ArfB
+1_169	Lipoprotein NlpE {ECO:0000303|PubMed:7635808}
+1_170	Probable lipoprotein peptidase YaeF
+1_171	Proline--tRNA ligase {ECO:0000255|HAMAP-Rule:MF_01569}
+1_172	NULL
+1_173	Outer membrane lipoprotein RcsF {ECO:0000255|HAMAP-Rule:MF_00976}
+1_174	Outer membrane lipoprotein 2
+1_175	Methionine import system permease protein MetP
+1_176	Methionine import ATP-binding protein MetN 1 {ECO:0000255|HAMAP-Rule:MF_01719}
+1_177	D-glycero-beta-D-manno-heptose-1,7-bisphosphate 7-phosphatase
+1_178	Hypothetical protein
+1_179	2,5-diketo-D-gluconic acid reductase B
+1_180	Uncharacterized HTH-type transcriptional regulator YafC
+1_181	UPF0294 protein VP2298 {ECO:0000255|HAMAP-Rule:MF_01119}
+1_182	Uncharacterized protein YafE
+1_183	Membrane-bound lytic murein transglycosylase D
+1_184	Hydroxyacylglutathione hydrolase {ECO:0000255|HAMAP-Rule:MF_01374}
+1_185	Uncharacterized protein YafS
+1_186	Ribonuclease H {ECO:0000255|HAMAP-Rule:MF_00042}
+1_187	DNA polymerase III subunit epsilon
+1_188	Uncharacterized lipoprotein YafT
+1_189	Uncharacterized protein YkfM
+1_190	Putative inner membrane protein YafU
+1_191	Omega-amidase YafV
+1_192	Inhibitor of vertebrate lysozyme
+1_193	Acyl-coenzyme A dehydrogenase {ECO:0000250|UniProtKB:Q8ZRJ7}
+1_194	Phosphoheptose isomerase {ECO:0000255|HAMAP-Rule:MF_00067}
+1_195	Putative glutamine amidotransferase HI_1037
+1_196	Putative L,D-transpeptidase YafK
+1_197	mRNA interferase toxin YafQ
+1_198	Hypothetical protein
+1_199	Probable endopeptidase YafL
+1_200	REP-associated tyrosine transposase
+</code></pre>
 
 :::
